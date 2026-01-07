@@ -135,50 +135,51 @@
       }
     ];
 
-    const projects = [
-      {
-        name: "Glory Gain - Sea Moss Bundle",
-        url: "https://glorygain.com/products/sea-moss-shilajit-supplement-bundle-offer/",
-        screenshot: "https://api.screenshotone.com/take?url=https://glorygain.com/products/sea-moss-shilajit-supplement-bundle-offer/&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&block_cookie_banners=true&block_banners_by_heuristics=true&block_ads=true",
-        description: "Shopify product page with custom bundle offers and advanced product variations",
-        tags: ["Shopify", "Product Page", "Bundle Offers"]
-      },
-      {
-        name: "Horizon View Tech",
-        url: "https://horizonviewtech.com/",
-        screenshot: "https://api.screenshotone.com/take?url=https://horizonviewtech.com/&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&block_cookie_banners=true&block_banners_by_heuristics=true&block_ads=true",
-        description: "Corporate website with modern design and responsive layout",
-        tags: ["WordPress", "Corporate", "Responsive"]
-      },
-      {
-        name: "Alyfe Supplements Quiz",
-        url: "https://alyfesupplements.com/pages/quiz-results",
-        screenshot: "https://api.screenshotone.com/take?url=https://alyfesupplements.com/pages/quiz-results&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&block_cookie_banners=true&block_banners_by_heuristics=true&block_ads=true",
-        description: "Interactive quiz results page with personalized product recommendations",
-        tags: ["Shopify", "Quiz", "Custom Features"]
-      },
-      {
-        name: "NeuroDrops Store",
-        url: "https://www.neurodrops.store/products/neurodrops",
-        screenshot: "https://api.screenshotone.com/take?url=https://www.neurodrops.store/products/neurodrops&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&block_cookie_banners=true&block_banners_by_heuristics=true&block_ads=true",
-        description: "E-commerce product page with optimized checkout and payment integration",
-        tags: ["Shopify", "E-commerce", "Product Page"]
-      },
-      {
-        name: "Pemvish.com",
-        url: "https://pemvish.com",
-        screenshot: "https://api.screenshotone.com/take?url=https://pemvish.com&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&block_cookie_banners=true&block_banners_by_heuristics=true&block_ads=true",
-        description: "Custom WordPress site with fast loading & clean design",
-        tags: ["WordPress", "Performance", "Custom Design"]
-      },
-      {
-        name: "Nene Solutions",
-        url: "https://nenesolutions.ca",
-        screenshot: "https://api.screenshotone.com/take?url=https://nenesolutions.ca&viewport_width=1200&viewport_height=800&device_scale_factor=1&format=jpg&block_cookie_banners=true&block_banners_by_heuristics=true&block_ads=true",
-        description: "Full WooCommerce store with variations, offers, checkout & payment integration",
-        tags: ["WooCommerce", "E-commerce", "Payment Integration"]
-      }
-    ];
+const projects = [
+  {
+    name: "Glory Gain - Sea Moss Bundle",
+    url: "https://glorygain.com/products/sea-moss-shilajit-supplement-bundle-offer/",
+    screenshot: "./seamos.png",
+    description: "Shopify product page with custom bundle offers and advanced product variations",
+    tags: ["Shopify", "Product Page", "Bundle Offers"]
+  },
+  {
+    name: "Horizon View Tech",
+    url: "https://horizonviewtech.com/",
+    screenshot: "./horizonviewtech.png",
+    description: "Corporate website with modern design and responsive layout",
+    tags: ["WordPress", "Corporate", "Responsive"]
+  },
+  {
+    name: "Alyfe Supplements Quiz",
+    url: "https://alyfesupplements.com/pages/quiz-results",
+    screenshot: "./quiz-result.png",
+    description: "Interactive quiz results page with personalized product recommendations",
+    tags: ["Shopify", "Quiz", "Custom Features"]
+  },
+  {
+    name: "NeuroDrops Store",
+    url: "https://www.neurodrops.store/products/neurodrops",
+    screenshot: "./neurodropes.png",
+    description: "E-commerce product page with optimized checkout and payment integration",
+    tags: ["Shopify", "E-commerce", "Product Page"]
+  },
+  {
+    name: "Pemvish.com",
+    url: "https://pemvish.com",
+    screenshot: "./pemvish.png",
+    description: "Custom WordPress site with fast loading & clean design",
+    tags: ["WordPress", "Performance", "Custom Design"]
+  },
+  {
+    name: "Nene Solutions",
+    url: "https://nenesolutions.ca",
+    screenshot: "./nene.png",
+    description: "Full WooCommerce store with variations, offers, checkout & payment integration",
+    tags: ["WooCommerce", "E-commerce", "Payment Integration"]
+  }
+];
+
 
     function renderPortfolio() {
       const config = window.elementSdk?.config || defaultConfig;
