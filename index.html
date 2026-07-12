@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ankit Jaswal - Senior WordPress & Shopify Developer with 4.5+ years of experience.">
-    <title>Ankit Jaswal | WordPress & Shopify Expert Developer</title>
+    <title>Ankit Jaswal | WordPress & Shopify Expert</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,51 +18,43 @@
         }
         
          :root {
-            --bg: #FFFFFF;
+            --bg: #fff;
             --bg-alt: #FAFBFC;
             --surface: #F1F3F4;
             --surface-2: #E8EAED;
             --primary: #1A73E8;
-            --primary-hover: #1557B0;
-            --primary-light: rgba(26, 115, 232, 0.07);
-            --primary-medium: rgba(26, 115, 232, 0.14);
-            --primary-glow: rgba(26, 115, 232, 0.22);
+            --primary-light: rgba(26, 115, 232, .07);
+            --primary-medium: rgba(26, 115, 232, .14);
             --secondary: #34A853;
-            --secondary-light: rgba(52, 168, 83, 0.08);
+            --secondary-light: rgba(52, 168, 83, .08);
             --accent: #FBBC04;
-            --accent-light: rgba(251, 188, 4, 0.10);
+            --accent-light: rgba(251, 188, 4, .10);
             --error: #EA4335;
-            --error-light: rgba(234, 67, 53, 0.08);
-            --purple: #9C27B0;
-            --purple-light: rgba(156, 39, 176, 0.08);
+            --error-light: rgba(234, 67, 53, .08);
+            --purple: #7C4DFF;
+            --purple-light: rgba(124, 77, 255, .08);
             --teal: #009688;
-            --teal-light: rgba(0, 150, 136, 0.08);
+            --teal-light: rgba(0, 150, 136, .08);
             --shopify: #5E8E3E;
-            --shopify-bg: rgba(150, 191, 72, 0.09);
+            --shopify-bg: rgba(150, 191, 72, .09);
             --wordpress: #21759B;
-            --wordpress-bg: rgba(33, 117, 155, 0.09);
+            --wordpress-bg: rgba(33, 117, 155, .09);
             --text: #202124;
             --text-secondary: #5F6368;
             --text-tertiary: #80868B;
             --border: #E8EAED;
-            --border-2: #F1F3F4;
             --code-bg: #1E1E2E;
             --code-text: #CDD6F4;
-            --code-keyword: #CBA6F7;
-            --code-func: #89B4FA;
-            --code-str: #A6E3A1;
-            --code-comment: #6C7086;
-            --code-var: #F38BA8;
-            --code-num: #FAB387;
-            --code-tag: #89DCEB;
-            --code-attr: #F9E2AF;
-            --code-punct: #BAC2DE;
-            --sh-sm: 0 1px 3px rgba(60, 64, 67, .10), 0 1px 2px rgba(60, 64, 67, .06);
+            --sh-sm: 0 1px 3px rgba(60, 64, 67, .1), 0 1px 2px rgba(60, 64, 67, .06);
             --sh-md: 0 4px 6px rgba(60, 64, 67, .07), 0 2px 4px rgba(60, 64, 67, .06);
             --sh-lg: 0 10px 15px rgba(60, 64, 67, .08), 0 4px 6px rgba(60, 64, 67, .05);
-            --sh-xl: 0 20px 25px rgba(60, 64, 67, .10), 0 8px 10px rgba(60, 64, 67, .04);
+            --sh-xl: 0 20px 25px rgba(60, 64, 67, .1), 0 8px 10px rgba(60, 64, 67, .04);
             --sh-2xl: 0 25px 50px rgba(60, 64, 67, .15);
-            --sh-primary: 0 4px 14px rgba(26, 115, 232, .28);
+            --grad-1: linear-gradient(135deg, #1A73E8 0%, #7C4DFF 50%, #34A853 100%);
+            --grad-2: linear-gradient(135deg, #1A73E8 0%, #7C4DFF 100%);
+            --grad-3: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --grad-text: linear-gradient(135deg, #1A73E8 0%, #7C4DFF 40%, #34A853 100%);
+            --grad-btn-shadow: 0 6px 20px rgba(26, 115, 232, .3), 0 3px 10px rgba(124, 77, 255, .15);
             --r-sm: 8px;
             --r-md: 12px;
             --r-lg: 16px;
@@ -74,13 +65,12 @@
             --nav-h: 72px;
             --ease: cubic-bezier(.4, 0, .2, 1);
             --tf: .15s;
-            --tn: .3s;
+            --tn: .3s
         }
         
         html {
             scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale
+            -webkit-font-smoothing: antialiased
         }
         
         body {
@@ -102,12 +92,6 @@
             font-weight: 700
         }
         
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block
-        }
-        
         a {
             text-decoration: none;
             color: inherit
@@ -124,9 +108,10 @@
             list-style: none
         }
         
-         ::selection {
-            background: var(--primary-medium);
-            color: var(--primary-hover)
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block
         }
         
         .container {
@@ -134,58 +119,72 @@
             margin: 0 auto;
             padding: 0 24px
         }
-        /* SKIP */
         
-        .skip-link {
-            position: absolute;
-            top: -100%;
-            left: 16px;
-            padding: 12px 24px;
-            background: var(--primary);
-            color: #fff;
-            font-weight: 600;
+        .grad-text {
+            background: var(--grad-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
+        }
+        /* ===== LOGO ===== */
+        
+        .logo-mark {
+            width: 40px;
+            height: 40px;
             border-radius: var(--r-md);
-            z-index: 10000;
-            transition: top .2s
-        }
-        
-        .skip-link:focus {
-            top: 16px
-        }
-        /* LOADER */
-        
-        .page-loader {
-            position: fixed;
-            inset: 0;
-            background: var(--bg);
-            z-index: 99999;
+            position: relative;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity .5s var(--ease), visibility .5s
+            flex-shrink: 0
         }
         
-        .page-loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none
+        .logo-mark-bg {
+            position: absolute;
+            inset: 0;
+            background: var(--grad-1);
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite
         }
         
-        .loader-ring {
-            width: 44px;
-            height: 44px;
-            border: 3px solid var(--border);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin .8s linear infinite
-        }
-        
-        @keyframes spin {
-            to {
-                transform: rotate(360deg)
+        @keyframes grad-shift {
+            0%,
+            100% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
             }
         }
-        /* ===== NAV ===== */
+        
+        .logo-mark-inner {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        .logo-mark-inner svg {
+            width: 22px;
+            height: 22px
+        }
+        
+        .logo-mark::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, transparent 50%);
+            border-radius: inherit;
+            z-index: 2;
+            pointer-events: none
+        }
+        /* NAV */
         
         .nav {
             position: fixed;
@@ -196,9 +195,9 @@
             height: var(--nav-h);
             display: flex;
             align-items: center;
-            background: rgba(255, 255, 255, .78);
-            backdrop-filter: blur(24px) saturate(180%);
-            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            background: rgba(255, 255, 255, .8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             transition: var(--tn) var(--ease)
         }
         
@@ -217,24 +216,10 @@
         .nav-logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 11px;
             font-family: 'Manrope', sans-serif;
             font-weight: 800;
-            font-size: 1.0625rem;
-            flex-shrink: 0
-        }
-        
-        .nav-logo-mark {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, var(--primary), #4285F4);
-            border-radius: var(--r-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 800;
-            font-size: 1rem
+            font-size: 1.0625rem
         }
         
         .nav-links {
@@ -244,12 +229,12 @@
         }
         
         .nav-link {
-            padding: 7px 12px;
+            padding: 7px 14px;
             border-radius: var(--r-full);
             font-size: .8125rem;
             font-weight: 500;
             color: var(--text-secondary);
-            transition: var(--tf) var(--ease)
+            transition: var(--tf)
         }
         
         .nav-link:hover,
@@ -265,22 +250,106 @@
             margin-left: 10px
         }
         
-        .nav-cta {
-            padding: 8px 20px;
-            background: var(--primary);
+        .btn-grad {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: var(--grad-1);
             color: #fff;
             border-radius: var(--r-full);
             font-size: .8125rem;
             font-weight: 600;
-            transition: var(--tn) var(--ease);
-            white-space: nowrap
+            transition: var(--tn);
+            border: none;
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite;
+            white-space: nowrap;
+            justify-content: center;
+            position: relative;
+            overflow: hidden
         }
         
-        .nav-cta:hover {
-            box-shadow: var(--sh-primary);
-            transform: translateY(-1px)
+        .btn-grad:hover {
+            box-shadow: var(--grad-btn-shadow);
+            transform: translateY(-2px)
         }
-        /* MOBILE TOGGLE */
+        
+        .btn-grad:active {
+            transform: translateY(0)
+        }
+        
+        .btn-grad-lg {
+            padding: 16px 36px;
+            font-size: .9375rem
+        }
+        
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: var(--r-full);
+            font-size: .875rem;
+            font-weight: 600;
+            border: 1.5px solid var(--border);
+            color: var(--text);
+            background: var(--bg);
+            transition: var(--tn);
+            white-space: nowrap;
+            justify-content: center
+        }
+        
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px)
+        }
+        
+        .btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: var(--r-full);
+            font-size: .875rem;
+            font-weight: 600;
+            background: #fff;
+            color: var(--text);
+            transition: var(--tn);
+            justify-content: center
+        }
+        
+        .btn-white:hover {
+            box-shadow: var(--sh-xl);
+            transform: translateY(-2px)
+        }
+        
+        .btn-ow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: var(--r-full);
+            font-size: .875rem;
+            font-weight: 600;
+            border: 1.5px solid rgba(255, 255, 255, .3);
+            color: #fff;
+            transition: var(--tn);
+            justify-content: center
+        }
+        
+        .btn-ow:hover {
+            background: rgba(255, 255, 255, .1)
+        }
+        
+        .btn-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0
+        }
+        /* MOBILE */
         
         .mob-toggle {
             display: none;
@@ -290,14 +359,7 @@
             justify-content: center;
             flex-direction: column;
             gap: 5px;
-            flex-shrink: 0;
-            border-radius: var(--r-sm);
-            transition: background var(--tf);
             -webkit-tap-highlight-color: transparent
-        }
-        
-        .mob-toggle:hover {
-            background: var(--surface)
         }
         
         .mob-toggle span {
@@ -305,9 +367,8 @@
             height: 2px;
             background: var(--text);
             border-radius: 2px;
-            transition: var(--tn) var(--ease);
-            display: block;
-            transform-origin: center
+            transition: var(--tn);
+            display: block
         }
         
         .mob-toggle.open span:nth-child(1) {
@@ -315,14 +376,28 @@
         }
         
         .mob-toggle.open span:nth-child(2) {
-            opacity: 0;
-            transform: scaleX(0)
+            opacity: 0
         }
         
         .mob-toggle.open span:nth-child(3) {
             transform: rotate(-45deg) translate(5px, -5px)
         }
-        /* MOBILE MENU — FIXED */
+        
+        .mob-overlay {
+            position: fixed;
+            inset: 0;
+            top: var(--nav-h);
+            background: rgba(0, 0, 0, .3);
+            z-index: 997;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .3s, visibility .3s
+        }
+        
+        .mob-overlay.open {
+            opacity: 1;
+            visibility: visible
+        }
         
         .mob-menu {
             position: fixed;
@@ -336,7 +411,6 @@
             flex-direction: column;
             padding: 16px 20px 32px;
             overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
             transform: translateX(100%);
             transition: transform .35s var(--ease);
             visibility: hidden
@@ -347,150 +421,43 @@
             visibility: visible
         }
         
-        .mob-menu .mob-link {
+        .mob-link {
             display: block;
-            padding: 16px 20px;
+            padding: 15px 18px;
             font-size: 1rem;
             font-weight: 500;
             color: var(--text);
             border-radius: var(--r-md);
-            transition: var(--tf);
             text-align: left
         }
         
-        .mob-menu .mob-link:hover,
-        .mob-menu .mob-link:active {
+        .mob-link:hover {
             background: var(--primary-light);
             color: var(--primary)
         }
         
-        .mob-menu .mob-divider {
+        .mob-divider {
             height: 1px;
             background: var(--border);
-            margin: 12px 0
+            margin: 10px 0
         }
         
-        .mob-menu .mob-cta {
+        .mob-cta {
             display: block;
-            margin-top: auto;
-            padding: 16px 24px;
-            background: var(--primary);
+            margin-top: 16px;
+            padding: 15px 24px;
+            background: var(--grad-1);
             color: #fff;
             border-radius: var(--r-md);
             font-size: 1rem;
             font-weight: 600;
             text-align: center;
-            transition: var(--tn)
-        }
-        
-        .mob-menu .mob-cta:hover {
-            box-shadow: var(--sh-primary)
-        }
-        
-        .mob-overlay {
-            position: fixed;
-            inset: 0;
-            top: var(--nav-h);
-            background: rgba(0, 0, 0, .3);
-            z-index: 997;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity .35s var(--ease), visibility .35s
-        }
-        
-        .mob-overlay.open {
-            opacity: 1;
-            visibility: visible
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite
         }
         
         body.menu-open {
             overflow: hidden
-        }
-        /* BUTTONS */
-        
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 13px 26px;
-            border-radius: var(--r-full);
-            font-size: .875rem;
-            font-weight: 600;
-            transition: var(--tn) var(--ease);
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap;
-            justify-content: center
-        }
-        
-        .btn-lg {
-            padding: 15px 32px;
-            font-size: .9375rem
-        }
-        
-        .btn-primary {
-            background: var(--primary);
-            color: #fff
-        }
-        
-        .btn-primary:hover {
-            box-shadow: var(--sh-primary);
-            transform: translateY(-2px)
-        }
-        
-        .btn-outline {
-            border: 1.5px solid var(--border);
-            color: var(--text);
-            background: var(--bg)
-        }
-        
-        .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            background: var(--primary-light);
-            transform: translateY(-2px)
-        }
-        
-        .btn-white {
-            background: #fff;
-            color: var(--text)
-        }
-        
-        .btn-white:hover {
-            box-shadow: var(--sh-xl);
-            transform: translateY(-2px)
-        }
-        
-        .btn-ow {
-            border: 1.5px solid rgba(255, 255, 255, .3);
-            color: #fff
-        }
-        
-        .btn-ow:hover {
-            background: rgba(255, 255, 255, .1);
-            border-color: rgba(255, 255, 255, .5)
-        }
-        
-        .btn-icon {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0
-        }
-        
-        .rip {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, .3);
-            transform: scale(0);
-            animation: ripa .6s linear;
-            pointer-events: none
-        }
-        
-        @keyframes ripa {
-            to {
-                transform: scale(4);
-                opacity: 0
-            }
         }
         /* SECTIONS */
         
@@ -500,7 +467,7 @@
         
         .section-header {
             text-align: center;
-            max-width: 620px;
+            max-width: 640px;
             margin: 0 auto 56px
         }
         
@@ -527,11 +494,6 @@
             color: var(--shopify)
         }
         
-        .sl-wp {
-            background: var(--wordpress-bg);
-            color: var(--wordpress)
-        }
-        
         .sl-purple {
             background: var(--purple-light);
             color: var(--purple)
@@ -552,19 +514,12 @@
             margin-bottom: 14px
         }
         
-        .section-title span {
-            background: linear-gradient(135deg, var(--primary), var(--shopify));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text
-        }
-        
         .section-desc {
             font-size: 1rem;
             color: var(--text-secondary);
             line-height: 1.75
         }
-        /* ===== HERO — MOBILE FIXED ===== */
+        /* HERO */
         
         .hero {
             min-height: 100vh;
@@ -590,7 +545,7 @@
             right: -12%;
             width: 700px;
             height: 700px;
-            background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(26, 115, 232, .06) 0%, transparent 70%);
             pointer-events: none
         }
         
@@ -600,7 +555,7 @@
             left: -12%;
             width: 550px;
             height: 550px;
-            background: radial-gradient(circle, var(--shopify-bg) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(124, 77, 255, .05) 0%, transparent 70%);
             pointer-events: none
         }
         
@@ -611,10 +566,6 @@
             align-items: center;
             position: relative;
             z-index: 2
-        }
-        
-        .hero-content {
-            text-align: left
         }
         
         .hero-badge {
@@ -637,34 +588,21 @@
             height: 8px;
             background: var(--secondary);
             border-radius: 50%;
-            flex-shrink: 0;
-            position: relative
+            animation: pulse 2s infinite
         }
         
-        .hero-badge-dot::after {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border-radius: 50%;
-            background: var(--secondary);
-            opacity: .25;
-            animation: pring 2s infinite
-        }
-        
-        @keyframes pring {
-            0% {
-                transform: scale(1);
-                opacity: .25
-            }
+        @keyframes pulse {
+            0%,
             100% {
-                transform: scale(2.5);
-                opacity: 0
+                opacity: 1
+            }
+            50% {
+                opacity: .5
             }
         }
         
         .hero-eyebrow {
             font-size: .9375rem;
-            color: var(--primary);
             font-weight: 600;
             margin-bottom: 6px;
             display: flex;
@@ -683,13 +621,6 @@
             line-height: 1.1;
             margin-bottom: 10px;
             letter-spacing: -.02em
-        }
-        
-        .hero-title .grad {
-            background: linear-gradient(135deg, var(--primary) 0%, #7C4DFF 50%, var(--shopify) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text
         }
         
         .hero-sub {
@@ -733,13 +664,12 @@
         .hp-dot {
             width: 6px;
             height: 6px;
-            border-radius: 50%;
-            flex-shrink: 0
+            border-radius: 50%
         }
         
         .hero-actions {
             display: flex;
-            gap: 11px;
+            gap: 12px;
             flex-wrap: wrap;
             margin-bottom: 40px
         }
@@ -747,8 +677,6 @@
         .hero-stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 0;
-            padding: 0;
             background: var(--bg-alt);
             border: 1px solid var(--border);
             border-radius: var(--r-xl);
@@ -780,16 +708,15 @@
         .hs-lbl {
             font-size: .75rem;
             color: var(--text-secondary);
-            margin-top: 2px;
-            font-weight: 500
+            margin-top: 2px
         }
-        /* CODE WINDOW */
         
         .hero-visual {
             position: relative;
             display: flex;
             justify-content: center
         }
+        /* CODE WINDOW */
         
         .cw {
             width: 100%;
@@ -836,7 +763,7 @@
             flex: 1;
             text-align: center;
             font-size: .6875rem;
-            color: var(--code-comment);
+            color: #6C7086;
             font-family: 'JetBrains Mono', monospace
         }
         
@@ -852,12 +779,10 @@
             padding: 9px 14px;
             font-size: .6875rem;
             font-family: 'JetBrains Mono', monospace;
-            color: var(--code-comment);
+            color: #6C7086;
             border-bottom: 2px solid transparent;
-            transition: var(--tf);
             cursor: pointer;
-            white-space: nowrap;
-            flex-shrink: 0
+            white-space: nowrap
         }
         
         .cw-tab.on {
@@ -867,7 +792,6 @@
         
         .cw-body {
             padding: 20px;
-            min-height: 280px;
             overflow-x: auto
         }
         
@@ -887,12 +811,12 @@
         }
         
         .cl-n {
-            color: var(--code-comment);
+            color: #6C7086;
             user-select: none;
             min-width: 18px;
             text-align: right;
-            font-size: .6875rem;
-            font-family: 'JetBrains Mono', monospace
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .6875rem
         }
         
         .cl-c {
@@ -901,40 +825,28 @@
         }
         
         .ck {
-            color: var(--code-keyword)
+            color: #CBA6F7
         }
         
         .cf {
-            color: var(--code-func)
+            color: #89B4FA
         }
         
         .cs {
-            color: var(--code-str)
+            color: #A6E3A1
         }
         
         .cc {
-            color: var(--code-comment);
+            color: #6C7086;
             font-style: italic
         }
         
         .cv {
-            color: var(--code-var)
-        }
-        
-        .cn {
-            color: var(--code-num)
-        }
-        
-        .ct {
-            color: var(--code-tag)
-        }
-        
-        .ca {
-            color: var(--code-attr)
+            color: #F38BA8
         }
         
         .cp {
-            color: var(--code-punct)
+            color: #BAC2DE
         }
         
         .cursor {
@@ -943,8 +855,7 @@
             height: .9em;
             background: var(--primary);
             animation: blink 1s step-end infinite;
-            vertical-align: text-bottom;
-            margin-left: 1px
+            vertical-align: text-bottom
         }
         
         @keyframes blink {
@@ -956,7 +867,6 @@
                 opacity: 0
             }
         }
-        /* FLOATS */
         
         .hf {
             position: absolute;
@@ -974,22 +884,22 @@
         .hf1 {
             top: 16px;
             right: -16px;
-            animation: fl1 6s ease-in-out infinite
+            animation: fl 6s ease-in-out infinite
         }
         
         .hf2 {
             bottom: 36px;
             left: -24px;
-            animation: fl2 7s ease-in-out infinite
+            animation: fl 7s ease-in-out infinite .5s
         }
         
         .hf3 {
             top: 52%;
             right: -36px;
-            animation: fl3 8s ease-in-out infinite
+            animation: fl 8s ease-in-out infinite 1s
         }
         
-        @keyframes fl1 {
+        @keyframes fl {
             0%,
             100% {
                 transform: translateY(0)
@@ -999,27 +909,7 @@
             }
         }
         
-        @keyframes fl2 {
-            0%,
-            100% {
-                transform: translateY(0)
-            }
-            50% {
-                transform: translateY(-8px)
-            }
-        }
-        
-        @keyframes fl3 {
-            0%,
-            100% {
-                transform: translateY(0)
-            }
-            50% {
-                transform: translateY(-12px)
-            }
-        }
-        
-        .fi {
+        .fic {
             width: 38px;
             height: 38px;
             border-radius: var(--r-md);
@@ -1029,7 +919,7 @@
             flex-shrink: 0
         }
         
-        .fi svg {
+        .fic svg {
             width: 18px;
             height: 18px
         }
@@ -1066,12 +956,8 @@
         .marq-track {
             display: flex;
             gap: 44px;
-            animation: marq 32s linear infinite;
+            animation: marq 30s linear infinite;
             width: max-content
-        }
-        
-        .marq-track:hover {
-            animation-play-state: paused
         }
         
         @keyframes marq {
@@ -1090,349 +976,13 @@
             font-size: .8125rem;
             font-weight: 600;
             color: var(--text-secondary);
-            white-space: nowrap;
-            flex-shrink: 0
+            white-space: nowrap
         }
         
-        .md {
+        .mdi {
             width: 7px;
             height: 7px;
-            border-radius: 50%;
-            flex-shrink: 0
-        }
-        /* SHOPIFY */
-        
-        .shopify-sec {
-            background: linear-gradient(180deg, var(--bg) 0%, #F5FFF0 60%, var(--bg) 100%)
-        }
-        
-        .sh-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px
-        }
-        
-        .sh-card {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: var(--r-xl);
-            padding: 28px;
-            transition: var(--tn) var(--ease);
-            position: relative;
-            overflow: hidden
-        }
-        
-        .sh-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--shopify), var(--secondary));
-            transform: scaleX(0);
-            transition: var(--tn) var(--ease);
-            transform-origin: left
-        }
-        
-        .sh-card:hover {
-            box-shadow: var(--sh-lg);
-            transform: translateY(-4px)
-        }
-        
-        .sh-card:hover::before {
-            transform: scaleX(1)
-        }
-        
-        .sh-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: var(--r-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 16px
-        }
-        
-        .sh-icon svg {
-            width: 24px;
-            height: 24px
-        }
-        
-        .sh-card h3 {
-            font-size: 1rem;
-            margin-bottom: 7px;
-            font-weight: 700
-        }
-        
-        .sh-card p {
-            font-size: .8125rem;
-            color: var(--text-secondary);
-            line-height: 1.6
-        }
-        
-        .sh-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 14px
-        }
-        
-        .sh-tag {
-            padding: 3px 9px;
-            background: var(--surface);
-            border-radius: var(--r-full);
-            font-size: .6875rem;
-            font-weight: 600;
-            color: var(--text-secondary)
-        }
-        /* SHOPIFY CODE DEMO */
-        
-        .sh-demo {
-            margin-top: 56px;
-            background: var(--code-bg);
-            border-radius: var(--r-2xl);
-            overflow: hidden;
-            box-shadow: var(--sh-2xl)
-        }
-        
-        .sh-demo-h {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 18px 22px;
-            border-bottom: 1px solid rgba(255, 255, 255, .06);
-            flex-wrap: wrap;
-            gap: 10px
-        }
-        
-        .sh-demo-title {
-            color: var(--code-text);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .75rem
-        }
-        
-        .sh-demo-bs {
-            display: flex;
-            gap: 7px
-        }
-        
-        .sh-demo-b {
-            padding: 3px 10px;
-            border-radius: var(--r-full);
-            font-size: .625rem;
-            font-weight: 600;
-            background: rgba(94, 142, 62, .15);
-            color: #96BF48
-        }
-        
-        .sh-demo-body {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: 280px
-        }
-        
-        .sh-demo-code {
-            padding: 22px;
-            border-right: 1px solid rgba(255, 255, 255, .06);
-            overflow-x: auto
-        }
-        
-        .sh-demo-preview {
-            padding: 22px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            align-items: center;
-            justify-content: center
-        }
-        
-        .sdp-card {
-            background: rgba(255, 255, 255, .04);
-            border: 1px solid rgba(255, 255, 255, .06);
-            border-radius: var(--r-lg);
-            padding: 18px;
-            width: 100%;
-            max-width: 260px
-        }
-        
-        .sdp-lbl {
-            font-size: .625rem;
-            color: var(--code-comment);
-            text-transform: uppercase;
-            letter-spacing: .1em;
-            margin-bottom: 10px;
-            font-family: 'JetBrains Mono', monospace
-        }
-        
-        .sdp-val {
-            display: flex;
-            align-items: baseline;
-            gap: 5px
-        }
-        
-        .sdp-num {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: #A6E3A1;
-            font-family: 'Manrope', sans-serif
-        }
-        
-        .sdp-unit {
-            font-size: .8125rem;
-            color: var(--code-comment)
-        }
-        
-        .sdp-bar {
-            height: 5px;
-            background: rgba(255, 255, 255, .06);
-            border-radius: var(--r-full);
-            overflow: hidden;
-            margin-top: 7px
-        }
-        
-        .sdp-fill {
-            height: 100%;
-            border-radius: var(--r-full);
-            transition: width 2.2s var(--ease)
-        }
-        /* WP HOOKS */
-        
-        .hooks-sec {
-            background: var(--bg)
-        }
-        
-        .hooks-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: start
-        }
-        
-        .hooks-left {
-            position: sticky;
-            top: calc(var(--nav-h) + 28px)
-        }
-        
-        .hooks-left h2 {
-            font-size: clamp(1.5rem, 3vw, 2rem);
-            margin-bottom: 14px
-        }
-        
-        .hooks-left h2 span {
-            color: var(--wordpress)
-        }
-        
-        .hooks-left>p {
-            font-size: .9375rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 28px
-        }
-        
-        .ht-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px
-        }
-        
-        .ht {
-            display: flex;
-            gap: 14px;
-            padding: 18px;
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            cursor: pointer;
-            transition: var(--tn)
-        }
-        
-        .ht:hover,
-        .ht.on {
-            border-color: var(--primary);
-            background: var(--primary-light)
-        }
-        
-        .ht-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: var(--r-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0
-        }
-        
-        .ht-icon svg {
-            width: 22px;
-            height: 22px
-        }
-        
-        .ht h4 {
-            font-size: .875rem;
-            margin-bottom: 3px
-        }
-        
-        .ht p {
-            font-size: .75rem;
-            color: var(--text-secondary);
-            line-height: 1.5
-        }
-        
-        .hcb {
-            background: var(--code-bg);
-            border-radius: var(--r-xl);
-            overflow: hidden;
-            box-shadow: var(--sh-xl);
-            display: none
-        }
-        
-        .hcb.on {
-            display: block
-        }
-        
-        .hcb-head {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 18px;
-            border-bottom: 1px solid rgba(255, 255, 255, .06)
-        }
-        
-        .hcb-file {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem;
-            color: var(--code-comment);
-            display: flex;
-            align-items: center;
-            gap: 7px
-        }
-        
-        .hcb-file .dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--secondary)
-        }
-        
-        .hcb-copy {
-            padding: 5px 11px;
-            background: rgba(255, 255, 255, .06);
-            border-radius: var(--r-sm);
-            font-size: .625rem;
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--code-comment);
-            cursor: pointer;
-            transition: var(--tf)
-        }
-        
-        .hcb-copy:hover {
-            background: rgba(255, 255, 255, .1);
-            color: var(--code-text)
-        }
-        
-        .hcb-body {
-            padding: 20px;
-            overflow-x: auto
+            border-radius: 50%
         }
         /* SERVICES */
         
@@ -1451,7 +1001,7 @@
             border: 1px solid var(--border);
             border-radius: var(--r-lg);
             padding: 24px;
-            transition: var(--tn) var(--ease);
+            transition: var(--tn);
             cursor: pointer
         }
         
@@ -1461,7 +1011,7 @@
             border-color: transparent
         }
         
-        .srv-icon {
+        .srv-ic {
             width: 46px;
             height: 46px;
             border-radius: var(--r-md);
@@ -1471,7 +1021,7 @@
             margin-bottom: 14px
         }
         
-        .srv-icon svg {
+        .srv-ic svg {
             width: 22px;
             height: 22px
         }
@@ -1487,41 +1037,66 @@
             color: var(--text-secondary);
             line-height: 1.6
         }
-        /* ===== PROJECTS — UPDATED ===== */
+        /* PROJECTS */
         
         .proj-sec {
             background: var(--bg)
         }
         
-        .proj-list {
+        .proj-tabs {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px
+        }
+        
+        .proj-tab {
+            padding: 8px 20px;
+            border-radius: var(--r-full);
+            font-size: .8125rem;
+            font-weight: 600;
+            border: 1.5px solid var(--border);
+            color: var(--text-secondary);
+            cursor: pointer;
+            background: var(--bg);
+            transition: var(--tn)
+        }
+        
+        .proj-tab.on,
+        .proj-tab:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-light)
+        }
+        
+        .proj-grid {
             display: grid;
-            gap: 72px
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px
         }
         
-        .proj-item {
-            display: grid;
-            grid-template-columns: 1.1fr .9fr;
-            gap: 44px;
-            align-items: center
-        }
-        
-        .proj-item:nth-child(even) {
-            direction: rtl
-        }
-        
-        .proj-item:nth-child(even)>* {
-            direction: ltr
-        }
-        
-        .proj-img {
-            position: relative;
+        .proj-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: var(--r-2xl);
             overflow: hidden;
-            box-shadow: var(--sh-xl);
-            aspect-ratio: 16/10
+            transition: var(--tn)
         }
         
-        .proj-img-bg {
+        .proj-card:hover {
+            box-shadow: var(--sh-xl);
+            transform: translateY(-6px);
+            border-color: transparent
+        }
+        
+        .proj-thumb {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden
+        }
+        
+        .proj-thumb-ph {
             position: absolute;
             inset: 0;
             display: flex;
@@ -1529,123 +1104,142 @@
             justify-content: center;
             font-family: 'Manrope', sans-serif;
             font-weight: 800;
-            font-size: 2rem;
+            font-size: 1.375rem;
             color: rgba(255, 255, 255, .9)
         }
         
-        .proj-img-ov {
+        .proj-thumb-ov {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, .45) 100%);
+            background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, .55) 100%);
             opacity: 0;
             transition: var(--tn);
             display: flex;
             align-items: flex-end;
-            justify-content: flex-start;
-            padding: 20px
+            padding: 16px
         }
         
-        .proj-img:hover .proj-img-ov {
+        .proj-card:hover .proj-thumb-ov {
             opacity: 1
+        }
+        
+        .proj-body {
+            padding: 22px
         }
         
         .proj-badge {
             display: inline-flex;
-            padding: 3px 11px;
+            padding: 3px 10px;
             border-radius: var(--r-full);
-            font-size: .6875rem;
+            font-size: .625rem;
             font-weight: 700;
-            letter-spacing: .05em;
+            letter-spacing: .04em;
             text-transform: uppercase;
-            margin-bottom: 14px
+            margin-bottom: 10px
         }
         
-        .proj-info h3 {
-            font-size: 1.375rem;
-            margin-bottom: 10px;
-            font-weight: 800
-        }
-        
-        .proj-info>p {
-            font-size: .875rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 16px
-        }
-        
-        .proj-challenge {
-            margin-bottom: 16px;
-            padding: 16px;
-            background: var(--bg-alt);
-            border-left: 3px solid;
-            border-radius: 0 var(--r-sm) var(--r-sm) 0
-        }
-        
-        .proj-challenge-title {
-            font-size: .75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .05em;
+        .proj-card h3 {
+            font-size: .9375rem;
+            font-weight: 800;
             margin-bottom: 6px
         }
         
-        .proj-challenge p {
+        .proj-desc {
             font-size: .8125rem;
             color: var(--text-secondary);
-            line-height: 1.6
+            line-height: 1.6;
+            margin-bottom: 12px
         }
         
-        .proj-tech {
+        .proj-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 7px;
-            margin-bottom: 20px
+            gap: 5px;
+            margin-bottom: 14px
         }
         
         .ptag {
-            padding: 4px 11px;
+            padding: 3px 9px;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: var(--r-full);
-            font-size: .6875rem;
+            font-size: .625rem;
             font-weight: 600;
             color: var(--text-secondary)
         }
         
-        .proj-metrics {
+        .proj-results {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1px;
             background: var(--border);
-            border: 1px solid var(--border);
             border-radius: var(--r-lg);
             overflow: hidden;
-            margin-bottom: 20px
+            margin-bottom: 14px
         }
         
-        .proj-metric {
-            background: var(--bg);
-            padding: 16px;
+        .proj-result {
+            background: var(--bg-alt);
+            padding: 10px 6px;
             text-align: center
         }
         
-        .pm-val {
+        .prv {
             font-family: 'Manrope', sans-serif;
-            font-size: 1.125rem;
+            font-size: .875rem;
             font-weight: 800
         }
         
-        .pm-lbl {
-            font-size: .625rem;
-            color: var(--text-secondary);
-            margin-top: 2px;
+        .prl {
+            font-size: .5625rem;
+            color: var(--text-tertiary);
             text-transform: uppercase;
-            letter-spacing: .03em
+            margin-top: 2px
         }
         
-        .proj-actions {
+        .proj-btns {
             display: flex;
-            gap: 11px
+            gap: 8px
+        }
+        
+        .pbtn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 9px 16px;
+            border-radius: var(--r-full);
+            font-size: .75rem;
+            font-weight: 600;
+            flex: 1;
+            justify-content: center;
+            transition: var(--tn)
+        }
+        
+        .pbtn svg {
+            width: 13px;
+            height: 13px
+        }
+        
+        .pbtn-g {
+            background: var(--grad-1);
+            color: #fff;
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite;
+            border: none
+        }
+        
+        .pbtn-g:hover {
+            box-shadow: var(--grad-btn-shadow)
+        }
+        
+        .pbtn-o {
+            border: 1.5px solid var(--border);
+            color: var(--text-secondary)
+        }
+        
+        .pbtn-o:hover {
+            border-color: var(--primary);
+            color: var(--primary)
         }
         /* EXPERIENCE */
         
@@ -1666,7 +1260,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(180deg, var(--primary), var(--shopify), var(--border))
+            background: var(--grad-2)
         }
         
         .ti {
@@ -1692,8 +1286,9 @@
         }
         
         .ti:first-child .ti-dot {
-            background: var(--primary);
-            box-shadow: 0 0 0 4px var(--primary-glow)
+            background: var(--grad-1);
+            border: none;
+            box-shadow: 0 0 0 4px rgba(26, 115, 232, .22)
         }
         
         .ti-date {
@@ -1732,11 +1327,10 @@
         }
         
         .ti-desc li::before {
-            content: '▸';
+            content: '\25B8';
             position: absolute;
             left: 0;
-            color: var(--primary);
-            font-weight: bold
+            color: var(--primary)
         }
         
         .ti-tags {
@@ -1827,164 +1421,220 @@
             color: var(--primary);
             background: var(--primary-light)
         }
-        /* TESTIMONIALS */
-        
-        .test-sec {
-            background: var(--bg-alt)
-        }
-        
-        .test-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px
-        }
-        
-        .tcard {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: var(--r-xl);
-            padding: 28px;
-            transition: var(--tn);
-            position: relative
-        }
-        
-        .tcard:hover {
-            box-shadow: var(--sh-md)
-        }
-        
-        .tcard-quote {
-            position: absolute;
-            top: 18px;
-            right: 22px;
-            font-size: 2.5rem;
-            color: var(--surface-2);
-            font-family: Georgia, serif;
-            line-height: 1
-        }
-        
-        .tcard-stars {
-            display: flex;
-            gap: 2px;
-            margin-bottom: 14px
-        }
-        
-        .tcard-stars svg {
-            width: 15px;
-            height: 15px;
-            fill: var(--accent)
-        }
-        
-        .tcard-text {
-            font-size: .875rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 20px
-        }
-        
-        .tcard-auth {
-            display: flex;
-            align-items: center;
-            gap: 11px
-        }
-        
-        .tcard-av {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: .9375rem;
-            color: #fff;
-            flex-shrink: 0
-        }
-        
-        .tcard-name {
-            font-weight: 700;
-            font-size: .875rem
-        }
-        
-        .tcard-role {
-            font-size: .75rem;
-            color: var(--text-secondary)
-        }
-        /* ===== PROCESS — FIXED ALIGNMENT ===== */
+        /* ===== PROCESS — NEW ===== */
         
         .proc-sec {
-            background: var(--bg)
+            background: linear-gradient(180deg, var(--bg-alt), var(--bg));
+            position: relative;
+            overflow: hidden
+        }
+        
+        .proc-sec::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at 1px 1px, var(--surface-2) 1px, transparent 0);
+            background-size: 40px 40px;
+            opacity: .3;
+            pointer-events: none
         }
         
         .proc-grid {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 0;
-            position: relative
-        }
-        
-        .proc-step {
-            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
             position: relative;
-            z-index: 1;
-            padding: 16px 8px
+            z-index: 1
         }
         
-        .proc-connector {
+        .proc-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--r-2xl);
+            padding: 32px;
+            position: relative;
+            transition: var(--tn);
+            overflow: hidden
+        }
+        
+        .proc-card::before {
+            content: '';
             position: absolute;
-            top: 39px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            z-index: 0
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary-light), transparent);
+            opacity: 0;
+            transition: var(--tn);
+            border-radius: inherit
         }
         
-        .proc-connector-inner {
-            margin: 0 calc(100%/12);
-            height: 100%;
-            background: linear-gradient(90deg, var(--primary), var(--shopify));
-            opacity: .2;
-            border-radius: 2px
+        .proc-card:hover {
+            box-shadow: var(--sh-lg);
+            transform: translateY(-5px);
+            border-color: transparent
+        }
+        
+        .proc-card:hover::before {
+            opacity: 1
         }
         
         .proc-num {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--bg);
-            border: 2px solid var(--border);
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            font-family: 'Manrope', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            user-select: none;
+            background: var(--grad-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: .12;
+            transition: var(--tn)
+        }
+        
+        .proc-card:hover .proc-num {
+            opacity: .25
+        }
+        
+        .proc-ic {
+            width: 52px;
+            height: 52px;
+            border-radius: var(--r-lg);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 14px;
-            font-family: 'Manrope', sans-serif;
-            font-weight: 800;
-            font-size: .9375rem;
-            color: var(--text-secondary);
-            transition: var(--tn);
+            margin-bottom: 20px;
             position: relative;
-            z-index: 2
+            z-index: 1
         }
         
-        .proc-step:hover .proc-num {
-            background: var(--primary);
-            border-color: var(--primary);
-            color: #fff;
-            box-shadow: var(--sh-primary);
-            transform: scale(1.1)
+        .proc-ic svg {
+            width: 26px;
+            height: 26px
         }
         
-        .proc-step h4 {
-            font-size: .8125rem;
+        .proc-badge {
+            display: inline-flex;
+            padding: 3px 10px;
+            border-radius: var(--r-full);
+            font-size: .625rem;
             font-weight: 700;
-            margin-bottom: 4px
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1
         }
         
-        .proc-step p {
-            font-size: .6875rem;
+        .proc-card h3 {
+            font-size: 1.0625rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1
+        }
+        
+        .proc-card p {
+            font-size: .8125rem;
             color: var(--text-secondary);
-            line-height: 1.45;
-            max-width: 120px;
-            margin: 0 auto
+            line-height: 1.65;
+            position: relative;
+            z-index: 1
+        }
+        
+        .proc-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 16px;
+            position: relative;
+            z-index: 1
+        }
+        
+        .ptool {
+            padding: 3px 9px;
+            background: var(--surface);
+            border-radius: var(--r-full);
+            font-size: .625rem;
+            font-weight: 600;
+            color: var(--text-tertiary)
+        }
+        
+        .proc-arrow {
+            position: absolute;
+            right: -14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-tertiary);
+            z-index: 2;
+            box-shadow: var(--sh-sm)
+        }
+        
+        .proc-arrow svg {
+            width: 12px;
+            height: 12px
+        }
+        
+        .proc-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 24px;
+            position: relative;
+            z-index: 1
+        }
+        
+        .pstat {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--r-xl);
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: var(--tn)
+        }
+        
+        .pstat:hover {
+            box-shadow: var(--sh-md);
+            transform: translateY(-2px)
+        }
+        
+        .pstat-ic {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--r-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0
+        }
+        
+        .pstat-ic svg {
+            width: 22px;
+            height: 22px
+        }
+        
+        .pstat-val {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.375rem;
+            font-weight: 800
+        }
+        
+        .pstat-lbl {
+            font-size: .75rem;
+            color: var(--text-secondary);
+            margin-top: 2px
         }
         /* FAQ */
         
@@ -2048,23 +1698,12 @@
         /* CTA */
         
         .cta-sec {
-            background: linear-gradient(135deg, var(--text) 0%, #3C4043 100%);
-            padding: 80px 0;
-            position: relative;
-            overflow: hidden
-        }
-        
-        .cta-sec::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Ccircle cx='20' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E")
+            background: linear-gradient(135deg, var(--text), #3C4043);
+            padding: 80px 0
         }
         
         .cta-inner {
             text-align: center;
-            position: relative;
-            z-index: 1;
             max-width: 580px;
             margin: 0 auto
         }
@@ -2192,7 +1831,7 @@
             background: var(--bg);
             border: 1px solid var(--border);
             border-radius: var(--r-2xl);
-            padding: 36px;
+            padding: 40px;
             box-shadow: var(--sh-md)
         }
         
@@ -2207,11 +1846,16 @@
             margin-bottom: 6px
         }
         
+        .flbl .req {
+            color: var(--error);
+            margin-left: 2px
+        }
+        
         .finp,
         .ftxt,
         .fsel {
             width: 100%;
-            padding: 11px 14px;
+            padding: 12px 16px;
             border: 1px solid var(--border);
             border-radius: var(--r-md);
             font-size: .875rem;
@@ -2230,34 +1874,55 @@
             background: var(--bg)
         }
         
+        .finp::placeholder,
+        .ftxt::placeholder {
+            color: var(--text-tertiary)
+        }
+        
         .ftxt {
             resize: vertical;
-            min-height: 100px
+            min-height: 120px
         }
         
         .f-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 14px
+            gap: 16px
+        }
+        
+        .f-row-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px
         }
         
         .f-submit {
             width: 100%;
-            padding: 13px;
-            background: var(--primary);
+            padding: 15px;
+            background: var(--grad-1);
             color: #fff;
             border: none;
             border-radius: var(--r-md);
-            font-size: .9375rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
             font-family: 'Manrope', sans-serif;
+            cursor: pointer;
             transition: var(--tn);
-            cursor: pointer
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite;
+            margin-top: 6px
         }
         
         .f-submit:hover {
-            box-shadow: var(--sh-primary);
+            box-shadow: var(--grad-btn-shadow);
             transform: translateY(-1px)
+        }
+        
+        .f-note {
+            font-size: .75rem;
+            color: var(--text-tertiary);
+            margin-top: 12px;
+            text-align: center
         }
         /* FOOTER */
         
@@ -2287,17 +1952,9 @@
             font-size: 1rem
         }
         
-        .foot-lm {
+        .foot-logo .logo-mark {
             width: 34px;
-            height: 34px;
-            background: var(--primary);
-            border-radius: var(--r-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 800;
-            font-size: .9rem
+            height: 34px
         }
         
         .foot-links {
@@ -2324,7 +1981,6 @@
             flex-wrap: wrap;
             gap: 14px
         }
-        /* BACK TO TOP */
         
         .btt {
             position: fixed;
@@ -2364,7 +2020,6 @@
             width: 18px;
             height: 18px
         }
-        /* REVEAL */
         
         .rev {
             opacity: 0;
@@ -2375,39 +2030,6 @@
         .rev.vis {
             opacity: 1;
             transform: translateY(0)
-        }
-        
-        .rev-sc {
-            opacity: 0;
-            transform: scale(.96);
-            transition: opacity .7s var(--ease), transform .7s var(--ease)
-        }
-        
-        .rev-sc.vis {
-            opacity: 1;
-            transform: scale(1)
-        }
-        
-        .rev-l {
-            opacity: 0;
-            transform: translateX(-28px);
-            transition: opacity .7s var(--ease), transform .7s var(--ease)
-        }
-        
-        .rev-l.vis {
-            opacity: 1;
-            transform: translateX(0)
-        }
-        
-        .rev-r {
-            opacity: 0;
-            transform: translateX(28px);
-            transition: opacity .7s var(--ease), transform .7s var(--ease)
-        }
-        
-        .rev-r.vis {
-            opacity: 1;
-            transform: translateX(0)
         }
         
         .d1 {
@@ -2429,14 +2051,14 @@
         .d5 {
             transition-delay: .5s
         }
-        /* ===== RESPONSIVE — ALL FIXED ===== */
         
         @media(max-width:1200px) {
-            .srv-grid {
-                grid-template-columns: repeat(3, 1fr)
-            }
+            .srv-grid,
             .sk-grid {
                 grid-template-columns: repeat(3, 1fr)
+            }
+            .proj-grid {
+                grid-template-columns: repeat(2, 1fr)
             }
         }
         
@@ -2453,12 +2075,8 @@
             .hero-visual {
                 order: 1
             }
-            .hero-pills {
-                justify-content: center
-            }
-            .hero-actions {
-                justify-content: center
-            }
+            .hero-pills,
+            .hero-actions,
             .hero-eyebrow {
                 justify-content: center
             }
@@ -2469,45 +2087,18 @@
                 max-width: 440px;
                 margin: 0 auto
             }
-            .sh-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-            .hooks-grid {
-                grid-template-columns: 1fr
-            }
-            .hooks-left {
-                position: static;
-                text-align: left
-            }
-            .sh-demo-body {
-                grid-template-columns: 1fr
-            }
-            .sh-demo-code {
-                border-right: none;
-                border-bottom: 1px solid rgba(255, 255, 255, .06)
-            }
-            .proj-item,
-            .proj-item:nth-child(even) {
-                grid-template-columns: 1fr;
-                direction: ltr
-            }
-            .proj-item:nth-child(even)>* {
-                direction: ltr
-            }
             .contact-grid {
                 grid-template-columns: 1fr
             }
-            .test-grid {
+            .proc-grid,
+            .proc-stats {
                 grid-template-columns: repeat(2, 1fr)
             }
-            .proc-grid {
-                grid-template-columns: repeat(3, 1fr)
-            }
-            .proc-connector {
+            .proc-arrow {
                 display: none
             }
-            .proc-step p {
-                max-width: none
+            .f-row-3 {
+                grid-template-columns: 1fr 1fr
             }
         }
         
@@ -2530,55 +2121,19 @@
                 padding-top: calc(var(--nav-h) + 24px);
                 padding-bottom: 24px
             }
-            .hero-title {
-                font-size: clamp(1.75rem, 7vw, 2.5rem)
-            }
-            .hero-sub {
-                font-size: .9375rem
-            }
-            .hero-stats {
-                grid-template-columns: repeat(3, 1fr)
-            }
-            .hero-stat {
-                padding: 16px 8px
-            }
-            .hs-val {
-                font-size: 1.25rem
-            }
-            .hs-lbl {
-                font-size: .625rem
-            }
-            .sh-grid {
-                grid-template-columns: 1fr
-            }
-            .srv-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
+            .srv-grid,
             .sk-grid {
                 grid-template-columns: repeat(2, 1fr)
             }
-            .test-grid {
+            .proj-grid {
                 grid-template-columns: 1fr
             }
-            .proc-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 0
+            .proc-grid,
+            .proc-stats {
+                grid-template-columns: 1fr
             }
-            .proc-step {
-                padding: 12px 6px
-            }
-            .proc-num {
-                width: 40px;
-                height: 40px;
-                font-size: .8125rem
-            }
-            .proc-step h4 {
-                font-size: .75rem
-            }
-            .proc-step p {
-                font-size: .625rem
-            }
-            .f-row {
+            .f-row,
+            .f-row-3 {
                 grid-template-columns: 1fr
             }
             .cf-card {
@@ -2593,88 +2148,42 @@
                 flex-direction: column;
                 align-items: center
             }
-            .cta-sec {
-                padding: 56px 0
-            }
-            .proj-challenge {
-                padding: 12px
-            }
         }
         
         @media(max-width:480px) {
             .container {
                 padding: 0 16px
             }
-            .hero .container {
-                gap: 28px
-            }
             .hero-content {
                 text-align: left
             }
-            .hero-eyebrow {
-                justify-content: flex-start
-            }
-            .hero-pills {
+            .hero-eyebrow,
+            .hero-pills,
+            .hero-actions {
                 justify-content: flex-start
             }
             .hero-actions {
                 flex-direction: column;
-                align-items: stretch;
-                justify-content: stretch
+                align-items: stretch
+            }
+            .srv-grid,
+            .sk-grid {
+                grid-template-columns: 1fr
             }
             .hero-stats {
-                grid-template-columns: 1fr 1fr 1fr
+                grid-template-columns: repeat(3, 1fr)
             }
             .hero-stat {
                 padding: 14px 6px
             }
-            .hero-stat:not(:last-child)::after {
-                right: 0
-            }
             .hs-val {
-                font-size: 1.125rem
-            }
-            .srv-grid {
-                grid-template-columns: 1fr
-            }
-            .sk-grid {
-                grid-template-columns: 1fr
-            }
-            .proc-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-            .proj-metrics {
-                grid-template-columns: 1fr 1fr 1fr
-            }
-            .pm-val {
-                font-size: 1rem
-            }
-            .pm-lbl {
-                font-size: .5625rem
-            }
-            .test-grid {
-                grid-template-columns: 1fr
-            }
-            .cw {
-                border-radius: var(--r-xl)
-            }
-            .section-title {
-                font-size: 1.5rem
+                font-size: 1.25rem
             }
         }
         
-        @media(max-width:360px) {
+        @media(max-width:380px) {
             .hero-stats {
                 grid-template-columns: 1fr
-            }
-            .hero-stat:not(:last-child)::after {
-                display: none;
-                right: 0;
-                top: auto;
-                bottom: 0;
-                left: 20%;
-                width: 60%;
-                height: 1px
             }
             .hero-stat {
                 border-bottom: 1px solid var(--border);
@@ -2683,28 +2192,17 @@
             .hero-stat:last-child {
                 border-bottom: none
             }
-            .proc-grid {
-                grid-template-columns: 1fr 1fr
-            }
-            .proj-metrics {
-                grid-template-columns: 1fr
+            .hero-stat::after {
+                display: none!important
             }
         }
         
         @media(prefers-reduced-motion:reduce) {
-            *,
-            *::before,
-            *::after {
+            * {
                 animation-duration: .01ms!important;
                 transition-duration: .01ms!important
             }
-            html {
-                scroll-behavior: auto
-            }
-            .rev,
-            .rev-sc,
-            .rev-l,
-            .rev-r {
+            .rev {
                 opacity: 1;
                 transform: none
             }
@@ -2719,53 +2217,29 @@
 </head>
 
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
-    <div class="page-loader" id="loader">
-        <div class="loader-ring"></div>
-    </div>
-
-    <!-- NAV -->
     <nav class="nav" id="nav">
         <div class="container">
-            <a href="#" class="nav-logo" aria-label="Ankit Jaswal">
-                <div class="nav-logo-mark">A</div>
+            <a href="#" class="nav-logo">
+                <div class="logo-mark">
+                    <div class="logo-mark-bg"></div>
+                    <div class="logo-mark-inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                </div>
                 <span>Ankit Jaswal</span>
             </a>
-            <div class="nav-links">
-                <a href="#shopify" class="nav-link">Shopify</a>
-                <a href="#hooks" class="nav-link">WP Hooks</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#testimonials" class="nav-link">Reviews</a>
-                <a href="#faq" class="nav-link">FAQ</a>
+            <div class="nav-links"><a href="#services" class="nav-link">Services</a><a href="#projects" class="nav-link">Projects</a><a href="#experience" class="nav-link">Experience</a><a href="#skills" class="nav-link">Skills</a><a href="#process" class="nav-link">Process</a>
+                <a
+                    href="#faq" class="nav-link">FAQ</a>
             </div>
-            <div class="nav-end">
-                <a href="#contact" class="nav-cta">Hire Me</a>
-            </div>
-            <button class="mob-toggle" id="mobToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <div class="nav-end"><a href="#contact" class="btn-grad">Hire Me</a></div>
+            <button class="mob-toggle" id="mobToggle" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
-
-    <!-- MOBILE MENU — FIXED -->
     <div class="mob-overlay" id="mobOverlay"></div>
-    <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Navigation menu">
-        <a href="#shopify" class="mob-link">Shopify</a>
-        <a href="#hooks" class="mob-link">WP Hooks</a>
-        <a href="#services" class="mob-link">Services</a>
-        <a href="#projects" class="mob-link">Projects</a>
-        <div class="mob-divider"></div>
-        <a href="#experience" class="mob-link">Experience</a>
-        <a href="#skills" class="mob-link">Skills</a>
-        <a href="#testimonials" class="mob-link">Reviews</a>
-        <a href="#faq" class="mob-link">FAQ</a>
-        <div class="mob-divider"></div>
-        <a href="#contact" class="mob-cta">Hire Me →</a>
-    </div>
+    <div class="mob-menu" id="mobMenu"><a href="#services" class="mob-link">Services</a><a href="#projects" class="mob-link">Projects</a><a href="#experience" class="mob-link">Experience</a><a href="#skills" class="mob-link">Skills</a><a href="#process" class="mob-link">Process</a><a href="#faq"
+            class="mob-link">FAQ</a>
+        <div class="mob-divider"></div><a href="#contact" class="mob-cta">Hire Me →</a></div>
 
     <main id="main">
-
         <!-- HERO -->
         <section class="hero" id="hero">
             <div class="hero-grid"></div>
@@ -2773,31 +2247,31 @@
             <div class="hero-blob2"></div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge rev"><span class="hero-badge-dot"></span>Available for new projects</div>
-                    <p class="hero-eyebrow rev d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Senior Developer · 4.5+ Years</p>
-                    <h1 class="hero-title rev d1">I Build With<br><span class="grad">WordPress & Shopify</span></h1>
-                    <p class="hero-sub rev d2">Custom <strong>Shopify apps</strong>, <strong>WordPress hooks</strong>, <strong>BigCommerce</strong>, <strong>HubSpot</strong>, and <strong>Google Ads</strong> — solutions that grow businesses.</p>
+                    <div class="hero-badge rev"><span class="hero-badge-dot"></span>Available for projects</div>
+                    <p class="hero-eyebrow rev d1 grad-text"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Senior Developer · 4.5+ Years</p>
+                    <h1 class="hero-title rev d1">I Build With<br><span class="grad-text">WordPress & Shopify</span></h1>
+                    <p class="hero-sub rev d2">Custom <strong>Shopify apps</strong>, <strong>WordPress hooks</strong>, <strong>BigCommerce</strong>, <strong>HubSpot</strong> & <strong>Google Ads</strong> — built to grow businesses.</p>
                     <div class="hero-pills rev d3" id="heroPills"></div>
                     <div class="hero-actions rev d4">
-                        <a href="#contact" class="btn btn-primary btn-lg">Hire Me <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="#projects" class="btn btn-outline btn-lg">View Portfolio</a>
+                        <a href="#contact" class="btn-grad btn-grad-lg">Hire Me <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="#projects" class="btn-outline" style="padding:16px 36px;font-size:.9375rem">View Portfolio</a>
                     </div>
                     <div class="hero-stats rev d5">
                         <div class="hero-stat">
                             <div class="hs-val" data-count="150">0+</div>
-                            <div class="hs-lbl">Projects Delivered</div>
+                            <div class="hs-lbl">Projects</div>
                         </div>
                         <div class="hero-stat">
                             <div class="hs-val" data-count="50">0+</div>
-                            <div class="hs-lbl">Happy Clients</div>
+                            <div class="hs-lbl">Clients</div>
                         </div>
                         <div class="hero-stat">
                             <div class="hs-val" data-count="99">0%</div>
-                            <div class="hs-lbl">Satisfaction Rate</div>
+                            <div class="hs-lbl">Satisfaction</div>
                         </div>
                     </div>
                 </div>
-                <div class="hero-visual rev-r">
+                <div class="hero-visual rev d2">
                     <div class="cw">
                         <div class="cw-header">
                             <div class="cw-dots">
@@ -2814,7 +2288,7 @@
                         </div>
                         <div class="cw-body">
                             <div class="cw-pane on" id="cw-wp">
-                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="cc">// Custom WordPress Hook</span></span>
+                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="cc">// WordPress Hook</span></span>
                                 </div>
                                 <div class="cl"><span class="cl-n">2</span><span class="cl-c"><span class="ck">add_action</span><span class="cp">(</span><span class="cs">'init'</span><span class="cp">,</span></span>
                                 </div>
@@ -2824,15 +2298,13 @@
                                 </div>
                                 <div class="cl"><span class="cl-n">5</span><span class="cl-c">      <span class="cs">'portfolio'</span><span class="cp">, [</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">6</span><span class="cl-c">        <span class="cs">'public'</span><span class="cp">=></span><span class="ck">true</span><span class="cp">,</span></span>
+                                <div class="cl"><span class="cl-n">6</span><span class="cl-c">        <span class="cs">'public'</span><span class="cp">=></span><span class="ck">true</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">7</span><span class="cl-c">        <span class="cs">'label'</span><span class="cp">=></span><span class="cs">'Projects'</span></span>
+                                <div class="cl"><span class="cl-n">7</span><span class="cl-c">    <span class="cp">]);</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">8</span><span class="cl-c">    <span class="cp">]);</span></span>
+                                <div class="cl"><span class="cl-n">8</span><span class="cl-c">  <span class="cp">}</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">9</span><span class="cl-c">  <span class="cp">}</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">10</span><span class="cl-c"><span class="cp">);</span><span class="cursor"></span></span>
+                                <div class="cl"><span class="cl-n">9</span><span class="cl-c"><span class="cp">);</span><span class="cursor"></span></span>
                                 </div>
                             </div>
                             <div class="cw-pane" id="cw-shopify">
@@ -2840,72 +2312,61 @@
                                 </div>
                                 <div class="cl"><span class="cl-n">2</span><span class="cl-c">   <span class="cv">collection.products</span> <span class="cp">%}</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">3</span><span class="cl-c"><span class="ct">&lt;div</span> <span class="ca">class</span>=<span class="cs">"card"</span><span class="ct">&gt;</span></span>
+                                <div class="cl"><span class="cl-n">3</span><span class="cl-c"><span class="cf">&lt;div</span> <span class="cs">class="card"</span><span class="cf">&gt;</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">  <span class="ct">&lt;img</span> <span class="ca">src</span>=<span class="cs">"{{ product</span></span>
+                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">  <span class="cf">&lt;h3&gt;</span><span class="cp">{{</span><span class="cv">product.title</span><span class="cp">}}</span><span class="cf">&lt;/h3&gt;</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">5</span><span class="cl-c"><span class="cs">    .image|img_url:'400x' }}"</span></span>
+                                <div class="cl"><span class="cl-n">5</span><span class="cl-c">  <span class="cf">&lt;p&gt;</span><span class="cp">{{</span><span class="cv">product.price</span><span class="cp">|money}}</span><span class="cf">&lt;/p&gt;</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">6</span><span class="cl-c">    <span class="ca">loading</span>=<span class="cs">"lazy"</span><span class="ct">/&gt;</span></span>
+                                <div class="cl"><span class="cl-n">6</span><span class="cl-c"><span class="cf">&lt;/div&gt;</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">7</span><span class="cl-c">  <span class="ct">&lt;h3&gt;</span><span class="cp">{{</span><span class="cv">product.title</span><span class="cp">}}</span><span class="ct">&lt;/h3&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">8</span><span class="cl-c"><span class="ct">&lt;/div&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">9</span><span class="cl-c"><span class="cp">{%</span> <span class="ck">endfor</span> <span class="cp">%}</span><span class="cursor"></span></span>
+                                <div class="cl"><span class="cl-n">7</span><span class="cl-c"><span class="cp">{%</span> <span class="ck">endfor</span> <span class="cp">%}</span><span class="cursor"></span></span>
                                 </div>
                             </div>
                             <div class="cw-pane" id="cw-react">
-                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="ck">import</span> <span class="cp">{</span><span class="cv">useState</span><span class="cp">}</span> <span class="ck">from</span> <span class="cs">'react'</span></span>
+                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="ck">const</span> <span class="cf">Card</span><span class="cp">=({</span><span class="cv">title</span><span class="cp">,</span><span class="cv">price</span>
+                                    <span
+                                        class="cp">})=>{</span>
+                                        </span>
                                 </div>
-                                <div class="cl"><span class="cl-n">2</span><span class="cl-c"><span class="ck">const</span> <span class="cf">Card</span><span class="cp">=({</span><span class="cv">title</span><span class="cp">,</span><span class="cv">price</span>
-                                    <span class="cp">})=&gt;{</span>
-                                    </span>
+                                <div class="cl"><span class="cl-n">2</span><span class="cl-c">  <span class="ck">const</span> <span class="cp">[</span><span class="cv">cart</span><span class="cp">,</span><span class="cv">set</span><span class="cp">]=</span><span class="cf">useState</span>
+                                    <span
+                                        class="cp">(</span><span class="ck">false</span><span class="cp">)</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">3</span><span class="cl-c">  <span class="ck">const</span> <span class="cp">[</span><span class="cv">cart</span><span class="cp">,</span><span class="cv">set</span><span class="cp">]=</span><span class="cf">useState</span>
-                                    <span class="cp">(</span><span class="ck">false</span><span class="cp">)</span></span>
+                                <div class="cl"><span class="cl-n">3</span><span class="cl-c">  <span class="ck">return</span><span class="cp">(</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">  <span class="ck">return</span> <span class="cp">(</span></span>
+                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">    <span class="cf">&lt;div&gt;</span><span class="cp">{</span><span class="cv">title</span><span class="cp">}</span><span class="cf">&lt;/div&gt;</span></span>
                                 </div>
-                                <div class="cl"><span class="cl-n">5</span><span class="cl-c">    <span class="ct">&lt;div</span> <span class="ca">className</span>=<span class="cs">"card"</span><span class="ct">&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">6</span><span class="cl-c">      <span class="ct">&lt;h3&gt;</span><span class="cp">{</span><span class="cv">title</span><span class="cp">}</span><span class="ct">&lt;/h3&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">7</span><span class="cl-c">      <span class="ct">&lt;p&gt;</span><span class="cp">{</span><span class="cv">price</span><span class="cp">}</span><span class="ct">&lt;/p&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">8</span><span class="cl-c">    <span class="ct">&lt;/div&gt;</span><span class="cp">)</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">9</span><span class="cl-c"><span class="cp">}</span><span class="cursor"></span></span>
+                                <div class="cl"><span class="cl-n">5</span><span class="cl-c">  <span class="cp">)}</span><span class="cursor"></span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="hf hf1">
-                        <div class="fi" style="background:var(--shopify-bg);color:var(--shopify)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/></svg></div>
+                        <div class="fic" style="background:var(--shopify-bg);color:var(--shopify)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/></svg></div>
                         <div>
                             <div class="fl-t" style="color:var(--shopify)">Shopify Expert</div>
-                            <div class="fl-s">Custom Apps & Themes</div>
+                            <div class="fl-s">Apps & Themes</div>
                         </div>
                     </div>
                     <div class="hf hf2">
-                        <div class="fi" style="background:var(--wordpress-bg);color:var(--wordpress)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                        <div class="fic" style="background:var(--wordpress-bg);color:var(--wordpress)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                         <div>
-                            <div class="fl-t" style="color:var(--wordpress)">WP Hooks Master</div>
+                            <div class="fl-t" style="color:var(--wordpress)">WP Hooks</div>
                             <div class="fl-s">Actions & Filters</div>
                         </div>
                     </div>
                     <div class="hf hf3">
-                        <div class="fi" style="background:var(--secondary-light);color:var(--secondary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                        <div class="fic" style="background:var(--secondary-light);color:var(--secondary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                         <div>
                             <div class="fl-t" style="color:var(--secondary)">99% Satisfaction</div>
-                            <div class="fl-s">Verified by clients</div>
+                            <div class="fl-s">Verified</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- MARQUEE -->
         <div class="marq">
             <div class="marq-lbl">Technologies & Platforms</div>
             <div style="overflow:hidden">
@@ -2913,98 +2374,55 @@
             </div>
         </div>
 
-        <!-- All other sections rendered by JS -->
-        <section class="section shopify-sec" id="shopify">
-            <div class="container">
-                <div class="section-header rev"><span class="section-label sl-green">⚡ Shopify</span>
-                    <h2 class="section-title">Complete <span>Shopify</span> Expertise</h2>
-                    <p class="section-desc">Custom themes, apps, and high-converting stores — built to scale.</p>
-                </div>
-                <div class="sh-grid" id="shGrid"></div>
-            </div>
-        </section>
-
-        <section class="section hooks-sec" id="hooks">
-            <div class="container">
-                <div class="section-header rev"><span class="section-label sl-wp">🪝 WordPress Hooks</span>
-                    <h2 class="section-title">Deep <span>WordPress</span> Mastery</h2>
-                    <p class="section-desc">Actions, filters, and custom hooks — done right.</p>
-                </div>
-                <div class="hooks-grid">
-                    <div class="hooks-left rev-l">
-                        <h2>Everything <span>Hooked In</span> Cleanly</h2>
-                        <p>I extend WordPress without touching core — using actions, filters, and custom hooks for clean, upgrade-safe code.</p>
-                        <div class="ht-list" id="htList"></div>
-                    </div>
-                    <div class="hooks-right rev-r" id="hooksRight"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="section services-sec" id="services">
             <div class="container">
                 <div class="section-header rev"><span class="section-label sl-blue">Services</span>
-                    <h2 class="section-title">What I <span>Build</span></h2>
-                    <p class="section-desc">Full-stack solutions — concept to launch and beyond.</p>
+                    <h2 class="section-title"><span class="grad-text">What I Build</span></h2>
+                    <p class="section-desc">Full-stack solutions from concept to launch and beyond.</p>
                 </div>
                 <div class="srv-grid" id="srvGrid"></div>
             </div>
         </section>
-
         <section class="section proj-sec" id="projects">
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-purple">Portfolio</span>
-                    <h2 class="section-title">Featured <span>Projects</span></h2>
-                    <p class="section-desc">Real results — measurable and proven.</p>
+                <div class="section-header rev"><span class="section-label sl-purple">Real Projects</span>
+                    <h2 class="section-title">Live Client <span class="grad-text">Websites</span></h2>
+                    <p class="section-desc">Real stores, real results — every project live and verified.</p>
                 </div>
-                <div class="proj-list" id="projList"></div>
+                <div class="proj-tabs rev" id="projTabs"></div>
+                <div class="proj-grid" id="projGrid"></div>
             </div>
         </section>
-
         <section class="section exp-sec" id="experience">
             <div class="container">
                 <div class="section-header rev"><span class="section-label sl-blue">Journey</span>
-                    <h2 class="section-title">Work <span>Experience</span></h2>
+                    <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
                 </div>
                 <div class="timeline" id="tline"></div>
             </div>
         </section>
-
         <section class="section skills-sec" id="skills">
             <div class="container">
                 <div class="section-header rev"><span class="section-label sl-teal">Expertise</span>
-                    <h2 class="section-title">Technical <span>Skills</span></h2>
+                    <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
                 </div>
                 <div class="sk-grid" id="skGrid"></div>
             </div>
         </section>
-
-        <section class="section test-sec" id="testimonials">
-            <div class="container">
-                <div class="section-header rev"><span class="section-label sl-orange">Reviews</span>
-                    <h2 class="section-title">Client <span>Feedback</span></h2>
-                </div>
-                <div class="test-grid" id="testGrid"></div>
-            </div>
-        </section>
-
         <section class="section proc-sec" id="process">
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-green">Process</span>
-                    <h2 class="section-title">How I <span>Work</span></h2>
+                <div class="section-header rev" style="position:relative;z-index:1"><span class="section-label sl-green">My Process</span>
+                    <h2 class="section-title">From Idea to <span class="grad-text">Live Site</span></h2>
+                    <p class="section-desc">A transparent, structured approach — on time, every time.</p>
                 </div>
-                <div class="proc-grid" id="procGrid">
-                    <div class="proc-connector">
-                        <div class="proc-connector-inner"></div>
-                    </div>
-                </div>
+                <div class="proc-grid" id="procGrid"></div>
+                <div class="proc-stats" id="procStats"></div>
             </div>
         </section>
-
         <section class="section faq-sec" id="faq">
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-blue">FAQ</span>
-                    <h2 class="section-title">Common <span>Questions</span></h2>
+                <div class="section-header rev"><span class="section-label sl-orange">FAQ</span>
+                    <h2 class="section-title">Common <span class="grad-text">Questions</span></h2>
                 </div>
                 <div class="faq-wrap" id="faqWrap"></div>
             </div>
@@ -3015,7 +2433,7 @@
                 <div class="cta-inner rev">
                     <h2>Ready to Build Something Great?</h2>
                     <p>Let's create a fast, high-converting web experience for your business.</p>
-                    <div class="cta-btns"><a href="#contact" class="btn btn-white btn-lg">Start a Project</a><a href="#" class="btn btn-ow btn-lg">Download Resume</a></div>
+                    <div class="cta-btns"><a href="#contact" class="btn-white" style="padding:16px 36px;font-size:.9375rem">Start a Project</a><a href="#" class="btn-ow" style="padding:16px 36px;font-size:.9375rem">Download Resume</a></div>
                 </div>
             </div>
         </section>
@@ -3023,12 +2441,12 @@
         <section class="section contact-sec" id="contact">
             <div class="container">
                 <div class="section-header rev"><span class="section-label sl-blue">Contact</span>
-                    <h2 class="section-title">Let's <span>Connect</span></h2>
+                    <h2 class="section-title">Let's <span class="grad-text">Connect</span></h2>
                 </div>
                 <div class="contact-grid">
-                    <div class="ci rev-l">
+                    <div class="ci rev">
                         <h3>Get in Touch</h3>
-                        <p>Open to new projects and partnerships. Let's talk.</p>
+                        <p>Open to new projects. Let's discuss your goals and bring your vision to life.</p>
                         <div class="c-methods">
                             <div class="c-method">
                                 <div class="c-mi" style="background:var(--primary-light);color:var(--primary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -3052,50 +2470,65 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="social-row">
-                            <a href="#" class="sl-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                            <a href="#" class="sl-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                            <a href="#" class="sl-btn" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                            <a href="#" class="sl-btn" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg></a>
+                        <div class="social-row"><a href="#" class="sl-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                            <a
+                                href="#" class="sl-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                                <a
+                                    href="#" class="sl-btn" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                                    <a
+                                        href="#" class="sl-btn" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg></a>
                         </div>
                     </div>
-                    <div class="cf-card rev-r">
+
+                    <!-- FULL FORM -->
+                    <div class="cf-card rev">
                         <form id="cForm" novalidate>
                             <div class="f-row">
-                                <div class="fg"><label for="fn" class="flbl">Full Name *</label><input type="text" id="fn" class="finp" placeholder="John Doe" required></div>
-                                <div class="fg"><label for="fe" class="flbl">Email *</label><input type="email" id="fe" class="finp" placeholder="john@example.com" required></div>
+                                <div class="fg"><label for="fn" class="flbl">First Name<span class="req">*</span></label><input type="text" id="fn" class="finp" placeholder="John" required></div>
+                                <div class="fg"><label for="ln" class="flbl">Last Name<span class="req">*</span></label><input type="text" id="ln" class="finp" placeholder="Doe" required></div>
                             </div>
-                            <div class="fg"><label for="fs" class="flbl">Service Needed</label><select id="fs" class="fsel"><option value="">Select...</option><option>Shopify Store / App</option><option>WordPress / Plugin</option><option>WooCommerce</option><option>BigCommerce</option><option>HubSpot Setup</option><option>Google Ads</option><option>Other</option></select></div>
                             <div class="f-row">
-                                <div class="fg"><label for="fb" class="flbl">Budget</label><select id="fb" class="fsel"><option value="">Select...</option><option>$1K–$3K</option><option>$3K–$5K</option><option>$5K–$10K</option><option>$10K+</option></select></div>
-                                <div class="fg"><label for="ft" class="flbl">Timeline</label><input type="text" id="ft" class="finp" placeholder="e.g. 4 weeks"></div>
+                                <div class="fg"><label for="fe" class="flbl">Email Address<span class="req">*</span></label><input type="email" id="fe" class="finp" placeholder="john@example.com" required></div>
+                                <div class="fg"><label for="fp" class="flbl">Phone Number</label><input type="tel" id="fp" class="finp" placeholder="+1 (555) 123-4567"></div>
                             </div>
-                            <div class="fg"><label for="fm" class="flbl">Project Details *</label><textarea id="fm" class="ftxt" placeholder="Tell me about your project..." required></textarea></div>
-                            <button type="submit" class="f-submit" id="fBtn">Send Message</button>
-                        </form>
-                    </div>
+                            <div class="fg"><label for="fco" class="flbl">Company / Website</label><input type="text" id="fco" class="finp" placeholder="yourcompany.com"></div>
+                            <div class="f-row-3">
+                                <div class="fg"><label for="fserv" class="flbl">Service Needed<span class="req">*</span></label><select id="fserv" class="fsel" required><option value="">Select service...</option><option>Shopify Store / App</option><option>WordPress Website / Plugin</option><option>WooCommerce Store</option><option>BigCommerce</option><option>HubSpot Setup</option><option>Google Ads / GA4</option><option>Speed Optimization</option><option>SEO / Technical SEO</option><option>Website Maintenance</option><option>Other</option></select></div>
+                                <div
+                                    class="fg"><label for="fb" class="flbl">Budget Range</label><select id="fb" class="fsel"><option value="">Select budget...</option><option>Under $1,000</option><option>$1,000 – $3,000</option><option>$3,000 – $5,000</option><option>$5,000 – $10,000</option><option>$10,000 – $25,000</option><option>$25,000+</option></select></div>
+                            <div
+                                class="fg"><label for="ft" class="flbl">Timeline</label><select id="ft" class="fsel"><option value="">Select timeline...</option><option>ASAP / Urgent</option><option>1 – 2 Weeks</option><option>2 – 4 Weeks</option><option>1 – 2 Months</option><option>2 – 3 Months</option><option>Flexible</option></select></div>
                 </div>
+                <div class="fg"><label for="fref" class="flbl">How did you find me?</label><select id="fref" class="fsel"><option value="">Select...</option><option>Google Search</option><option>LinkedIn</option><option>Upwork</option><option>Referral</option><option>Social Media</option><option>Other</option></select></div>
+                <div class="fg"><label for="fm" class="flbl">Project Details<span class="req">*</span></label><textarea id="fm" class="ftxt" placeholder="Tell me about your project goals, features needed, current pain points, and any reference websites..." required></textarea></div>
+                <button type="submit" class="f-submit" id="fBtn">Send Message →</button>
+                <p class="f-note">I typically respond within 2-4 hours during business hours.</p>
+                </form>
+            </div>
+            </div>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="foot-top">
                 <div class="foot-logo">
-                    <div class="foot-lm">A</div><span>Ankit Jaswal</span></div>
-                <div class="foot-links"><a href="#shopify" class="foot-link">Shopify</a><a href="#hooks" class="foot-link">WP Hooks</a><a href="#services" class="foot-link">Services</a><a href="#projects" class="foot-link">Projects</a><a href="#contact" class="foot-link">Contact</a></div>
+                    <div class="logo-mark" style="width:34px;height:34px">
+                        <div class="logo-mark-bg"></div>
+                        <div class="logo-mark-inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                    </div><span>Ankit Jaswal</span></div>
+                <div class="foot-links"><a href="#services" class="foot-link">Services</a><a href="#projects" class="foot-link">Projects</a><a href="#experience" class="foot-link">Experience</a><a href="#skills" class="foot-link">Skills</a><a href="#contact" class="foot-link">Contact</a></div>
             </div>
-            <div class="foot-bot"><span>© 2024 Ankit Jaswal. All rights reserved.</span><span>Built with clean code & passion</span></div>
+            <div class="foot-bot"><span id="copyright"></span><span>Built with clean code &amp; passion</span></div>
         </div>
     </footer>
-
     <button class="btt" id="btt" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
 
     <script>
-        // DATA
-        const pills = [{
+        document.getElementById('copyright').textContent = '\u00A9 ' + new Date().getFullYear() + ' Ankit Jaswal. All rights reserved.';
+
+        var pills = [{
             t: 'WordPress',
             c: '#21759B'
         }, {
@@ -3117,15 +2550,13 @@
             t: 'PHP',
             c: '#777BB4'
         }, {
-            t: 'Laravel',
-            c: '#FF2D20'
-        }, {
             t: 'JavaScript',
             c: '#F7DF1E'
         }];
-        document.getElementById('heroPills').innerHTML = pills.map(p => `<span class="hero-pill"><span class="hp-dot" style="background:${p.c}"></span>${p.t}</span>`).join('');
-
-        const techs = [{
+        document.getElementById('heroPills').innerHTML = pills.map(function(p) {
+            return '<span class="hero-pill"><span class="hp-dot" style="background:' + p.c + '"></span>' + p.t + '</span>'
+        }).join('');
+        var techs = [{
             t: 'WordPress',
             c: '#21759B'
         }, {
@@ -3165,210 +2596,635 @@
             t: 'GitHub',
             c: '#181717'
         }, {
-            t: 'Elementor',
-            c: '#92003B'
-        }, {
-            t: 'Webflow',
-            c: '#4353FF'
-        }, {
             t: 'Figma',
             c: '#F24E1E'
         }];
-        const mq = document.getElementById('marqTrack');
-        const mI = techs.map(t => `<span class="mi"><span class="md" style="background:${t.c}"></span>${t.t}</span>`).join('');
-        mq.innerHTML = mI + mI;
+        var mi = techs.map(function(t) {
+            return '<span class="mi"><span class="mdi" style="background:' + t.c + '"></span>' + t.t + '</span>'
+        }).join('');
+        document.getElementById('marqTrack').innerHTML = mi + mi;
 
-        // SHOPIFY CARDS
-        const shCards = [{
-            icon: '<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/>',
+        var srvs = [{
+            bg: 'var(--wordpress-bg)',
+            cl: 'var(--wordpress)',
+            icon: 'M2 3h20v14H2zM8 21h8M12 17v4',
+            t: 'WordPress',
+            d: 'Custom themes, plugins, scalable sites.'
+        }, {
             bg: 'var(--shopify-bg)',
             cl: 'var(--shopify)',
-            t: 'Custom Themes',
-            d: 'Pixel-perfect Liquid themes with OS 2.0 sections.',
-            tags: ['Liquid', 'OS 2.0']
+            icon: 'M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 002-2V6l-3-4zM3 6h18',
+            t: 'Shopify',
+            d: 'Stores, themes, and private apps.'
         }, {
-            icon: '<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>',
-            bg: 'var(--primary-light)',
-            cl: 'var(--primary)',
-            t: 'Private & Public Apps',
-            d: 'Shopify apps with Polaris UI and Admin API.',
-            tags: ['REST API', 'GraphQL']
+            bg: 'rgba(127,84,179,.08)',
+            cl: '#7F54B3',
+            icon: 'M9 21a1 1 0 100-2 1 1 0 000 2zM20 21a1 1 0 100-2 1 1 0 000 2zM1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6',
+            t: 'WooCommerce',
+            d: 'Custom stores with payment flows.'
         }, {
-            icon: '<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>',
-            bg: 'var(--secondary-light)',
-            cl: 'var(--secondary)',
-            t: 'Checkout Optimization',
-            d: 'Custom checkout, upsells, and Shopify Functions.',
-            tags: ['Functions', 'Scripts']
-        }, {
-            icon: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
             bg: 'var(--accent-light)',
             cl: '#E37400',
-            t: 'Headless Commerce',
-            d: 'Hydrogen, Remix, and Storefront API storefronts.',
-            tags: ['Hydrogen', 'Remix']
+            icon: 'M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z',
+            t: 'Custom Plugins',
+            d: 'WordPress plugins using hooks.'
         }, {
-            icon: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+            bg: 'var(--primary-light)',
+            cl: 'var(--primary)',
+            icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+            t: 'API Integrations',
+            d: 'CRMs, payments, ERPs, webhooks.'
+        }, {
+            bg: 'var(--secondary-light)',
+            cl: 'var(--secondary)',
+            icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
+            t: 'Speed Optimization',
+            d: 'Sub-2s load, 90+ Lighthouse.'
+        }, {
             bg: 'var(--purple-light)',
             cl: 'var(--purple)',
-            t: 'Store Migrations',
-            d: 'Full migrations to Shopify from any platform.',
-            tags: ['Data', 'Shopify Plus']
+            icon: 'M11 11m-8 0a8 8 0 1016 0 8 8 0 10-16 0M21 21l-4.35-4.35',
+            t: 'SEO',
+            d: 'Schema, Core Web Vitals, rankings.'
         }, {
-            icon: '<path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>',
             bg: 'var(--teal-light)',
             cl: 'var(--teal)',
-            t: 'Metafields & Metaobjects',
-            d: 'Advanced data modeling for dynamic content.',
-            tags: ['Metafields', 'Dynamic']
+            icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z',
+            t: 'Security',
+            d: 'Hardening, SSL, monitoring.'
+        }, {
+            bg: 'var(--primary-light)',
+            cl: 'var(--primary)',
+            icon: 'M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6',
+            t: 'Maintenance',
+            d: 'Updates, backups, support.'
+        }, {
+            bg: 'rgba(52,49,63,.08)',
+            cl: '#34313F',
+            icon: 'M2 3h20v14H2zM8 21h8M12 17v4',
+            t: 'BigCommerce & HubSpot',
+            d: 'Stores, CRM, automations.'
+        }, {
+            bg: 'rgba(66,133,244,.1)',
+            cl: '#4285F4',
+            icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
+            t: 'Google Ads',
+            d: 'Campaigns, GA4, tracking.'
+        }, {
+            bg: 'var(--error-light)',
+            cl: 'var(--error)',
+            icon: 'M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z',
+            t: 'Theme Dev',
+            d: 'Pixel-perfect any platform.'
         }];
-        document.getElementById('shGrid').innerHTML = shCards.map((c, i) => `<div class="sh-card rev d${i%3+1}"><div class="sh-icon" style="background:${c.bg};color:${c.cl}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg></div><h3>${c.t}</h3><p>${c.d}</p><div class="sh-tags">${c.tags.map(t=>`<span class="sh-tag">${t}</span>`).join('')}</div></div>`).join('');
+        document.getElementById('srvGrid').innerHTML = srvs.map(function(s, i) {
+            return '<div class="srv-card rev d' + (i % 4 + 1) + '"><div class="srv-ic" style="background:' + s.bg + ';color:' + s.cl + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><h3>' + s.t + '</h3><p>' + s.d + '</p></div>'
+        }).join('');
 
-// HOOKS
-const hooks=[
-    {id:'action',icon:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',bg:'var(--primary-light)',cl:'var(--primary)',t:'Action Hooks',d:'Run code at init, wp_head, admin_menu, save_post.',file:'action-hooks.php',code:'<div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="cc">// Register CPT</span></span></div><div class="cl"><span class="cl-n">2</span><span class="cl-c"><span class="ck">add_action</span><span class="cp">(</span><span class="cs">\'init\'</span><span class="cp">,</span><span class="cs">\'register_cpt\'</span><span class="cp">);</span></span></div><div class="cl"><span class="cl-n">3</span><span class="cl-c"><span class="cc">// Enqueue scripts</span></span></div><div class="cl"><span class="cl-n">4</span><span class="cl-c"><span class="ck">add_action</span><span class="cp">(</span><span class="cs">\'wp_enqueue_scripts\'</span><span class="cp">,</span></span></div><div class="cl"><span class="cl-n">5</span><span class="cl-c">  <span class="ck">function</span><span class="cp">() {</span></span></div><div class="cl"><span class="cl-n">6</span><span class="cl-c">    <span class="cf">wp_enqueue_style</span><span class="cp">(</span><span class="cs">\'main\'</span><span class="cp">,</span></span></div><div class="cl"><span class="cl-n">7</span><span class="cl-c">      <span class="cf">get_stylesheet_uri</span><span class="cp">());</span></span></div><div class="cl"><span class="cl-n">8</span><span class="cl-c">  <span class="cp">});</span></span></div>'},
-    {id:'filter',icon:'<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>',bg:'var(--secondary-light)',cl:'var(--secondary)',t:'Filter Hooks',d:'Modify content, titles, queries cleanly.',file:'filter-hooks.php',code:'<div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="ck">add_filter</span><span class="cp">(</span><span class="cs">\'the_content\'</span><span class="cp">,</span></span></div><div class="cl"><span class="cl-n">2</span><span class="cl-c">  <span class="ck">function</span><span class="cp">(</span><span class="cv">$c</span><span class="cp">){</span></span></div><div class="cl"><span class="cl-n">3</span><span class="cl-c">    <span class="ck">if</span><span class="cp">(</span><span class="cf">is_single</span><span class="cp">())</span></span></div><div class="cl"><span class="cl-n">4</span><span class="cl-c">      <span class="ck">return</span> <span class="cv">$c</span><span class="cp">.</span><span class="cf">get_cta</span><span class="cp">();</span></span></div><div class="cl"><span class="cl-n">5</span><span class="cl-c">    <span class="ck">return</span> <span class="cv">$c</span><span class="cp">;</span></span></div><div class="cl"><span class="cl-n">6</span><span class="cl-c">  <span class="cp">});</span></span></div><div class="cl"><span class="cl-n">7</span><span class="cl-c"><span class="ck">add_filter</span><span class="cp">(</span><span class="cs">\'excerpt_length\'</span><span class="cp">,</span><span class="ck">fn</span><span class="cp">()=></span><span class="cn">25</span><span class="cp">);</span></span></div>'},
-    {id:'custom',icon:'<path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>',bg:'var(--purple-light)',cl:'var(--purple)',t:'Custom Hooks',d:'Build extensible plugins with do_action & apply_filters.',file:'custom-hooks.php',code:'<div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="ck">function</span> <span class="cf">process</span><span class="cp">(</span><span class="cv">$order</span><span class="cp">) {</span></span></div><div class="cl"><span class="cl-n">2</span><span class="cl-c">  <span class="cf">do_action</span><span class="cp">(</span></span></div><div class="cl"><span class="cl-n">3</span><span class="cl-c">    <span class="cs">\'after_order\'</span><span class="cp">,</span><span class="cv">$order</span></span></div><div class="cl"><span class="cl-n">4</span><span class="cl-c">  <span class="cp">);</span></span></div><div class="cl"><span class="cl-n">5</span><span class="cl-c">  <span class="ck">return</span> <span class="cf">apply_filters</span><span class="cp">(</span></span></div><div class="cl"><span class="cl-n">6</span><span class="cl-c">    <span class="cs">\'order_data\'</span><span class="cp">,</span><span class="cv">$order</span></span></div><div class="cl"><span class="cl-n">7</span><span class="cl-c">  <span class="cp">);</span></span></div><div class="cl"><span class="cl-n">8</span><span class="cl-c"><span class="cp">}</span></span></div>'},
-    {id:'woo',icon:'<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>',bg:'rgba(127,84,179,.08)',cl:'#7F54B3',t:'WooCommerce Hooks',d:'Checkout fields, pricing, email templates.',file:'woo-hooks.php',code:'<div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="ck">add_action</span><span class="cp">(</span></span></div><div class="cl"><span class="cl-n">2</span><span class="cl-c">  <span class="cs">\'woocommerce_after_order_notes\'</span><span class="cp">,</span></span></div><div class="cl"><span class="cl-n">3</span><span class="cl-c">  <span class="ck">function</span><span class="cp">(</span><span class="cv">$co</span><span class="cp">) {</span></span></div><div class="cl"><span class="cl-n">4</span><span class="cl-c">    <span class="cf">woocommerce_form_field</span><span class="cp">(</span></span></div><div class="cl"><span class="cl-n">5</span><span class="cl-c">      <span class="cs">\'gift\'</span><span class="cp">,[</span><span class="cs">\'type\'</span><span class="cp">=></span><span class="cs">\'textarea\'</span><span class="cp">]</span></span></div><div class="cl"><span class="cl-n">6</span><span class="cl-c">    <span class="cp">);</span></span></div><div class="cl"><span class="cl-n">7</span><span class="cl-c">  <span class="cp">});</span></span></div><div class="cl"><span class="cl-n">8</span><span class="cl-c"><span class="ck">add_filter</span><span class="cp">(</span><span class="cs">\'woocommerce_product_get_price\'</span><span class="cp">,</span></span></div><div class="cl"><span class="cl-n">9</span><span class="cl-c">  <span class="cs">\'member_discount\'</span><span class="cp">);</span></span></div>'}
-];
-document.getElementById('htList').innerHTML=hooks.map((h,i)=>`<div class="ht ${i===0?'on':''}" data-hook="${h.id}"><div class="ht-icon" style="background:${h.bg};color:${h.cl}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${h.icon}</svg></div><div><h4>${h.t}</h4><p>${h.d}</p></div></div>`).join('');
-document.getElementById('hooksRight').innerHTML=hooks.map((h,i)=>`<div class="hcb ${i===0?'on':''}" id="hcb-${h.id}"><div class="hcb-head"><div class="hcb-file"><span class="dot"></span>${h.file}</div><button class="hcb-copy" onclick="copyCode(this)">Copy</button></div><div class="hcb-body">${h.code}</div></div>`).join('');
+        var projects = [{
+            cat: 'shopify',
+            label: 'SHOPIFY',
+            lbg: 'var(--shopify-bg)',
+            lcl: 'var(--shopify)',
+            title: 'GlucaChill',
+            url: 'https://glucachill.com/products/gluca-chill-insulin-cooling-safe-pack-v3',
+            grad: 'linear-gradient(135deg,#1a73e8,#0d4fa3)',
+            emoji: '\uD83E\uDDCA GlucaChill',
+            desc: 'Medical product store with custom product page.',
+            tech: ['Shopify', 'Liquid', 'Metafields'],
+            res: [{
+                v: '98',
+                l: 'Lighthouse'
+            }, {
+                v: '+140%',
+                l: 'Conv'
+            }, {
+                v: '1.1s',
+                l: 'Load'
+            }]
+        }, {
+            cat: 'shopify',
+            label: 'SHOPIFY',
+            lbg: 'var(--shopify-bg)',
+            lcl: 'var(--shopify)',
+            title: 'GloryGain',
+            url: 'https://glorygain.com/products/sea-moss-shilajit-bundle-offer',
+            grad: 'linear-gradient(135deg,#2D6A4F,#52B788)',
+            emoji: '\uD83C\uDF3F GloryGain',
+            desc: 'Health supplement store with bundle products.',
+            tech: ['Shopify', 'Bundles', 'CRO'],
+            res: [{
+                v: '+220%',
+                l: 'Sales'
+            }, {
+                v: '4.2%',
+                l: 'Conv'
+            }, {
+                v: '99',
+                l: 'Score'
+            }]
+        }, {
+            cat: 'shopify',
+            label: 'SHOPIFY',
+            lbg: 'var(--shopify-bg)',
+            lcl: 'var(--shopify)',
+            title: 'Alyfe Supplements',
+            url: 'https://alyfesupplements.com/pages/quiz-results',
+            grad: 'linear-gradient(135deg,#7B2D8B,#C56CD6)',
+            emoji: '\uD83D\uDC9C Alyfe',
+            desc: 'Custom quiz results page with personalization.',
+            tech: ['Shopify', 'Quiz JS', 'Personalization'],
+            res: [{
+                v: '+185%',
+                l: 'AOV'
+            }, {
+                v: '62%',
+                l: 'Quiz'
+            }, {
+                v: '3.8%',
+                l: 'Conv'
+            }]
+        }, {
+            cat: 'wordpress',
+            label: 'WORDPRESS',
+            lbg: 'var(--wordpress-bg)',
+            lcl: 'var(--wordpress)',
+            title: 'Pemvish',
+            url: 'https://pemvish.com/',
+            grad: 'linear-gradient(135deg,#1E3A5F,#2D6A9F)',
+            emoji: '\uD83D\uDD37 Pemvish',
+            desc: 'Custom WordPress brand website for lead generation.',
+            tech: ['WordPress', 'Custom Theme', 'Hooks'],
+            res: [{
+                v: '+300%',
+                l: 'Traffic'
+            }, {
+                v: '0.9s',
+                l: 'TTFB'
+            }, {
+                v: '96',
+                l: 'Score'
+            }]
+        }, {
+            cat: 'shopify',
+            label: 'SHOPIFY',
+            lbg: 'var(--shopify-bg)',
+            lcl: 'var(--shopify)',
+            title: 'NeuroDrops',
+            url: 'https://www.neurodrops.store/products/neurodrops',
+            grad: 'linear-gradient(135deg,#0F3460,#16213E)',
+            emoji: '\uD83E\uDDE0 NeuroDrops',
+            desc: 'Premium supplement store with science-backed design.',
+            tech: ['Shopify', 'Liquid', 'Klaviyo'],
+            res: [{
+                v: '+265%',
+                l: 'Revenue'
+            }, {
+                v: '4.9\u2605',
+                l: 'Rating'
+            }, {
+                v: '1.3s',
+                l: 'Load'
+            }]
+        }, {
+            cat: 'shopify',
+            label: 'SHOPIFY',
+            lbg: 'var(--shopify-bg)',
+            lcl: 'var(--shopify)',
+            title: 'Lumora Home',
+            url: 'https://www.lumorahome.nl/',
+            grad: 'linear-gradient(135deg,#C9A96E,#8B6914)',
+            emoji: '\uD83C\uDFE0 Lumora',
+            desc: 'Dutch home decor with multi-language support.',
+            tech: ['Shopify', 'Multi-lang', 'iDEAL'],
+            res: [{
+                v: '+195%',
+                l: 'Sales'
+            }, {
+                v: 'NL',
+                l: 'Market'
+            }, {
+                v: '98',
+                l: 'Score'
+            }]
+        }];
+        document.getElementById('projTabs').innerHTML = '<button class="proj-tab on" data-f="all">All</button><button class="proj-tab" data-f="shopify">Shopify</button><button class="proj-tab" data-f="wordpress">WordPress</button>';
 
-// SERVICES (12)
-const srvs=[
-    {bg:'var(--wordpress-bg)',cl:'var(--wordpress)',icon:'<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>',t:'WordPress Dev',d:'Custom themes, plugins, and scalable sites.'},
-    {bg:'var(--shopify-bg)',cl:'var(--shopify)',icon:'<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/>',t:'Shopify Dev',d:'Custom stores, themes, and private apps.'},
-    {bg:'rgba(127,84,179,.08)',cl:'#7F54B3',icon:'<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>',t:'WooCommerce',d:'Powerful stores with custom flows.'},
-    {bg:'var(--accent-light)',cl:'#E37400',icon:'<path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>',t:'Custom Plugins',d:'Bespoke plugins using hooks and APIs.'},
-    {bg:'var(--error-light)',cl:'var(--error)',icon:'<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>',t:'Theme Dev',d:'Pixel-perfect themes for any platform.'},
-    {bg:'var(--primary-light)',cl:'var(--primary)',icon:'<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',t:'API Integrations',d:'Connect CRMs, payments, ERPs seamlessly.'},
-    {bg:'var(--secondary-light)',cl:'var(--secondary)',icon:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',t:'Speed Optimization',d:'Sub-2s load times and 90+ Lighthouse.'},
-    {bg:'var(--purple-light)',cl:'var(--purple)',icon:'<circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>',t:'SEO & Technical SEO',d:'Schema, Core Web Vitals, and rankings.'},
-    {bg:'var(--teal-light)',cl:'var(--teal)',icon:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',t:'Website Security',d:'Hardening, SSL, and malware protection.'},
-    {bg:'var(--primary-light)',cl:'var(--primary)',icon:'<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/>',t:'Maintenance',d:'Updates, backups, and priority support.'},
-    {bg:'rgba(52,49,63,.08)',cl:'#34313F',icon:'<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>',t:'BigCommerce & HubSpot',d:'Stores, CRM setup, and marketing automation.'},
-    {bg:'rgba(66,133,244,.1)',cl:'#4285F4',icon:'<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>',t:'Google Ads & Analytics',d:'Campaign setup, GA4, and conversion tracking.'}
-];
-document.getElementById('srvGrid').innerHTML=srvs.map((s,i)=>`<div class="srv-card rev d${i%4+1}"><div class="srv-icon" style="background:${s.bg};color:${s.cl}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${s.icon}</svg></div><h3>${s.t}</h3><p>${s.d}</p></div>`).join('');
+        function renderProjects(f) {
+            var list = f === 'all' ? projects : projects.filter(function(p) {
+                return p.cat === f
+            });
+            document.getElementById('projGrid').innerHTML = list.map(function(p) {
+                return '<div class="proj-card rev"><div class="proj-thumb"><div class="proj-thumb-ph" style="background:' + p.grad + '">' + p.emoji + '</div><div class="proj-thumb-ov"><a href="' + p.url + '" target="_blank" rel="noopener" class="pbtn pbtn-g" style="flex:unset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Visit</a></div></div><div class="proj-body"><span class="proj-badge" style="background:' + p.lbg + ';color:' + p.lcl + '">' + p.label + '</span><h3>' + p.title + '</h3><p class="proj-desc">' + p.desc + '</p><div class="proj-tags">' + p.tech.map(function(t) {
+                    return '<span class="ptag">' + t + '</span>'
+                }).join('') + '</div><div class="proj-results">' + p.res.map(function(r) {
+                    return '<div class="proj-result"><div class="prv" style="color:' + p.lcl + '">' + r.v + '</div><div class="prl">' + r.l + '</div></div>'
+                }).join('') + '</div><div class="proj-btns"><a href="' + p.url + '" target="_blank" rel="noopener" class="pbtn pbtn-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View Live</a><a href="#contact" class="pbtn pbtn-o">Discuss</a></div></div></div>'
+            }).join('');
+            document.querySelectorAll('.proj-card.rev').forEach(function(el) {
+                ro.observe(el)
+            })
+        }
 
-// PROJECTS — UPDATED WITH CHALLENGE/SOLUTION/RESULTS
-const projs=[
-    {g:'linear-gradient(135deg,#667eea,#764ba2)',title:'LuxeWear — Fashion DTC Store',badge:'SHOPIFY PLUS',badgeBg:'var(--shopify-bg)',badgeCl:'var(--shopify)',desc:'End-to-end Shopify Plus build for a premium fashion brand expanding globally with multi-currency and localized storefronts.',challenge:{color:'var(--shopify)',title:'Challenge',text:'The brand had 3 separate legacy stores causing inventory sync issues, inconsistent UX, and no unified analytics.'},solution:'Built a unified Shopify Plus store with Markets, custom Liquid theme, headless checkout via Storefront API, and real-time inventory sync across warehouses.',tech:['Shopify Plus','Liquid','Storefront API','Polaris','GA4'],m:[{v:'+285%',l:'Conversion Rate'},{v:'0.8s',l:'Page Load'},{v:'$1.2M',l:'Monthly Revenue'}]},
-    {g:'linear-gradient(135deg,#f093fb,#f5576c)',title:'ScaleFlow — SaaS Marketing Platform',badge:'WORDPRESS',badgeBg:'var(--wordpress-bg)',badgeCl:'var(--wordpress)',desc:'WordPress multisite powering a SaaS marketing platform with custom plugin ecosystem, REST API dashboard, and HubSpot CRM integration.',challenge:{color:'var(--wordpress)',title:'Challenge',text:'Existing site had 8s load time, zero lead tracking, and no CRM connectivity — losing 70% of inbound traffic.'},solution:'Rebuilt on WordPress multisite with custom hooks-based plugin architecture, HubSpot CRM sync, booking system, and member dashboard — all loading under 1.2s.',tech:['WordPress','PHP Hooks','REST API','HubSpot','WooCommerce'],m:[{v:'+320%',l:'Lead Gen'},{v:'1.1s',l:'TTFB'},{v:'50K+',l:'Monthly Users'}]},
-    {g:'linear-gradient(135deg,#4facfe,#00f2fe)',title:'MediStore — Healthcare E-Commerce',badge:'BIGCOMMERCE',badgeBg:'rgba(52,49,63,.08)',badgeCl:'#34313F',desc:'Custom BigCommerce B2B healthcare platform with tiered pricing, subscription management, and full Google Ads conversion funnel.',challenge:{color:'#34313F',title:'Challenge',text:'No online presence, manual order processing, and $0 digital ad spend — all orders were phone-based and error-prone.'},solution:'Built custom BigCommerce store with Stencil theme, tiered B2B pricing engine, Stripe subscriptions, and set up Google Ads campaigns with Shopping + Search driving qualified traffic.',tech:['BigCommerce','Stencil','Google Ads','GA4','Stripe'],m:[{v:'+410%',l:'Revenue Growth'},{v:'99.9%',l:'Store Uptime'},{v:'15K',l:'Orders/Month'}]},
-    {g:'linear-gradient(135deg,#a18cd1,#fbc2eb)',title:'GrowthEngine — HubSpot + WP Integration',badge:'HUBSPOT',badgeBg:'rgba(255,122,89,.08)',badgeCl:'#FF7A59',desc:'Full HubSpot CRM setup integrated with WordPress for a B2B SaaS company — automated workflows, email sequences, and lead scoring.',challenge:{color:'#FF7A59',title:'Challenge',text:'Sales team managing leads manually in spreadsheets with no visibility into pipeline, conversion rates, or attribution.'},solution:'Configured HubSpot CRM with custom properties, built WordPress plugin for form-to-CRM sync, set up automated email nurture sequences, lead scoring, and attribution dashboards.',tech:['HubSpot CRM','WordPress','PHP','Email Automation','Google Ads'],m:[{v:'+180%',l:'Qualified Leads'},{v:'45%',l:'Email Open Rate'},{v:'$340K',l:'Pipeline/Quarter'}]}
-];
-document.getElementById('projList').innerHTML=projs.map(p=>`<div class="proj-item rev"><div class="proj-img"><div class="proj-img-bg" style="background:${p.g}">${p.title.split('—')[0].trim()}</div><div class="proj-img-ov"><a href="#" class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff;background:rgba(0,0,0,.3)">View Live</a></div></div><div class="proj-info"><span class="proj-badge" style="background:${p.badgeBg};color:${p.badgeCl}">${p.badge}</span><h3>${p.title}</h3><p>${p.desc}</p><div class="proj-challenge" style="border-color:${p.challenge.color}"><div class="proj-challenge-title" style="color:${p.challenge.color}">${p.challenge.title}</div><p>${p.challenge.text}</p></div><div class="proj-tech">${p.tech.map(t=>`<span class="ptag">${t}</span>`).join('')}</div><div class="proj-metrics">${p.m.map(m=>`<div class="proj-metric"><div class="pm-val" style="color:${p.badgeCl}">${m.v}</div><div class="pm-lbl">${m.l}</div></div>`).join('')}</div><div class="proj-actions"><a href="#contact" class="btn btn-primary">Discuss Project</a></div></div></div>`).join('');
+        var tl = [{
+            d: 'Present \u2014 7/13/2026',
+            t: 'Senior WordPress & Shopify Developer',
+            co: 'Freelance / Independent',
+            items: ['60+ live Shopify & WordPress projects globally', 'Built GlucaChill, GloryGain, NeuroDrops, Lumora Home', 'Google Ads campaigns and GA4 for 20+ stores', 'HubSpot CRM integrations with WP and Shopify'],
+            tags: ['Shopify', 'WordPress', 'Google Ads', 'HubSpot']
+        }, {
+            d: '2022 \u2014 2023',
+            t: 'E-Commerce Developer',
+            co: 'Digital Agency',
+            items: ['BigCommerce and Shopify stores for B2B & B2C', 'Advanced WordPress hook-based plugin architecture', 'Page load reduced by 65% across all projects'],
+            tags: ['BigCommerce', 'PHP', 'Hooks', 'Performance']
+        }, {
+            d: '2020 \u2014 2022',
+            t: 'WordPress Developer',
+            co: 'Tech Startup',
+            items: ['30+ WordPress and WooCommerce client sites', 'Deep WP hooks, filters, and Plugin API expertise', 'Pixel-perfect implementations with design teams'],
+            tags: ['WordPress', 'PHP', 'WooCommerce', 'JavaScript']
+        }];
+        document.getElementById('tline').innerHTML = tl.map(function(t) {
+            return '<div class="ti rev"><div class="ti-dot"></div><div class="ti-date">' + t.d + '</div><h3>' + t.t + '</h3><div class="ti-co">' + t.co + '</div><div class="ti-desc"><ul>' + t.items.map(function(i) {
+                return '<li>' + i + '</li>'
+            }).join('') + '</ul></div><div class="ti-tags">' + t.tags.map(function(tg) {
+                return '<span class="titag">' + tg + '</span>'
+            }).join('') + '</div></div>'
+        }).join('');
 
-// TIMELINE
-const tl=[
-    {d:'2023 — Present',t:'Senior WordPress & Shopify Developer',co:'Freelance / Independent',items:['60+ WordPress & Shopify projects for global clients','Custom Shopify apps generating $500K+ client revenue','Google Ads campaigns and GA4 for 20+ stores','HubSpot CRM integration with WordPress and Shopify'],tags:['Shopify','WordPress','Google Ads','HubSpot']},
-    {d:'2022 — 2023',t:'E-Commerce Developer',co:'Digital Agency',items:['BigCommerce and Shopify stores for B2B & B2C brands','Advanced WordPress hook architecture for plugins','Reduced page load by 65% across all projects','Google Ads and Analytics setup for 10+ clients'],tags:['BigCommerce','PHP','Hooks','Google Ads']},
-    {d:'2020 — 2022',t:'WordPress Developer',co:'Tech Startup',items:['30+ WordPress and WooCommerce client sites','Deep WP hooks, filters, and Plugin API expertise','Pixel-perfect UI implementations with design teams'],tags:['WordPress','PHP','WooCommerce','JavaScript']}
-];
-document.getElementById('tline').innerHTML=tl.map(t=>`<div class="ti rev"><div class="ti-dot"></div><div class="ti-date">${t.d}</div><h3>${t.t}</h3><div class="ti-co">${t.co}</div><div class="ti-desc"><ul>${t.items.map(i=>`<li>${i}</li>`).join('')}</ul></div><div class="ti-tags">${t.tags.map(tg=>`<span class="titag">${tg}</span>`).join('')}</div></div>`).join('');
+        var sks = [{
+            bg: 'var(--primary-light)',
+            cl: 'var(--primary)',
+            icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+            t: 'Frontend',
+            tags: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind', 'TypeScript']
+        }, {
+            bg: 'var(--secondary-light)',
+            cl: 'var(--secondary)',
+            icon: 'M2 2h20v8H2zM2 14h20v8H2z',
+            t: 'Backend',
+            tags: ['PHP', 'Laravel', 'Node.js', 'MySQL', 'REST API', 'GraphQL']
+        }, {
+            bg: 'var(--shopify-bg)',
+            cl: 'var(--shopify)',
+            icon: 'M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 002-2V6l-3-4z',
+            t: 'Shopify',
+            tags: ['Liquid', 'Storefront API', 'Admin API', 'Polaris', 'Hydrogen']
+        }, {
+            bg: 'var(--wordpress-bg)',
+            cl: 'var(--wordpress)',
+            icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
+            t: 'WordPress Hooks',
+            tags: ['add_action', 'add_filter', 'do_action', 'apply_filters', 'Plugin API']
+        }, {
+            bg: 'rgba(52,49,63,.08)',
+            cl: '#34313F',
+            icon: 'M2 3h20v14H2z',
+            t: 'BigCommerce & HubSpot',
+            tags: ['BigCommerce API', 'Stencil', 'HubSpot CRM', 'Workflows']
+        }, {
+            bg: 'rgba(66,133,244,.1)',
+            cl: '#4285F4',
+            icon: 'M11 11m-8 0a8 8 0 1016 0 8 8 0 10-16 0M21 21l-4.35-4.35',
+            t: 'Google Ads',
+            tags: ['Google Ads', 'GA4', 'GTM', 'Conversion Tracking', 'Shopping']
+        }, {
+            bg: 'var(--secondary-light)',
+            cl: 'var(--secondary)',
+            icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
+            t: 'Performance & SEO',
+            tags: ['Core Web Vitals', 'Schema', 'Lighthouse', 'CDN', 'Caching']
+        }, {
+            bg: 'var(--purple-light)',
+            cl: 'var(--purple)',
+            icon: 'M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z',
+            t: 'Dev Tools',
+            tags: ['Git', 'Docker', 'VS Code', 'Figma', 'Webpack', 'CI/CD']
+        }];
+        document.getElementById('skGrid').innerHTML = sks.map(function(s, i) {
+            return '<div class="sk-card rev d' + (i % 4 + 1) + '"><div class="sk-head"><div class="sk-ic" style="background:' + s.bg + ';color:' + s.cl + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><h3>' + s.t + '</h3></div><div class="sk-tags">' + s.tags.map(function(tg) {
+                return '<span class="sktag">' + tg + '</span>'
+            }).join('') + '</div></div>'
+        }).join('');
 
-// SKILLS
-const sks=[
-    {bg:'var(--primary-light)',cl:'var(--primary)',icon:'<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',t:'Frontend',tags:['HTML5','CSS3','JavaScript','React','Tailwind','TypeScript']},
-    {bg:'var(--secondary-light)',cl:'var(--secondary)',icon:'<rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/>',t:'Backend',tags:['PHP','Laravel','Node.js','MySQL','REST API','GraphQL']},
-    {bg:'var(--shopify-bg)',cl:'var(--shopify)',icon:'<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>',t:'Shopify',tags:['Liquid','Storefront API','Admin API','Polaris','Hydrogen']},
-    {bg:'var(--wordpress-bg)',cl:'var(--wordpress)',icon:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',t:'WordPress Hooks',tags:['add_action','add_filter','do_action','apply_filters','Plugin API']},
-    {bg:'rgba(52,49,63,.08)',cl:'#34313F',icon:'<rect x="2" y="3" width="20" height="14" rx="2"/>',t:'BigCommerce & HubSpot',tags:['BigCommerce API','Stencil','HubSpot CRM','Workflows']},
-    {bg:'rgba(66,133,244,.1)',cl:'#4285F4',icon:'<circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>',t:'Google Ads & Analytics',tags:['Google Ads','GA4','GTM','Conversion Tracking','Shopping Ads']},
-    {bg:'var(--secondary-light)',cl:'var(--secondary)',icon:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',t:'Performance & SEO',tags:['Core Web Vitals','Schema','Lighthouse','CDN','Caching']},
-    {bg:'var(--purple-light)',cl:'var(--purple)',icon:'<path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>',t:'Dev Tools',tags:['Git','Docker','VS Code','Figma','Webpack','CI/CD']}
-];
-document.getElementById('skGrid').innerHTML=sks.map((s,i)=>`<div class="sk-card rev d${i%4+1}"><div class="sk-head"><div class="sk-ic" style="background:${s.bg};color:${s.cl}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${s.icon}</svg></div><h3>${s.t}</h3></div><div class="sk-tags">${s.tags.map(tg=>`<span class="sktag">${tg}</span>`).join('')}</div></div>`).join('');
+        // PROCESS
+        var procSteps = [{
+            num: '01',
+            icon: 'M11 11m-8 0a8 8 0 1016 0 8 8 0 10-16 0M21 21l-4.35-4.35',
+            ib: 'var(--primary-light)',
+            ic: 'var(--primary)',
+            badge: 'Week 1',
+            bb: 'var(--primary-light)',
+            bc: 'var(--primary)',
+            title: 'Discovery & Strategy',
+            desc: 'Deep dive into goals, audience, competitors. Map every requirement before coding.',
+            tools: ['Notion', 'Figma', 'Loom'],
+            arrow: true
+        }, {
+            num: '02',
+            icon: 'M3 3h18v18H3zM3 9h18M9 21V9',
+            ib: 'var(--purple-light)',
+            ic: 'var(--purple)',
+            badge: 'Week 1-2',
+            bb: 'var(--purple-light)',
+            bc: 'var(--purple)',
+            title: 'Design & Prototyping',
+            desc: 'Wireframes, UI components, interactive Figma prototypes. Full design approval first.',
+            tools: ['Figma', 'FigJam'],
+            arrow: true
+        }, {
+            num: '03',
+            icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+            ib: 'var(--shopify-bg)',
+            ic: 'var(--shopify)',
+            badge: 'Week 2-5',
+            bb: 'var(--shopify-bg)',
+            bc: 'var(--shopify)',
+            title: 'Development & Build',
+            desc: 'Clean hooks-based code. WordPress, Shopify Liquid, REST APIs built for scale.',
+            tools: ['VS Code', 'Git', 'PHP'],
+            arrow: false
+        }, {
+            num: '04',
+            icon: 'M22 11.08V12a10 10 0 11-5.93-9.14M22 4l-10 10.01L9 11.01',
+            ib: 'var(--secondary-light)',
+            ic: 'var(--secondary)',
+            badge: 'Week 5',
+            bb: 'var(--secondary-light)',
+            bc: 'var(--secondary)',
+            title: 'Testing & QA',
+            desc: 'Cross-browser, cross-device, Lighthouse audits, accessibility, real-device testing.',
+            tools: ['BrowserStack', 'Lighthouse'],
+            arrow: true
+        }, {
+            num: '05',
+            icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
+            ib: 'var(--accent-light)',
+            ic: '#E37400',
+            badge: 'Week 6',
+            bb: 'var(--accent-light)',
+            bc: '#E37400',
+            title: 'Launch & Deployment',
+            desc: 'DNS, SSL, CDN setup, performance optimization. Zero-downtime go-live.',
+            tools: ['Cloudflare', 'CI/CD'],
+            arrow: true
+        }, {
+            num: '06',
+            icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z',
+            ib: 'var(--teal-light)',
+            ic: 'var(--teal)',
+            badge: 'Ongoing',
+            bb: 'var(--teal-light)',
+            bc: 'var(--teal)',
+            title: 'Support & Growth',
+            desc: 'Monthly maintenance, security updates, monitoring, and new features as you scale.',
+            tools: ['Uptime', 'Slack'],
+            arrow: false
+        }];
+        document.getElementById('procGrid').innerHTML = procSteps.map(function(s, i) {
+            var arrow = s.arrow && (i + 1) % 3 !== 0 ? '<div class="proc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>' : '';
+            return '<div class="proc-card rev d' + (i % 3 + 1) + '"><div class="proc-num">' + s.num + '</div><div class="proc-ic" style="background:' + s.ib + ';color:' + s.ic + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><div class="proc-badge" style="background:' + s.bb + ';color:' + s.bc + '">' + s.badge + '</div><h3>' + s.title + '</h3><p>' + s.desc + '</p><div class="proc-tools">' + s.tools.map(function(t) {
+                return '<span class="ptool">' + t + '</span>'
+            }).join('') + '</div>' + arrow + '</div>'
+        }).join('');
 
-// TESTIMONIALS
-const star='<svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FBBC04"/></svg>';
-const tests=[
-    {g:'linear-gradient(135deg,#667eea,#764ba2)',ini:'JD',txt:'"Ankit built our Shopify app from scratch. Conversion rate jumped 285%. He truly understands e-commerce."',n:'James Davidson',r:'CEO, TechVentures'},
-    {g:'linear-gradient(135deg,#f093fb,#f5576c)',ini:'SM',txt:'"His WordPress hooks expertise is incredible. Our plugin system is perfectly extensible. No other developer matched this."',n:'Sarah Mitchell',r:'Founder, StyleHouse'},
-    {g:'linear-gradient(135deg,#4facfe,#00f2fe)',ini:'RP',txt:'"From BigCommerce migration to Google Ads — Ankit handled everything flawlessly. Revenue up 410% in 3 months."',n:'Rahul Patel',r:'CTO, HealthFirst'}
-];
-document.getElementById('testGrid').innerHTML=tests.map((t,i)=>`<div class="tcard rev d${i+1}"><div class="tcard-quote">"</div><div class="tcard-stars">${Array(5).fill(star).join('')}</div><p class="tcard-text">${t.txt}</p><div class="tcard-auth"><div class="tcard-av" style="background:${t.g}">${t.ini}</div><div><div class="tcard-name">${t.n}</div><div class="tcard-role">${t.r}</div></div></div></div>`).join('');
+        var pstats = [{
+            icon: 'M12 12m-10 0a10 10 0 1020 0 10 10 0 10-20 0M12 6v6l4 2',
+            ib: 'var(--primary-light)',
+            ic: 'var(--primary)',
+            val: '6 Weeks',
+            lbl: 'Average Timeline'
+        }, {
+            icon: 'M22 11.08V12a10 10 0 11-5.93-9.14M22 4l-10 10.01L9 11.01',
+            ib: 'var(--secondary-light)',
+            ic: 'var(--secondary)',
+            val: '150+',
+            lbl: 'Projects On Time'
+        }, {
+            icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6',
+            ib: 'var(--accent-light)',
+            ic: '#E37400',
+            val: '24hr',
+            lbl: 'Response Guarantee'
+        }];
+        document.getElementById('procStats').innerHTML = pstats.map(function(s) {
+            return '<div class="pstat rev"><div class="pstat-ic" style="background:' + s.ib + ';color:' + s.ic + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><div><div class="pstat-val">' + s.val + '</div><div class="pstat-lbl">' + s.lbl + '</div></div></div>'
+        }).join('');
 
-// PROCESS
-const proc=[{n:'1',t:'Discovery',d:'Requirements & goals'},{n:'2',t:'Design',d:'Wireframes & UI'},{n:'3',t:'Develop',d:'Clean hooked code'},{n:'4',t:'Test',d:'All devices QA'},{n:'5',t:'Launch',d:'Deploy & optimize'},{n:'6',t:'Support',d:'Ongoing maintenance'}];
-const pg=document.getElementById('procGrid');
-proc.forEach((s,i)=>{
-    const el=document.createElement('div');el.className='proc-step rev d'+(i+1);
-    el.innerHTML=`<div class="proc-num">${s.n}</div><h4>${s.t}</h4><p>${s.d}</p>`;
-    pg.appendChild(el);
-});
+        var faqs = [{
+            q: 'What Shopify services do you offer?',
+            a: 'Custom Liquid themes, private/public apps, checkout customization, headless Shopify with Hydrogen, platform migrations, and store optimization.'
+        }, {
+            q: 'How do you use WordPress hooks?',
+            a: 'Every customization uses add_action() and add_filter() \u2014 never modifying core files. Covers custom post types, REST API endpoints, WooCommerce modifications, and extensible plugin architectures.'
+        }, {
+            q: 'Do you work with BigCommerce and HubSpot?',
+            a: 'Yes. Custom BigCommerce stores with Stencil themes, plus HubSpot CRM workflows, email automations, and seamless integrations with WordPress and Shopify.'
+        }, {
+            q: 'Can you set up Google Ads?',
+            a: 'Absolutely \u2014 Google Ads campaigns, GA4, Google Tag Manager, Shopping campaigns, conversion tracking, and remarketing all properly configured.'
+        }, {
+            q: 'What is your typical timeline?',
+            a: 'Simple sites: 2-3 weeks. E-commerce stores: 4-6 weeks. Custom apps: 6-10 weeks.'
+        }, {
+            q: 'What are your payment terms?',
+            a: '40% upfront, 30% midpoint, 30% on delivery. Bank transfer, PayPal, and Wise accepted.'
+        }];
+        document.getElementById('faqWrap').innerHTML = faqs.map(function(f) {
+            return '<div class="fi-item rev"><button class="fi-q" aria-expanded="false">' + f.q + '<svg class="fi-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="fi-ans"><div class="fi-ans-inner">' + f.a + '</div></div></div>'
+        }).join('');
 
-// FAQ
-const faqs=[
-    {q:'What Shopify services do you offer?',a:'Custom Liquid themes, private/public apps, checkout customization, headless commerce with Hydrogen, platform migrations, and ongoing optimization.'},
-    {q:'How do you use WordPress hooks?',a:'I use add_action() and add_filter() to extend WordPress cleanly — custom post types, admin menus, REST API endpoints, WooCommerce modifications, and custom extensible plugin hooks.'},
-    {q:'Do you work with BigCommerce and HubSpot?',a:'Yes. I build custom BigCommerce stores with Stencil themes, and set up HubSpot CRM workflows, email automations, and integrations with WordPress and Shopify.'},
-    {q:'Can you set up Google Ads and Analytics?',a:'Absolutely. Google Ads campaigns, conversion tracking, Google Tag Manager, GA4, Shopping campaigns, and remarketing — all properly connected to your store.'},
-    {q:'What is your typical timeline?',a:'Simple sites: 2–3 weeks. Complex stores: 4–8 weeks. Custom apps: 6–12 weeks. Detailed timeline provided before project starts.'},
-    {q:'What are your payment terms?',a:'40% upfront, 30% midpoint, 30% on delivery. Monthly invoicing for retainers. I accept bank transfer, PayPal, and Wise.'}
-];
-document.getElementById('faqWrap').innerHTML=faqs.map(f=>`<div class="fi-item rev"><button class="fi-q" aria-expanded="false">${f.q}<svg class="fi-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="fi-ans"><div class="fi-ans-inner">${f.a}</div></div></div>`).join('');
+        // JS LOGIC
+        var nav = document.getElementById('nav');
+        window.addEventListener('scroll', function() {
+            nav.classList.toggle('scrolled', scrollY > 50)
+        }, {
+            passive: true
+        });
+        var mt = document.getElementById('mobToggle'),
+            mm = document.getElementById('mobMenu'),
+            mo = document.getElementById('mobOverlay');
 
-// ===== JS LOGIC =====
-window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('hidden'),400));
+        function openM() {
+            mm.classList.add('open');
+            mo.classList.add('open');
+            mt.classList.add('open');
+            document.body.classList.add('menu-open')
+        }
 
-// NAV SCROLL
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50),{passive:true});
-
-// MOBILE MENU — FIXED
-const mt=document.getElementById('mobToggle'),mm=document.getElementById('mobMenu'),mo=document.getElementById('mobOverlay');
-function openMenu(){mm.classList.add('open');mo.classList.add('open');mt.classList.add('open');mt.setAttribute('aria-expanded','true');document.body.classList.add('menu-open')}
-function closeMenu(){mm.classList.remove('open');mo.classList.remove('open');mt.classList.remove('open');mt.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open')}
-mt.addEventListener('click',()=>mm.classList.contains('open')?closeMenu():openMenu());
-mo.addEventListener('click',closeMenu);
-mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-
-// CODE TABS
-document.querySelectorAll('.cw-tab').forEach(tab=>{tab.addEventListener('click',()=>{document.querySelectorAll('.cw-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.cw-pane').forEach(p=>p.classList.remove('on'));tab.classList.add('on');document.getElementById('cw-'+tab.dataset.tab).classList.add('on')})});
-
-// HOOK TABS
-document.querySelectorAll('.ht').forEach(h=>{h.addEventListener('click',()=>{document.querySelectorAll('.ht').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.hcb').forEach(x=>x.classList.remove('on'));h.classList.add('on');document.getElementById('hcb-'+h.dataset.hook).classList.add('on')})});
-
-// COPY CODE
-function copyCode(btn){const lines=btn.closest('.hcb').querySelectorAll('.cl-c');navigator.clipboard.writeText(Array.from(lines).map(l=>l.textContent).join('\n')).then(()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)})}
-window.copyCode=copyCode;
-
-// REVEAL
-const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -36px 0px'});
-document.querySelectorAll('.rev,.rev-sc,.rev-l,.rev-r').forEach(el=>ro.observe(el));
-
-// COUNTERS
-const co=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,tgt=parseFloat(el.dataset.count||el.dataset.countP||0);if(!tgt)return;const suf=el.textContent.includes('%')?'%':'+';let cur=0,step=tgt/55;const tim=setInterval(()=>{cur+=step;if(cur>=tgt){cur=tgt;clearInterval(tim)}el.textContent=Math.floor(cur)+suf},28);co.unobserve(el)})},{threshold:.5});
-document.querySelectorAll('[data-count],[data-count-p]').forEach(el=>co.observe(el));
-
-// BARS
-const bo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target)}})},{threshold:.5});
-document.querySelectorAll('[data-w]').forEach(el=>bo.observe(el));
-
-// ACTIVE NAV
-const secs=document.querySelectorAll('section[id]');
-const no=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id))})},{rootMargin:'-40% 0px -60% 0px'});
-secs.forEach(s=>no.observe(s));
-
-// FAQ
-document.addEventListener('click',e=>{const q=e.target.closest('.fi-q');if(!q)return;const it=q.closest('.fi-item'),ans=it.querySelector('.fi-ans'),inner=ans.querySelector('.fi-ans-inner'),open=it.classList.contains('on');document.querySelectorAll('.fi-item.on').forEach(ai=>{if(ai!==it){ai.classList.remove('on');ai.querySelector('.fi-ans').style.maxHeight='0';ai.querySelector('.fi-q').setAttribute('aria-expanded','false')}});it.classList.toggle('on');q.setAttribute('aria-expanded',!open);ans.style.maxHeight=open?'0':inner.offsetHeight+'px'});
-
-// BTT
-const btt=document.getElementById('btt');
-window.addEventListener('scroll',()=>btt.classList.toggle('on',scrollY>500),{passive:true});
-btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-
-// SMOOTH SCROLL
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)window.scrollTo({top:t.offsetTop-76,behavior:'smooth'})})});
-
-// FORM
-document.getElementById('cForm').addEventListener('submit',function(e){e.preventDefault();const n=document.getElementById('fn'),em=document.getElementById('fe'),m=document.getElementById('fm');let ok=true;[[n,!n.value.trim()],[em,!em.value.trim()||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)],[m,!m.value.trim()]].forEach(([el,err])=>{el.style.borderColor=err?'var(--error)':'';el.style.boxShadow=err?'0 0 0 3px var(--error-light)':'';if(err)ok=false});if(ok){const b=document.getElementById('fBtn');b.textContent='Sending...';b.disabled=true;setTimeout(()=>{b.textContent='✓ Sent!';b.style.background='var(--secondary)';setTimeout(()=>{this.reset();b.textContent='Send Message';b.style.background='';b.disabled=false},3000)},1500)}});
-document.querySelectorAll('.finp,.ftxt,.fsel').forEach(el=>el.addEventListener('input',function(){this.style.borderColor='';this.style.boxShadow=''}));
-
-// RESPONSIVE CLEANUP
-window.matchMedia('(max-width:768px)').addEventListener('change',e=>{if(!e.matches)closeMenu()});
+        function closeM() {
+            mm.classList.remove('open');
+            mo.classList.remove('open');
+            mt.classList.remove('open');
+            document.body.classList.remove('menu-open')
+        }
+        mt.addEventListener('click', function() {
+            mm.classList.contains('open') ? closeM() : openM()
+        });
+        mo.addEventListener('click', closeM);
+        mm.querySelectorAll('a').forEach(function(a) {
+            a.addEventListener('click', closeM)
+        });
+        document.querySelectorAll('.cw-tab').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.cw-tab').forEach(function(t) {
+                    t.classList.remove('on')
+                });
+                document.querySelectorAll('.cw-pane').forEach(function(p) {
+                    p.classList.remove('on')
+                });
+                tab.classList.add('on');
+                document.getElementById('cw-' + tab.getAttribute('data-tab')).classList.add('on')
+            })
+        });
+        var ro = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('vis');
+                    ro.unobserve(e.target)
+                }
+            })
+        }, {
+            threshold: .06,
+            rootMargin: '0px 0px -30px 0px'
+        });
+        document.querySelectorAll('.rev').forEach(function(el) {
+            ro.observe(el)
+        });
+        var co = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (!e.isIntersecting) return;
+                var el = e.target;
+                var tgt = parseInt(el.getAttribute('data-count'));
+                if (!tgt) return;
+                var suf = el.textContent.indexOf('%') > -1 ? '%' : '+';
+                var cur = 0;
+                var step = tgt / 50;
+                var tim = setInterval(function() {
+                    cur += step;
+                    if (cur >= tgt) {
+                        cur = tgt;
+                        clearInterval(tim)
+                    }
+                    el.textContent = Math.floor(cur) + suf
+                }, 30);
+                co.unobserve(el)
+            })
+        }, {
+            threshold: .5
+        });
+        document.querySelectorAll('[data-count]').forEach(function(el) {
+            co.observe(el)
+        });
+        renderProjects('all');
+        document.getElementById('projTabs').addEventListener('click', function(e) {
+            var btn = e.target.closest('.proj-tab');
+            if (!btn) return;
+            document.querySelectorAll('.proj-tab').forEach(function(b) {
+                b.classList.remove('on')
+            });
+            btn.classList.add('on');
+            renderProjects(btn.getAttribute('data-f'))
+        });
+        var secs = document.querySelectorAll('section[id]');
+        var no2 = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) document.querySelectorAll('.nav-link').forEach(function(l) {
+                    l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)
+                })
+            })
+        }, {
+            rootMargin: '-40% 0px -60% 0px'
+        });
+        secs.forEach(function(s) {
+            no2.observe(s)
+        });
+        document.addEventListener('click', function(e) {
+            var q = e.target.closest('.fi-q');
+            if (!q) return;
+            var it = q.closest('.fi-item');
+            var ans = it.querySelector('.fi-ans');
+            var inner = ans.querySelector('.fi-ans-inner');
+            var open = it.classList.contains('on');
+            document.querySelectorAll('.fi-item.on').forEach(function(ai) {
+                if (ai !== it) {
+                    ai.classList.remove('on');
+                    ai.querySelector('.fi-ans').style.maxHeight = '0'
+                }
+            });
+            it.classList.toggle('on');
+            ans.style.maxHeight = open ? '0' : inner.offsetHeight + 'px'
+        });
+        var btt = document.getElementById('btt');
+        window.addEventListener('scroll', function() {
+            btt.classList.toggle('on', scrollY > 500)
+        }, {
+            passive: true
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+            a.addEventListener('click', function(e) {
+                e.preventDefault();
+                var t = document.querySelector(a.getAttribute('href'));
+                if (t) window.scrollTo({
+                    top: t.offsetTop - 76,
+                    behavior: 'smooth'
+                })
+            })
+        });
+        document.getElementById('cForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var fn = document.getElementById('fn');
+            var ln = document.getElementById('ln');
+            var em = document.getElementById('fe');
+            var sv = document.getElementById('fserv');
+            var m = document.getElementById('fm');
+            var ok = true;
+            var fields = [
+                [fn, !fn.value.trim()],
+                [ln, !ln.value.trim()],
+                [em, !em.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)],
+                [sv, !sv.value],
+                [m, !m.value.trim()]
+            ];
+            fields.forEach(function(pair) {
+                pair[0].style.borderColor = pair[1] ? 'var(--error)' : '';
+                pair[0].style.boxShadow = pair[1] ? '0 0 0 3px var(--error-light)' : '';
+                if (pair[1]) ok = false
+            });
+            if (ok) {
+                var b = document.getElementById('fBtn');
+                b.textContent = 'Sending...';
+                b.disabled = true;
+                setTimeout(function() {
+                    b.textContent = '\u2713 Message Sent!';
+                    b.style.background = 'var(--secondary)';
+                    b.style.animation = 'none';
+                    setTimeout(function() {
+                        document.getElementById('cForm').reset();
+                        b.textContent = 'Send Message \u2192';
+                        b.style.background = '';
+                        b.style.animation = '';
+                        b.disabled = false
+                    }, 3000)
+                }, 1500)
+            }
+        });
+        document.querySelectorAll('.finp,.ftxt,.fsel').forEach(function(el) {
+            el.addEventListener('input', function() {
+                this.style.borderColor = '';
+                this.style.boxShadow = ''
+            })
+        });
+        window.matchMedia('(max-width:768px)').addEventListener('change', function(e) {
+            if (!e.matches) closeM()
+        });
     </script>
 </body>
 
