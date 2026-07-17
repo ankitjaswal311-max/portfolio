@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankit Jaswal | WordPress & Shopify Expert</title>
+    <meta name="description" content="Ankit Jaswal - Senior WordPress & Shopify Developer with 4+ years of experience building high-performance websites and eCommerce stores.">
+    <title>Ankit Jaswal | Senior WordPress & Shopify Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *,
         *::before,
@@ -18,43 +19,43 @@
         }
         
          :root {
+            --g-blue: #174EA6;
+            --g-red: #A50E0E;
+            --g-orange: #E37400;
+            --g-green: #0D652D;
+            --g-mblue: #4285F4;
+            --g-mred: #EA4335;
+            --g-yellow: #FBBC04;
+            --g-mgreen: #34A853;
+            --g-lblue: #D2E3FC;
+            --g-lred: #FAD2CF;
+            --g-lyellow: #FEEFC3;
+            --g-lgreen: #CEEAD6;
+            --g-lgrey: #F1F3F4;
+            --g-grey: #9AA0A6;
+            --g-black: #202124;
+            --g-lblue-soft: #EFF4FE;
+            --g-lred-soft: #FDEBEA;
+            --g-lyellow-soft: #FFF8E1;
+            --g-lgreen-soft: #E8F5EC;
             --bg: #fff;
-            --bg-alt: #FAFBFC;
-            --surface: #F1F3F4;
-            --surface-2: #E8EAED;
-            --primary: #1A73E8;
-            --primary-light: rgba(26, 115, 232, .07);
-            --primary-medium: rgba(26, 115, 232, .14);
-            --secondary: #34A853;
-            --secondary-light: rgba(52, 168, 83, .08);
-            --accent: #FBBC04;
-            --accent-light: rgba(251, 188, 4, .10);
-            --error: #EA4335;
-            --error-light: rgba(234, 67, 53, .08);
-            --purple: #7C4DFF;
-            --purple-light: rgba(124, 77, 255, .08);
-            --teal: #009688;
-            --teal-light: rgba(0, 150, 136, .08);
-            --shopify: #5E8E3E;
-            --shopify-bg: rgba(150, 191, 72, .09);
-            --wordpress: #21759B;
-            --wordpress-bg: rgba(33, 117, 155, .09);
+            --bg-alt: #F8F9FA;
             --text: #202124;
             --text-secondary: #5F6368;
-            --text-tertiary: #80868B;
+            --text-tertiary: #9AA0A6;
             --border: #E8EAED;
-            --code-bg: #1E1E2E;
-            --code-text: #CDD6F4;
+            --code-bg: #0d1117;
+            --code-text: #c9d1d9;
+            --code-border: #30363d;
             --sh-sm: 0 1px 3px rgba(60, 64, 67, .1), 0 1px 2px rgba(60, 64, 67, .06);
             --sh-md: 0 4px 6px rgba(60, 64, 67, .07), 0 2px 4px rgba(60, 64, 67, .06);
             --sh-lg: 0 10px 15px rgba(60, 64, 67, .08), 0 4px 6px rgba(60, 64, 67, .05);
             --sh-xl: 0 20px 25px rgba(60, 64, 67, .1), 0 8px 10px rgba(60, 64, 67, .04);
             --sh-2xl: 0 25px 50px rgba(60, 64, 67, .15);
-            --grad-1: linear-gradient(135deg, #1A73E8 0%, #7C4DFF 50%, #34A853 100%);
-            --grad-2: linear-gradient(135deg, #1A73E8 0%, #7C4DFF 100%);
-            --grad-3: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --grad-text: linear-gradient(135deg, #1A73E8 0%, #7C4DFF 40%, #34A853 100%);
-            --grad-btn-shadow: 0 6px 20px rgba(26, 115, 232, .3), 0 3px 10px rgba(124, 77, 255, .15);
+            --grad-google: linear-gradient(135deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #34A853 100%);
+            --grad-btn: linear-gradient(135deg, #174EA6 0%, #4285F4 50%, #34A853 100%);
+            --grad-text: linear-gradient(135deg, #174EA6 0%, #4285F4 50%, #34A853 100%);
+            --grad-btn-shadow: 0 6px 20px rgba(66, 133, 244, .3), 0 3px 10px rgba(23, 78, 166, .15);
             --r-sm: 8px;
             --r-md: 12px;
             --r-lg: 16px;
@@ -74,11 +75,12 @@
         }
         
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', system-ui, sans-serif;
             color: var(--text);
             background: var(--bg);
             line-height: 1.6;
-            overflow-x: hidden
+            overflow-x: hidden;
+            cursor: none
         }
         
         h1,
@@ -92,13 +94,18 @@
             font-weight: 700
         }
         
+        a,
+        button {
+            cursor: none
+        }
+        
         a {
             text-decoration: none;
             color: inherit
         }
         
         button {
-            cursor: pointer;
+            cursor: none;
             border: none;
             background: none;
             font-family: inherit
@@ -117,7 +124,9 @@
         .container {
             max-width: var(--max-w);
             margin: 0 auto;
-            padding: 0 24px
+            padding: 0 24px;
+            position: relative;
+            z-index: 2
         }
         
         .grad-text {
@@ -126,7 +135,203 @@
             -webkit-text-fill-color: transparent;
             background-clip: text
         }
-        /* ===== LOGO ===== */
+        
+        .mono {
+            font-family: 'JetBrains Mono', monospace
+        }
+        /* ===== CUSTOM CURSOR ===== */
+        
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--g-mblue);
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: width .2s, height .2s, background .2s;
+            mix-blend-mode: normal;
+            box-shadow: 0 0 12px rgba(66, 133, 244, .5)
+        }
+        
+        .cursor-ring {
+            width: 36px;
+            height: 36px;
+            border: 1.5px solid var(--g-mblue);
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 99998;
+            transform: translate(-50%, -50%);
+            transition: width .3s var(--ease), height .3s var(--ease), border-color .3s, background .3s;
+            opacity: .6
+        }
+        
+        .cursor-dot.hover {
+            width: 0;
+            height: 0;
+            background: transparent
+        }
+        
+        .cursor-ring.hover {
+            width: 64px;
+            height: 64px;
+            background: rgba(66, 133, 244, .1);
+            border-color: var(--g-mblue);
+            opacity: 1
+        }
+        
+        .cursor-dot.click {
+            width: 14px;
+            height: 14px
+        }
+        
+        .cursor-ring.click {
+            width: 20px;
+            height: 20px
+        }
+        
+        @media(hover:none),
+        (pointer:coarse) {
+            .cursor-dot,
+            .cursor-ring {
+                display: none
+            }
+            body,
+            a,
+            button {
+                cursor: auto
+            }
+        }
+        /* Cursor glow follower */
+        
+        .cursor-glow {
+            width: 400px;
+            height: 400px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(66, 133, 244, .08) 0%, transparent 60%);
+            transition: opacity .3s;
+            opacity: 0
+        }
+        
+        body:hover .cursor-glow {
+            opacity: 1
+        }
+        
+        @media(hover:none),
+        (pointer:coarse) {
+            .cursor-glow {
+                display: none
+            }
+        }
+        /* BG PATTERNS */
+        
+        .bg-dots-grid {
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, #E8EAED 1px, transparent 1px);
+            background-size: 32px 32px;
+            opacity: .6;
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .bg-lines-diagonal {
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 24px, rgba(66, 133, 244, .025) 24px, rgba(66, 133, 244, .025) 25px);
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .bg-lines-horizontal {
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(232, 234, 237, .4) 39px, rgba(232, 234, 237, .4) 40px);
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .bg-grid-subtle {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(232, 234, 237, .5) 1px, transparent 1px), linear-gradient(90deg, rgba(232, 234, 237, .5) 1px, transparent 1px);
+            background-size: 64px 64px;
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .bg-crosses {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23E8EAED' stroke-width='1'%3E%3Cpath d='M24 20v8M20 24h8'/%3E%3C/g%3E%3C/svg%3E");
+            opacity: .7;
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .bg-iso {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(30deg, rgba(232, 234, 237, .4) 1px, transparent 1px), linear-gradient(-30deg, rgba(232, 234, 237, .4) 1px, transparent 1px);
+            background-size: 52px 52px;
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .bg-code-lines {
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(66, 133, 244, .04) 27px, rgba(66, 133, 244, .04) 28px);
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .fade-top-bottom {
+            mask-image: linear-gradient(180deg, transparent 0%, black 15%, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 15%, black 85%, transparent 100%)
+        }
+        
+        .fade-radial {
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 90%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 90%)
+        }
+        
+        .glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: .15;
+            pointer-events: none;
+            z-index: 0
+        }
+        
+        .glow-blue {
+            background: #4285F4
+        }
+        
+        .glow-green {
+            background: #34A853
+        }
+        
+        .glow-red {
+            background: #EA4335
+        }
+        
+        .glow-yellow {
+            background: #FBBC04
+        }
+        /* LOGO */
         
         .logo-mark {
             width: 40px;
@@ -143,7 +348,7 @@
         .logo-mark-bg {
             position: absolute;
             inset: 0;
-            background: var(--grad-1);
+            background: var(--grad-btn);
             background-size: 200% 200%;
             animation: grad-shift 5s ease infinite
         }
@@ -162,9 +367,6 @@
             position: relative;
             z-index: 1;
             color: #fff;
-            font-family: 'Manrope', sans-serif;
-            font-weight: 800;
-            font-size: 1.125rem;
             display: flex;
             align-items: center;
             justify-content: center
@@ -198,12 +400,13 @@
             background: rgba(255, 255, 255, .8);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            transition: var(--tn) var(--ease)
+            transition: var(--tn) var(--ease);
+            border-bottom: 1px solid transparent
         }
         
         .nav.scrolled {
             background: rgba(255, 255, 255, .95);
-            box-shadow: 0 1px 0 var(--border)
+            border-bottom-color: var(--border)
         }
         
         .nav .container {
@@ -239,15 +442,15 @@
         
         .nav-link:hover,
         .nav-link.active {
-            color: var(--primary);
-            background: var(--primary-light)
+            color: var(--g-mblue);
+            background: var(--g-lblue-soft)
         }
         
         .nav-end {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-left: 10px
+            gap: 10px;
+            margin-left: 12px
         }
         
         .btn-grad {
@@ -255,7 +458,7 @@
             align-items: center;
             gap: 8px;
             padding: 10px 24px;
-            background: var(--grad-1);
+            background: var(--grad-btn);
             color: #fff;
             border-radius: var(--r-full);
             font-size: .8125rem;
@@ -273,10 +476,6 @@
         .btn-grad:hover {
             box-shadow: var(--grad-btn-shadow);
             transform: translateY(-2px)
-        }
-        
-        .btn-grad:active {
-            transform: translateY(0)
         }
         
         .btn-grad-lg {
@@ -301,9 +500,9 @@
         }
         
         .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            background: var(--primary-light);
+            border-color: var(--g-mblue);
+            color: var(--g-blue);
+            background: var(--g-lblue-soft);
             transform: translateY(-2px)
         }
         
@@ -349,7 +548,31 @@
             height: 18px;
             flex-shrink: 0
         }
-        /* MOBILE */
+        
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 18px;
+            border-radius: var(--r-full);
+            font-size: .8125rem;
+            font-weight: 500;
+            border: 1.5px solid var(--border);
+            color: var(--text-secondary);
+            transition: var(--tn);
+            background: var(--bg)
+        }
+        
+        .dl-btn:hover {
+            border-color: var(--g-mblue);
+            color: var(--g-blue);
+            background: var(--g-lblue-soft)
+        }
+        
+        .dl-btn svg {
+            width: 16px;
+            height: 16px
+        }
         
         .mob-toggle {
             display: none;
@@ -432,8 +655,8 @@
         }
         
         .mob-link:hover {
-            background: var(--primary-light);
-            color: var(--primary)
+            background: var(--g-lblue-soft);
+            color: var(--g-blue)
         }
         
         .mob-divider {
@@ -446,7 +669,7 @@
             display: block;
             margin-top: 16px;
             padding: 15px 24px;
-            background: var(--grad-1);
+            background: var(--grad-btn);
             color: #fff;
             border-radius: var(--r-md);
             font-size: 1rem;
@@ -462,13 +685,17 @@
         /* SECTIONS */
         
         .section {
-            padding: 96px 0
+            padding: 96px 0;
+            position: relative;
+            overflow: hidden
         }
         
         .section-header {
             text-align: center;
             max-width: 640px;
-            margin: 0 auto 56px
+            margin: 0 auto 56px;
+            position: relative;
+            z-index: 3
         }
         
         .section-label {
@@ -481,32 +708,44 @@
             font-weight: 700;
             margin-bottom: 14px;
             letter-spacing: .08em;
-            text-transform: uppercase
+            text-transform: uppercase;
+            font-family: 'JetBrains Mono', monospace
+        }
+        
+        .section-label::before {
+            content: '//';
+            font-weight: 700;
+            opacity: .6
         }
         
         .sl-blue {
-            background: var(--primary-light);
-            color: var(--primary)
+            background: var(--g-lblue);
+            color: var(--g-blue)
+        }
+        
+        .sl-red {
+            background: var(--g-lred);
+            color: var(--g-red)
+        }
+        
+        .sl-yellow {
+            background: var(--g-lyellow);
+            color: var(--g-orange)
         }
         
         .sl-green {
-            background: var(--shopify-bg);
-            color: var(--shopify)
+            background: var(--g-lgreen);
+            color: var(--g-green)
         }
         
         .sl-purple {
-            background: var(--purple-light);
-            color: var(--purple)
+            background: var(--g-lblue);
+            color: var(--g-blue)
         }
         
         .sl-teal {
-            background: var(--teal-light);
-            color: var(--teal)
-        }
-        
-        .sl-orange {
-            background: var(--accent-light);
-            color: #E37400
+            background: var(--g-lgreen);
+            color: var(--g-green)
         }
         
         .section-title {
@@ -519,7 +758,7 @@
             color: var(--text-secondary);
             line-height: 1.75
         }
-        /* HERO */
+        /* ===== HERO ===== */
         
         .hero {
             min-height: 100vh;
@@ -527,45 +766,17 @@
             align-items: center;
             padding-top: var(--nav-h);
             position: relative;
-            overflow: hidden
-        }
-        
-        .hero-grid {
-            position: absolute;
-            inset: 0;
-            background-image: radial-gradient(circle at 1px 1px, var(--surface-2) 1px, transparent 0);
-            background-size: 40px 40px;
-            opacity: .4;
-            pointer-events: none
-        }
-        
-        .hero-blob1 {
-            position: absolute;
-            top: -25%;
-            right: -12%;
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(26, 115, 232, .06) 0%, transparent 70%);
-            pointer-events: none
-        }
-        
-        .hero-blob2 {
-            position: absolute;
-            bottom: -30%;
-            left: -12%;
-            width: 550px;
-            height: 550px;
-            background: radial-gradient(circle, rgba(124, 77, 255, .05) 0%, transparent 70%);
-            pointer-events: none
+            overflow: hidden;
+            background: var(--bg)
         }
         
         .hero .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.05fr .95fr;
             gap: 64px;
             align-items: center;
             position: relative;
-            z-index: 2
+            z-index: 3
         }
         
         .hero-badge {
@@ -580,15 +791,17 @@
             font-weight: 500;
             color: var(--text-secondary);
             margin-bottom: 28px;
-            box-shadow: var(--sh-sm)
+            box-shadow: var(--sh-sm);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .hero-badge-dot {
             width: 8px;
             height: 8px;
-            background: var(--secondary);
+            background: var(--g-mgreen);
             border-radius: 50%;
-            animation: pulse 2s infinite
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 0 3px rgba(52, 168, 83, .2)
         }
         
         @keyframes pulse {
@@ -607,7 +820,8 @@
             margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 7px
+            gap: 7px;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .hero-eyebrow svg {
@@ -616,23 +830,38 @@
         }
         
         .hero-title {
-            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
             font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 10px;
+            line-height: 1.05;
+            margin-bottom: 14px;
             letter-spacing: -.02em
         }
         
-        .hero-sub {
-            font-size: clamp(1rem, 1.8vw, 1.25rem);
-            color: var(--text-secondary);
-            margin-bottom: 22px;
-            line-height: 1.65
+        .hero-title::before {
+            content: '<';
+            color: var(--g-mblue);
+            opacity: .4;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 400;
+            margin-right: 6px
         }
         
-        .hero-sub strong {
-            color: var(--text);
-            font-weight: 600
+        .hero-title::after {
+            content: ' />';
+            color: var(--g-mblue);
+            opacity: .4;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 400;
+            font-size: .6em;
+            vertical-align: middle
+        }
+        
+        .hero-sub {
+            font-size: clamp(1rem, 1.8vw, 1.1875rem);
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.7;
+            max-width: 520px
         }
         
         .hero-pills {
@@ -653,12 +882,15 @@
             align-items: center;
             gap: 6px;
             color: var(--text-secondary);
-            transition: var(--tf)
+            transition: var(--tf);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .hero-pill:hover {
             transform: translateY(-2px);
-            box-shadow: var(--sh-sm)
+            box-shadow: var(--sh-sm);
+            border-color: var(--g-mblue);
+            color: var(--g-blue)
         }
         
         .hp-dot {
@@ -676,16 +908,17 @@
         
         .hero-stats {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            background: var(--bg-alt);
+            grid-template-columns: repeat(4, 1fr);
+            background: var(--bg);
             border: 1px solid var(--border);
             border-radius: var(--r-xl);
-            overflow: hidden
+            overflow: hidden;
+            box-shadow: var(--sh-sm)
         }
         
         .hero-stat {
             text-align: center;
-            padding: 20px 16px;
+            padding: 20px 12px;
             position: relative
         }
         
@@ -701,171 +934,137 @@
         
         .hs-val {
             font-family: 'Manrope', sans-serif;
-            font-size: 1.625rem;
+            font-size: 1.5rem;
             font-weight: 800
         }
         
         .hs-lbl {
-            font-size: .75rem;
+            font-size: .6875rem;
             color: var(--text-secondary);
             margin-top: 2px
         }
+        /* ===== HERO IMAGE (real photo) ===== */
         
         .hero-visual {
             position: relative;
             display: flex;
-            justify-content: center
+            justify-content: center;
+            align-items: center
         }
-        /* CODE WINDOW */
         
-        .cw {
+        .photo-wrap {
+            position: relative;
             width: 100%;
-            max-width: 500px;
-            background: var(--code-bg);
+            max-width: 440px;
+            padding: 20px
+        }
+        
+        .photo-glow {
+            position: absolute;
+            inset: 20px;
+            background: var(--grad-google);
+            background-size: 200% 200%;
+            animation: grad-shift 6s ease infinite;
+            filter: blur(70px);
+            opacity: .35;
             border-radius: var(--r-2xl);
-            overflow: hidden;
-            box-shadow: var(--sh-2xl)
+            z-index: 0
         }
         
-        .cw-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 18px;
-            background: rgba(255, 255, 255, .04);
-            border-bottom: 1px solid rgba(255, 255, 255, .06)
+        .photo-frame {
+            position: relative;
+            animation: grad-shift 6s ease infinite;
         }
         
-        .cw-dots {
-            display: flex;
-            gap: 6px
+        .photo-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
         }
         
-        .cw-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%
-        }
-        
-        .cw-dot:nth-child(1) {
-            background: #FF5F57
-        }
-        
-        .cw-dot:nth-child(2) {
-            background: #FEBC2E
-        }
-        
-        .cw-dot:nth-child(3) {
-            background: #28C840
-        }
-        
-        .cw-title {
-            flex: 1;
-            text-align: center;
-            font-size: .6875rem;
-            color: #6C7086;
-            font-family: 'JetBrains Mono', monospace
-        }
-        
-        .cw-tabs {
-            display: flex;
-            padding: 0 14px;
-            background: rgba(255, 255, 255, .02);
-            border-bottom: 1px solid rgba(255, 255, 255, .05);
-            overflow-x: auto
-        }
-        
-        .cw-tab {
-            padding: 9px 14px;
-            font-size: .6875rem;
-            font-family: 'JetBrains Mono', monospace;
-            color: #6C7086;
-            border-bottom: 2px solid transparent;
-            cursor: pointer;
-            white-space: nowrap
-        }
-        
-        .cw-tab.on {
-            color: var(--code-text);
-            border-bottom-color: var(--primary)
-        }
-        
-        .cw-body {
-            padding: 20px;
-            overflow-x: auto
-        }
-        
-        .cw-pane {
-            display: none
-        }
-        
-        .cw-pane.on {
+        .photo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
             display: block
         }
         
-        .cl {
+        .photo-verified {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 46px;
+            height: 46px;
+            background: var(--g-mblue);
+            color: #fff;
+            border-radius: 50%;
             display: flex;
-            gap: 14px;
-            line-height: 1.75;
-            font-size: .75rem
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--bg);
+            box-shadow: var(--sh-md);
+            z-index: 3
         }
         
-        .cl-n {
-            color: #6C7086;
-            user-select: none;
-            min-width: 18px;
-            text-align: right;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem
+        .photo-verified svg {
+            width: 20px;
+            height: 20px
         }
         
-        .cl-c {
-            white-space: pre;
-            font-family: 'JetBrains Mono', monospace
+        .photo-info {
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--r-full);
+            padding: 10px 22px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: var(--sh-lg);
+            z-index: 4;
+            white-space: nowrap
         }
         
-        .ck {
-            color: #CBA6F7
+        .photo-info-name {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2
         }
         
-        .cf {
-            color: #89B4FA
+        .photo-info-name strong {
+            font-size: .8125rem;
+            font-weight: 800;
+            font-family: 'Manrope', sans-serif
         }
         
-        .cs {
-            color: #A6E3A1
+        .photo-info-name span {
+            font-size: .6875rem;
+            color: var(--text-secondary);
+            margin-top: 2px
         }
         
-        .cc {
-            color: #6C7086;
-            font-style: italic
+        .photo-info-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: .75rem;
+            font-weight: 600;
+            color: var(--g-green);
+            padding-left: 16px;
+            border-left: 1px solid var(--border)
         }
         
-        .cv {
-            color: #F38BA8
-        }
-        
-        .cp {
-            color: #BAC2DE
-        }
-        
-        .cursor {
-            display: inline-block;
-            width: 2px;
-            height: .9em;
-            background: var(--primary);
-            animation: blink 1s step-end infinite;
-            vertical-align: text-bottom
-        }
-        
-        @keyframes blink {
-            0%,
-            100% {
-                opacity: 1
-            }
-            50% {
-                opacity: 0
-            }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--g-mgreen);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 0 3px rgba(52, 168, 83, .2)
         }
         
         .hf {
@@ -877,25 +1076,25 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            z-index: 3;
+            z-index: 5;
             border: 1px solid var(--border)
         }
         
         .hf1 {
-            top: 16px;
-            right: -16px;
+            top: 30px;
+            right: -20px;
             animation: fl 6s ease-in-out infinite
         }
         
         .hf2 {
-            bottom: 36px;
-            left: -24px;
+            top: 45%;
+            left: -30px;
             animation: fl 7s ease-in-out infinite .5s
         }
         
         .hf3 {
-            top: 52%;
-            right: -36px;
+            bottom: 100px;
+            right: -30px;
             animation: fl 8s ease-in-out infinite 1s
         }
         
@@ -926,7 +1125,7 @@
         
         .fl-t {
             font-size: .75rem;
-            font-weight: 600
+            font-weight: 700
         }
         
         .fl-s {
@@ -939,8 +1138,9 @@
             padding: 36px 0;
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
-            background: var(--bg-alt);
-            overflow: hidden
+            background: var(--g-lgrey);
+            overflow: hidden;
+            position: relative
         }
         
         .marq-lbl {
@@ -950,13 +1150,14 @@
             color: var(--text-tertiary);
             text-transform: uppercase;
             letter-spacing: .15em;
-            margin-bottom: 20px
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .marq-track {
             display: flex;
             gap: 44px;
-            animation: marq 30s linear infinite;
+            animation: marq 32s linear infinite;
             width: max-content
         }
         
@@ -976,7 +1177,8 @@
             font-size: .8125rem;
             font-weight: 600;
             color: var(--text-secondary);
-            white-space: nowrap
+            white-space: nowrap;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .mdi {
@@ -987,13 +1189,16 @@
         /* SERVICES */
         
         .services-sec {
-            background: var(--bg-alt)
+            background: var(--bg-alt);
+            position: relative
         }
         
         .srv-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 18px
+            gap: 18px;
+            position: relative;
+            z-index: 3
         }
         
         .srv-card {
@@ -1002,13 +1207,34 @@
             border-radius: var(--r-lg);
             padding: 24px;
             transition: var(--tn);
-            cursor: pointer
+            cursor: none;
+            position: relative;
+            overflow: hidden
+        }
+        
+        .srv-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--grad-btn);
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite;
+            transform: scaleX(0);
+            transition: var(--tn);
+            transform-origin: left
         }
         
         .srv-card:hover {
-            box-shadow: var(--sh-md);
-            transform: translateY(-3px);
+            box-shadow: var(--sh-lg);
+            transform: translateY(-4px);
             border-color: transparent
+        }
+        
+        .srv-card:hover::before {
+            transform: scaleX(1)
         }
         
         .srv-ic {
@@ -1018,7 +1244,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 14px
+            margin-bottom: 14px;
+            transition: var(--tn)
+        }
+        
+        .srv-card:hover .srv-ic {
+            transform: scale(1.1) rotate(-5deg)
         }
         
         .srv-ic svg {
@@ -1040,7 +1271,8 @@
         /* PROJECTS */
         
         .proj-sec {
-            background: var(--bg)
+            background: var(--bg);
+            position: relative
         }
         
         .proj-tabs {
@@ -1048,7 +1280,9 @@
             gap: 8px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 48px
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 3
         }
         
         .proj-tab {
@@ -1058,22 +1292,25 @@
             font-weight: 600;
             border: 1.5px solid var(--border);
             color: var(--text-secondary);
-            cursor: pointer;
+            cursor: none;
             background: var(--bg);
-            transition: var(--tn)
+            transition: var(--tn);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .proj-tab.on,
         .proj-tab:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            background: var(--primary-light)
+            border-color: var(--g-mblue);
+            color: var(--g-blue);
+            background: var(--g-lblue-soft)
         }
         
         .proj-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px
+            gap: 24px;
+            position: relative;
+            z-index: 3
         }
         
         .proj-card {
@@ -1093,25 +1330,29 @@
         .proj-thumb {
             position: relative;
             aspect-ratio: 16/10;
-            overflow: hidden
+            overflow: hidden;
+            background: var(--g-lgrey)
         }
         
-        .proj-thumb-ph {
+        .proj-thumb-img {
             position: absolute;
             inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Manrope', sans-serif;
-            font-weight: 800;
-            font-size: 1.375rem;
-            color: rgba(255, 255, 255, .9)
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform .6s var(--ease);
+            display: block
+        }
+        
+        .proj-card:hover .proj-thumb-img {
+            transform: scale(1.05)
         }
         
         .proj-thumb-ov {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, .55) 100%);
+            background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, .7) 100%);
             opacity: 0;
             transition: var(--tn);
             display: flex;
@@ -1135,7 +1376,8 @@
             font-weight: 700;
             letter-spacing: .04em;
             text-transform: uppercase;
-            margin-bottom: 10px
+            margin-bottom: 10px;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .proj-card h3 {
@@ -1160,12 +1402,13 @@
         
         .ptag {
             padding: 3px 9px;
-            background: var(--surface);
+            background: var(--g-lgrey);
             border: 1px solid var(--border);
             border-radius: var(--r-full);
             font-size: .625rem;
             font-weight: 600;
-            color: var(--text-secondary)
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .proj-results {
@@ -1194,7 +1437,8 @@
             font-size: .5625rem;
             color: var(--text-tertiary);
             text-transform: uppercase;
-            margin-top: 2px
+            margin-top: 2px;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .proj-btns {
@@ -1221,7 +1465,7 @@
         }
         
         .pbtn-g {
-            background: var(--grad-1);
+            background: var(--grad-btn);
             color: #fff;
             background-size: 200% 200%;
             animation: grad-shift 5s ease infinite;
@@ -1238,126 +1482,162 @@
         }
         
         .pbtn-o:hover {
-            border-color: var(--primary);
-            color: var(--primary)
+            border-color: var(--g-mblue);
+            color: var(--g-blue)
         }
         /* EXPERIENCE */
         
         .exp-sec {
-            background: var(--bg-alt)
-        }
-        
-        .timeline {
-            max-width: 740px;
-            margin: 0 auto;
+            background: var(--bg-alt);
             position: relative
         }
         
-        .timeline::before {
+        .exp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3
+        }
+        
+        .exp-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--r-xl);
+            padding: 32px;
+            transition: var(--tn);
+            position: relative;
+            overflow: hidden
+        }
+        
+        .exp-card::before {
             content: '';
             position: absolute;
-            left: 27px;
             top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--grad-2)
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--grad-btn);
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite;
+            transform: scaleX(0);
+            transition: var(--tn);
+            transform-origin: left
         }
         
-        .ti {
-            position: relative;
-            padding-left: 72px;
-            padding-bottom: 44px
+        .exp-card:hover {
+            box-shadow: var(--sh-lg);
+            transform: translateY(-4px)
         }
         
-        .ti:last-child {
-            padding-bottom: 0
+        .exp-card:hover::before {
+            transform: scaleX(1)
         }
         
-        .ti-dot {
-            position: absolute;
-            left: 17px;
-            top: 4px;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            background: var(--bg);
-            border: 3px solid var(--primary);
-            z-index: 1
+        .exp-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px
         }
         
-        .ti:first-child .ti-dot {
-            background: var(--grad-1);
-            border: none;
-            box-shadow: 0 0 0 4px rgba(26, 115, 232, .22)
-        }
-        
-        .ti-date {
+        .exp-date {
             font-size: .6875rem;
             font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 6px;
-            display: inline-flex;
-            padding: 2px 9px;
-            background: var(--primary-light);
-            border-radius: var(--r-full)
+            color: var(--g-blue);
+            padding: 4px 11px;
+            background: var(--g-lblue);
+            border-radius: var(--r-full);
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-family: 'JetBrains Mono', monospace
         }
         
-        .ti h3 {
+        .exp-card h3 {
             font-size: 1.0625rem;
-            margin-bottom: 3px
+            margin-bottom: 4px;
+            font-weight: 800
         }
         
-        .ti-co {
+        .exp-co {
             font-size: .875rem;
             color: var(--text-secondary);
             font-weight: 500;
-            margin-bottom: 10px
+            margin-bottom: 4px
         }
         
-        .ti-desc {
+        .exp-loc {
+            font-size: .75rem;
+            color: var(--text-tertiary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-family: 'JetBrains Mono', monospace
+        }
+        
+        .exp-loc svg {
+            width: 12px;
+            height: 12px
+        }
+        
+        .exp-list {
             font-size: .8125rem;
             color: var(--text-secondary);
             line-height: 1.7
         }
         
-        .ti-desc li {
+        .exp-list li {
             position: relative;
-            padding-left: 14px;
-            margin-bottom: 3px
+            padding-left: 16px;
+            margin-bottom: 6px
         }
         
-        .ti-desc li::before {
-            content: '\25B8';
+        .exp-list li::before {
+            content: '';
             position: absolute;
             left: 0;
-            color: var(--primary)
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--grad-btn);
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite
         }
         
-        .ti-tags {
+        .exp-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 5px;
-            margin-top: 10px
+            margin-top: 16px
         }
         
-        .titag {
-            padding: 2px 9px;
-            background: var(--surface);
+        .exp-tag {
+            padding: 3px 9px;
+            background: var(--g-lgrey);
             border-radius: var(--r-full);
             font-size: .625rem;
             font-weight: 600;
-            color: var(--text-secondary)
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace
         }
         /* SKILLS */
         
         .skills-sec {
-            background: var(--bg)
+            background: var(--bg);
+            position: relative
         }
         
         .sk-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 18px
+            gap: 18px;
+            position: relative;
+            z-index: 3
         }
         
         .sk-card {
@@ -1370,7 +1650,8 @@
         
         .sk-card:hover {
             box-shadow: var(--sh-md);
-            border-color: transparent
+            border-color: transparent;
+            transform: translateY(-2px)
         }
         
         .sk-head {
@@ -1386,7 +1667,12 @@
             border-radius: var(--r-sm);
             display: flex;
             align-items: center;
-            justify-content: center
+            justify-content: center;
+            transition: var(--tn)
+        }
+        
+        .sk-card:hover .sk-ic {
+            transform: scale(1.1) rotate(-5deg)
         }
         
         .sk-ic svg {
@@ -1407,36 +1693,26 @@
         
         .sktag {
             padding: 4px 11px;
-            background: var(--surface);
+            background: var(--g-lgrey);
             border: 1px solid transparent;
             border-radius: var(--r-full);
             font-size: .6875rem;
             font-weight: 500;
             color: var(--text-secondary);
-            transition: var(--tf)
+            transition: var(--tf);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .sktag:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            background: var(--primary-light)
+            border-color: var(--g-mblue);
+            color: var(--g-blue);
+            background: var(--g-lblue-soft)
         }
-        /* ===== PROCESS — NEW ===== */
+        /* PROCESS */
         
         .proc-sec {
-            background: linear-gradient(180deg, var(--bg-alt), var(--bg));
-            position: relative;
-            overflow: hidden
-        }
-        
-        .proc-sec::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: radial-gradient(circle at 1px 1px, var(--surface-2) 1px, transparent 0);
-            background-size: 40px 40px;
-            opacity: .3;
-            pointer-events: none
+            background: var(--bg-alt);
+            position: relative
         }
         
         .proc-grid {
@@ -1444,7 +1720,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             position: relative;
-            z-index: 1
+            z-index: 3
         }
         
         .proc-card {
@@ -1461,7 +1737,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, var(--primary-light), transparent);
+            background: linear-gradient(135deg, var(--g-lblue-soft), transparent);
             opacity: 0;
             transition: var(--tn);
             border-radius: inherit
@@ -1481,7 +1757,7 @@
             position: absolute;
             top: 16px;
             right: 20px;
-            font-family: 'Manrope', sans-serif;
+            font-family: 'JetBrains Mono', monospace;
             font-size: 3.5rem;
             font-weight: 800;
             line-height: 1;
@@ -1490,12 +1766,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            opacity: .12;
+            opacity: .15;
             transition: var(--tn)
         }
         
         .proc-card:hover .proc-num {
-            opacity: .25
+            opacity: .3
         }
         
         .proc-ic {
@@ -1507,7 +1783,12 @@
             justify-content: center;
             margin-bottom: 20px;
             position: relative;
-            z-index: 1
+            z-index: 1;
+            transition: var(--tn)
+        }
+        
+        .proc-card:hover .proc-ic {
+            transform: scale(1.1) rotate(-5deg)
         }
         
         .proc-ic svg {
@@ -1525,7 +1806,8 @@
             text-transform: uppercase;
             margin-bottom: 10px;
             position: relative;
-            z-index: 1
+            z-index: 1;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .proc-card h3 {
@@ -1555,11 +1837,12 @@
         
         .ptool {
             padding: 3px 9px;
-            background: var(--surface);
+            background: var(--g-lgrey);
             border-radius: var(--r-full);
             font-size: .625rem;
             font-weight: 600;
-            color: var(--text-tertiary)
+            color: var(--text-tertiary);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .proc-arrow {
@@ -1591,7 +1874,7 @@
             gap: 24px;
             margin-top: 24px;
             position: relative;
-            z-index: 1
+            z-index: 3
         }
         
         .pstat {
@@ -1639,16 +1922,28 @@
         /* FAQ */
         
         .faq-sec {
-            background: var(--bg-alt)
+            background: var(--bg);
+            position: relative
         }
         
         .faq-wrap {
             max-width: 720px;
-            margin: 0 auto
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--r-2xl);
+            padding: 8px 32px;
+            box-shadow: var(--sh-sm)
         }
         
         .fi-item {
             border-bottom: 1px solid var(--border)
+        }
+        
+        .fi-item:last-child {
+            border-bottom: none
         }
         
         .fi-q {
@@ -1667,7 +1962,7 @@
         }
         
         .fi-q:hover {
-            color: var(--primary)
+            color: var(--g-blue)
         }
         
         .fi-chev {
@@ -1680,7 +1975,7 @@
         
         .fi-item.on .fi-chev {
             transform: rotate(180deg);
-            color: var(--primary)
+            color: var(--g-blue)
         }
         
         .fi-ans {
@@ -1695,29 +1990,155 @@
             color: var(--text-secondary);
             line-height: 1.75
         }
-        /* CTA */
+        /* ===== CTA — DEVELOPER TERMINAL STYLE (no cartoon) ===== */
         
         .cta-sec {
-            background: linear-gradient(135deg, var(--text), #3C4043);
-            padding: 80px 0
+            background: var(--code-bg);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden
+        }
+        
+        .cta-sec::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(66, 133, 244, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(66, 133, 244, .05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: .4
+        }
+        
+        .cta-sec::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(66, 133, 244, .15), transparent 50%), radial-gradient(circle at 70% 60%, rgba(52, 168, 83, .12), transparent 50%)
         }
         
         .cta-inner {
             text-align: center;
-            max-width: 580px;
-            margin: 0 auto
+            max-width: 720px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2
+        }
+        
+        .cta-terminal {
+            background: rgba(13, 17, 23, .7);
+            border: 1px solid var(--code-border);
+            border-radius: var(--r-xl);
+            padding: 0;
+            margin-bottom: 32px;
+            text-align: left;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .875rem;
+            overflow: hidden;
+            backdrop-filter: blur(10px)
+        }
+        
+        .cta-terminal-head {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, .03);
+            border-bottom: 1px solid var(--code-border)
+        }
+        
+        .cta-terminal-head .dots {
+            display: flex;
+            gap: 6px
+        }
+        
+        .cta-terminal-head .dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%
+        }
+        
+        .cta-terminal-head .dots span:nth-child(1) {
+            background: #FF5F57
+        }
+        
+        .cta-terminal-head .dots span:nth-child(2) {
+            background: #FEBC2E
+        }
+        
+        .cta-terminal-head .dots span:nth-child(3) {
+            background: #28C840
+        }
+        
+        .cta-terminal-head .title {
+            color: #8b949e;
+            font-size: .75rem;
+            margin-left: 12px
+        }
+        
+        .cta-terminal-body {
+            padding: 20px 24px;
+            color: var(--code-text);
+            line-height: 1.8
+        }
+        
+        .cta-terminal-body .prompt {
+            color: #7ee787
+        }
+        
+        .cta-terminal-body .cmd {
+            color: #79c0ff
+        }
+        
+        .cta-terminal-body .comment {
+            color: #8b949e
+        }
+        
+        .cta-terminal-body .string {
+            color: #a5d6ff
+        }
+        
+        .cta-terminal-body .keyword {
+            color: #ff7b72
+        }
+        
+        .cta-cursor-blink {
+            display: inline-block;
+            width: 8px;
+            height: 1em;
+            background: #7ee787;
+            vertical-align: text-bottom;
+            margin-left: 2px;
+            animation: tcursor 1s step-end infinite
+        }
+        
+        @keyframes tcursor {
+            0%,
+            50% {
+                opacity: 1
+            }
+            51%,
+            100% {
+                opacity: 0
+            }
         }
         
         .cta-inner h2 {
             color: #fff;
-            font-size: clamp(1.5rem, 3vw, 2.25rem);
-            margin-bottom: 14px
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            margin-bottom: 14px;
+            font-weight: 800
+        }
+        
+        .cta-inner h2 span {
+            background: var(--grad-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
         }
         
         .cta-inner p {
-            color: rgba(255, 255, 255, .7);
-            font-size: .9375rem;
-            margin-bottom: 28px;
+            color: rgba(255, 255, 255, .75);
+            font-size: 1rem;
+            margin-bottom: 32px;
             line-height: 1.7
         }
         
@@ -1730,13 +2151,16 @@
         /* CONTACT */
         
         .contact-sec {
-            background: var(--bg)
+            background: var(--bg-alt);
+            position: relative
         }
         
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1.25fr;
-            gap: 44px
+            gap: 44px;
+            position: relative;
+            z-index: 3
         }
         
         .ci h3 {
@@ -1765,12 +2189,13 @@
             padding: 14px;
             border: 1px solid var(--border);
             border-radius: var(--r-lg);
-            transition: var(--tf)
+            transition: var(--tf);
+            background: var(--bg)
         }
         
         .c-method:hover {
-            border-color: var(--primary);
-            background: var(--primary-light)
+            border-color: var(--g-mblue);
+            background: var(--g-lblue-soft)
         }
         
         .c-mi {
@@ -1790,12 +2215,22 @@
         
         .c-ml {
             font-size: .6875rem;
-            color: var(--text-secondary)
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .c-mv {
             font-weight: 600;
             font-size: .875rem
+        }
+        
+        .c-mv a {
+            color: inherit;
+            transition: var(--tf)
+        }
+        
+        .c-mv a:hover {
+            color: var(--g-mblue)
         }
         
         .social-row {
@@ -1808,6 +2243,7 @@
             height: 40px;
             border-radius: 50%;
             border: 1px solid var(--border);
+            background: var(--bg);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1816,8 +2252,8 @@
         }
         
         .sl-btn:hover {
-            background: var(--primary);
-            border-color: var(--primary);
+            background: var(--g-mblue);
+            border-color: var(--g-mblue);
             color: #fff;
             transform: translateY(-2px)
         }
@@ -1847,8 +2283,16 @@
         }
         
         .flbl .req {
-            color: var(--error);
+            color: var(--g-mred);
             margin-left: 2px
+        }
+        
+        .flbl .cur {
+            font-size: .6875rem;
+            color: var(--text-tertiary);
+            font-weight: 500;
+            margin-left: 6px;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .finp,
@@ -1862,21 +2306,17 @@
             font-family: 'Inter', sans-serif;
             color: var(--text);
             transition: var(--tf);
-            background: var(--bg-alt)
+            background: var(--bg-alt);
+            cursor: none
         }
         
         .finp:focus,
         .ftxt:focus,
         .fsel:focus {
             outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px var(--primary-medium);
+            border-color: var(--g-mblue);
+            box-shadow: 0 0 0 3px var(--g-lblue-soft);
             background: var(--bg)
-        }
-        
-        .finp::placeholder,
-        .ftxt::placeholder {
-            color: var(--text-tertiary)
         }
         
         .ftxt {
@@ -1899,14 +2339,14 @@
         .f-submit {
             width: 100%;
             padding: 15px;
-            background: var(--grad-1);
+            background: var(--grad-btn);
             color: #fff;
             border: none;
             border-radius: var(--r-md);
             font-size: 1rem;
             font-weight: 700;
             font-family: 'Manrope', sans-serif;
-            cursor: pointer;
+            cursor: none;
             transition: var(--tn);
             background-size: 200% 200%;
             animation: grad-shift 5s ease infinite;
@@ -1922,14 +2362,17 @@
             font-size: .75rem;
             color: var(--text-tertiary);
             margin-top: 12px;
-            text-align: center
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace
         }
         /* FOOTER */
         
         .footer {
-            background: var(--text);
+            background: var(--g-black);
             color: rgba(255, 255, 255, .6);
-            padding: 44px 0 22px
+            padding: 44px 0 22px;
+            position: relative;
+            overflow: hidden
         }
         
         .foot-top {
@@ -1965,7 +2408,8 @@
         
         .foot-link {
             font-size: .8125rem;
-            transition: var(--tf)
+            transition: var(--tf);
+            font-family: 'JetBrains Mono', monospace
         }
         
         .foot-link:hover {
@@ -1979,7 +2423,8 @@
             padding-top: 20px;
             font-size: .75rem;
             flex-wrap: wrap;
-            gap: 14px
+            gap: 14px;
+            font-family: 'JetBrains Mono', monospace
         }
         
         .btt {
@@ -2010,9 +2455,9 @@
         }
         
         .btt:hover {
-            background: var(--primary);
+            background: var(--g-mblue);
             color: #fff;
-            border-color: var(--primary);
+            border-color: var(--g-mblue);
             transform: translateY(-3px)
         }
         
@@ -2066,7 +2511,7 @@
             .hero .container {
                 grid-template-columns: 1fr;
                 text-align: center;
-                gap: 40px
+                gap: 60px
             }
             .hero-content {
                 order: 2;
@@ -2080,12 +2525,12 @@
             .hero-eyebrow {
                 justify-content: center
             }
-            .hf {
-                display: none
+            .hero-sub {
+                margin-left: auto;
+                margin-right: auto
             }
-            .cw {
-                max-width: 440px;
-                margin: 0 auto
+            .photo-wrap {
+                max-width: 360px
             }
             .contact-grid {
                 grid-template-columns: 1fr
@@ -2099,6 +2544,10 @@
             }
             .f-row-3 {
                 grid-template-columns: 1fr 1fr
+            }
+            .exp-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px
             }
         }
         
@@ -2121,6 +2570,9 @@
                 padding-top: calc(var(--nav-h) + 24px);
                 padding-bottom: 24px
             }
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr)
+            }
             .srv-grid,
             .sk-grid {
                 grid-template-columns: repeat(2, 1fr)
@@ -2136,7 +2588,8 @@
             .f-row-3 {
                 grid-template-columns: 1fr
             }
-            .cf-card {
+            .cf-card,
+            .faq-wrap {
                 padding: 24px
             }
             .foot-top,
@@ -2147,6 +2600,15 @@
             .cta-btns {
                 flex-direction: column;
                 align-items: center
+            }
+            .photo-wrap {
+                max-width: 300px
+            }
+            .hf {
+                display: none
+            }
+            .cta-terminal-body {
+                font-size: .75rem
             }
         }
         
@@ -2162,6 +2624,9 @@
             .hero-actions {
                 justify-content: flex-start
             }
+            .hero-sub {
+                margin-left: 0
+            }
             .hero-actions {
                 flex-direction: column;
                 align-items: stretch
@@ -2171,29 +2636,16 @@
                 grid-template-columns: 1fr
             }
             .hero-stats {
-                grid-template-columns: repeat(3, 1fr)
+                grid-template-columns: repeat(2, 1fr)
             }
             .hero-stat {
-                padding: 14px 6px
+                padding: 14px 8px
             }
             .hs-val {
                 font-size: 1.25rem
             }
-        }
-        
-        @media(max-width:380px) {
-            .hero-stats {
-                grid-template-columns: 1fr
-            }
-            .hero-stat {
-                border-bottom: 1px solid var(--border);
-                padding: 12px 8px
-            }
-            .hero-stat:last-child {
-                border-bottom: none
-            }
-            .hero-stat::after {
-                display: none!important
+            .photo-wrap {
+                max-width: 260px
             }
         }
         
@@ -2209,7 +2661,7 @@
         }
         
          :focus-visible {
-            outline: 3px solid var(--primary);
+            outline: 3px solid var(--g-mblue);
             outline-offset: 2px;
             border-radius: 4px
         }
@@ -2217,40 +2669,43 @@
 </head>
 
 <body>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
     <nav class="nav" id="nav">
         <div class="container">
             <a href="#" class="nav-logo">
                 <div class="logo-mark">
                     <div class="logo-mark-bg"></div>
                     <div class="logo-mark-inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-                </div>
-                <span>Ankit Jaswal</span>
-            </a>
+                </div><span>Ankit Jaswal</span></a>
             <div class="nav-links"><a href="#services" class="nav-link">Services</a><a href="#projects" class="nav-link">Projects</a><a href="#experience" class="nav-link">Experience</a><a href="#skills" class="nav-link">Skills</a><a href="#process" class="nav-link">Process</a>
-                <a
-                    href="#faq" class="nav-link">FAQ</a>
+                <a href="#faq" class="nav-link">FAQ</a>
             </div>
-            <div class="nav-end"><a href="#contact" class="btn-grad">Hire Me</a></div>
-            <button class="mob-toggle" id="mobToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-        </div>
+            <div class="nav-end"><a href="#" class="dl-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Resume</a>
+                <a href="#contact" class="btn-grad">Hire Me</a>
+            </div><button class="mob-toggle" id="mobToggle" aria-label="Menu"><span></span><span></span><span></span></button></div>
     </nav>
     <div class="mob-overlay" id="mobOverlay"></div>
     <div class="mob-menu" id="mobMenu"><a href="#services" class="mob-link">Services</a><a href="#projects" class="mob-link">Projects</a><a href="#experience" class="mob-link">Experience</a><a href="#skills" class="mob-link">Skills</a><a href="#process" class="mob-link">Process</a><a href="#faq"
             class="mob-link">FAQ</a>
-        <div class="mob-divider"></div><a href="#contact" class="mob-cta">Hire Me →</a></div>
+        <div class="mob-divider"></div><a href="#contact" class="mob-cta">Hire Me &rarr;</a></div>
 
     <main id="main">
-        <!-- HERO -->
+        <!-- HERO with real photo -->
         <section class="hero" id="hero">
-            <div class="hero-grid"></div>
-            <div class="hero-blob1"></div>
-            <div class="hero-blob2"></div>
+            <div class="bg-dots-grid fade-radial"></div>
+            <div class="glow glow-blue" style="width:500px;height:500px;top:-15%;right:-10%"></div>
+            <div class="glow glow-green" style="width:400px;height:400px;bottom:-20%;left:-10%"></div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge rev"><span class="hero-badge-dot"></span>Available for projects</div>
-                    <p class="hero-eyebrow rev d1 grad-text"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Senior Developer · 4.5+ Years</p>
-                    <h1 class="hero-title rev d1">I Build With<br><span class="grad-text">WordPress & Shopify</span></h1>
-                    <p class="hero-sub rev d2">Custom <strong>Shopify apps</strong>, <strong>WordPress hooks</strong>, <strong>BigCommerce</strong>, <strong>HubSpot</strong> & <strong>Google Ads</strong> — built to grow businesses.</p>
+                    <div class="hero-badge rev"><span class="hero-badge-dot"></span>const status = "available_for_hire"</div>
+                    <p class="hero-eyebrow rev d1 grad-text"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Senior Developer &middot; 4+ Years &middot; Zirakpur, Punjab</p>
+                    <h1 class="hero-title rev d1"><span class="grad-text">Ankit Jaswal</span></h1>
+                    <p class="hero-sub rev d2">Senior WordPress &amp; Shopify Developer specializing in custom themes, plugins, WooCommerce, Shopify Liquid, performance optimization, and conversion-focused eCommerce solutions for clients worldwide.</p>
                     <div class="hero-pills rev d3" id="heroPills"></div>
                     <div class="hero-actions rev d4">
                         <a href="#contact" class="btn-grad btn-grad-lg">Hire Me <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -2258,109 +2713,56 @@
                     </div>
                     <div class="hero-stats rev d5">
                         <div class="hero-stat">
-                            <div class="hs-val" data-count="150">0+</div>
+                            <div class="hs-val" style="color:var(--g-blue)" data-count="150">0+</div>
                             <div class="hs-lbl">Projects</div>
                         </div>
                         <div class="hero-stat">
-                            <div class="hs-val" data-count="50">0+</div>
+                            <div class="hs-val" style="color:var(--g-red)" data-count="50">0+</div>
                             <div class="hs-lbl">Clients</div>
                         </div>
                         <div class="hero-stat">
-                            <div class="hs-val" data-count="99">0%</div>
+                            <div class="hs-val" style="color:var(--g-orange)" data-count="98">0%</div>
                             <div class="hs-lbl">Satisfaction</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hs-val" style="color:var(--g-green)" data-count="4">0+</div>
+                            <div class="hs-lbl">Years Exp</div>
                         </div>
                     </div>
                 </div>
                 <div class="hero-visual rev d2">
-                    <div class="cw">
-                        <div class="cw-header">
-                            <div class="cw-dots">
-                                <div class="cw-dot"></div>
-                                <div class="cw-dot"></div>
-                                <div class="cw-dot"></div>
+                    <div class="photo-wrap">
+                        <div class="photo-glow"></div>
+                        <div class="photo-frame">
+                            <div class="photo-container">
+                                <img src="https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/profile-pic.png" alt="Ankit Jaswal - Senior WordPress & Shopify Developer" class="photo-img" loading="eager">
                             </div>
-                            <div class="cw-title">ankit-jaswal.dev</div>
+                            <div class="photo-verified" title="Verified Developer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
                         </div>
-                        <div class="cw-tabs">
-                            <div class="cw-tab on" data-tab="wp">functions.php</div>
-                            <div class="cw-tab" data-tab="shopify">theme.liquid</div>
-                            <div class="cw-tab" data-tab="react">App.jsx</div>
-                        </div>
-                        <div class="cw-body">
-                            <div class="cw-pane on" id="cw-wp">
-                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="cc">// WordPress Hook</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">2</span><span class="cl-c"><span class="ck">add_action</span><span class="cp">(</span><span class="cs">'init'</span><span class="cp">,</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">3</span><span class="cl-c">  <span class="ck">function</span><span class="cp">() {</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">    <span class="cf">register_post_type</span><span class="cp">(</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">5</span><span class="cl-c">      <span class="cs">'portfolio'</span><span class="cp">, [</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">6</span><span class="cl-c">        <span class="cs">'public'</span><span class="cp">=></span><span class="ck">true</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">7</span><span class="cl-c">    <span class="cp">]);</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">8</span><span class="cl-c">  <span class="cp">}</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">9</span><span class="cl-c"><span class="cp">);</span><span class="cursor"></span></span>
-                                </div>
-                            </div>
-                            <div class="cw-pane" id="cw-shopify">
-                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="cp">{%</span> <span class="ck">for</span> <span class="cv">product</span> <span class="ck">in</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">2</span><span class="cl-c">   <span class="cv">collection.products</span> <span class="cp">%}</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">3</span><span class="cl-c"><span class="cf">&lt;div</span> <span class="cs">class="card"</span><span class="cf">&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">  <span class="cf">&lt;h3&gt;</span><span class="cp">{{</span><span class="cv">product.title</span><span class="cp">}}</span><span class="cf">&lt;/h3&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">5</span><span class="cl-c">  <span class="cf">&lt;p&gt;</span><span class="cp">{{</span><span class="cv">product.price</span><span class="cp">|money}}</span><span class="cf">&lt;/p&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">6</span><span class="cl-c"><span class="cf">&lt;/div&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">7</span><span class="cl-c"><span class="cp">{%</span> <span class="ck">endfor</span> <span class="cp">%}</span><span class="cursor"></span></span>
-                                </div>
-                            </div>
-                            <div class="cw-pane" id="cw-react">
-                                <div class="cl"><span class="cl-n">1</span><span class="cl-c"><span class="ck">const</span> <span class="cf">Card</span><span class="cp">=({</span><span class="cv">title</span><span class="cp">,</span><span class="cv">price</span>
-                                    <span
-                                        class="cp">})=>{</span>
-                                        </span>
-                                </div>
-                                <div class="cl"><span class="cl-n">2</span><span class="cl-c">  <span class="ck">const</span> <span class="cp">[</span><span class="cv">cart</span><span class="cp">,</span><span class="cv">set</span><span class="cp">]=</span><span class="cf">useState</span>
-                                    <span
-                                        class="cp">(</span><span class="ck">false</span><span class="cp">)</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">3</span><span class="cl-c">  <span class="ck">return</span><span class="cp">(</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">4</span><span class="cl-c">    <span class="cf">&lt;div&gt;</span><span class="cp">{</span><span class="cv">title</span><span class="cp">}</span><span class="cf">&lt;/div&gt;</span></span>
-                                </div>
-                                <div class="cl"><span class="cl-n">5</span><span class="cl-c">  <span class="cp">)}</span><span class="cursor"></span></span>
-                                </div>
-                            </div>
+                        <div class="photo-info">
+                            <div class="photo-info-name"><strong>Ankit Jaswal</strong><span>Senior Developer</span></div>
+                            <div class="photo-info-status"><span class="status-dot"></span>Online</div>
                         </div>
                     </div>
                     <div class="hf hf1">
-                        <div class="fic" style="background:var(--shopify-bg);color:var(--shopify)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/></svg></div>
+                        <div class="fic" style="background:var(--g-lgreen);color:var(--g-green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/></svg></div>
                         <div>
-                            <div class="fl-t" style="color:var(--shopify)">Shopify Expert</div>
-                            <div class="fl-s">Apps & Themes</div>
+                            <div class="fl-t" style="color:var(--g-green)">Shopify Expert</div>
+                            <div class="fl-s">Liquid &amp; Apps</div>
                         </div>
                     </div>
                     <div class="hf hf2">
-                        <div class="fic" style="background:var(--wordpress-bg);color:var(--wordpress)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                        <div class="fic" style="background:var(--g-lblue);color:var(--g-blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                         <div>
-                            <div class="fl-t" style="color:var(--wordpress)">WP Hooks</div>
-                            <div class="fl-s">Actions & Filters</div>
+                            <div class="fl-t" style="color:var(--g-blue)">WP Hooks</div>
+                            <div class="fl-s">Actions &amp; Filters</div>
                         </div>
                     </div>
                     <div class="hf hf3">
-                        <div class="fic" style="background:var(--secondary-light);color:var(--secondary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                        <div class="fic" style="background:var(--g-lyellow);color:var(--g-orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                         <div>
-                            <div class="fl-t" style="color:var(--secondary)">99% Satisfaction</div>
-                            <div class="fl-s">Verified</div>
+                            <div class="fl-t" style="color:var(--g-orange)">98% Rated</div>
+                            <div class="fl-s">Top Reviews</div>
                         </div>
                     </div>
                 </div>
@@ -2368,144 +2770,186 @@
         </section>
 
         <div class="marq">
-            <div class="marq-lbl">Technologies & Platforms</div>
+            <div class="marq-lbl">&lt;/&gt; Technologies &amp; Platforms</div>
             <div style="overflow:hidden">
                 <div class="marq-track" id="marqTrack"></div>
             </div>
         </div>
 
         <section class="section services-sec" id="services">
+            <div class="bg-grid-subtle fade-top-bottom"></div>
+            <div class="glow glow-blue" style="width:400px;height:400px;top:20%;right:-15%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-blue">Services</span>
+                <div class="section-header rev"><span class="section-label sl-blue">services</span>
                     <h2 class="section-title"><span class="grad-text">What I Build</span></h2>
-                    <p class="section-desc">Full-stack solutions from concept to launch and beyond.</p>
+                    <p class="section-desc">Custom WordPress development, Shopify stores, WooCommerce, performance optimization, and scalable web solutions.</p>
                 </div>
                 <div class="srv-grid" id="srvGrid"></div>
             </div>
         </section>
+
         <section class="section proj-sec" id="projects">
+            <div class="bg-lines-diagonal fade-top-bottom"></div>
+            <div class="glow glow-green" style="width:400px;height:400px;bottom:10%;left:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-purple">Real Projects</span>
+                <div class="section-header rev"><span class="section-label sl-purple">portfolio</span>
                     <h2 class="section-title">Live Client <span class="grad-text">Websites</span></h2>
-                    <p class="section-desc">Real stores, real results — every project live and verified.</p>
+                    <p class="section-desc">Real stores, real results &mdash; every project live and verified.</p>
                 </div>
                 <div class="proj-tabs rev" id="projTabs"></div>
                 <div class="proj-grid" id="projGrid"></div>
             </div>
         </section>
+
         <section class="section exp-sec" id="experience">
+            <div class="bg-crosses fade-top-bottom"></div>
+            <div class="glow glow-red" style="width:400px;height:400px;top:10%;left:-10%"></div>
+            <div class="glow glow-blue" style="width:350px;height:350px;bottom:15%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-blue">Journey</span>
-                    <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
+                <div class="section-header rev"><span class="section-label sl-red">career</span>
+                    <h2 class="section-title">Professional <span class="grad-text">Experience</span></h2>
+                    <p class="section-desc">4+ years of building high-performance websites and eCommerce solutions.</p>
                 </div>
-                <div class="timeline" id="tline"></div>
+                <div class="exp-grid" id="expGrid"></div>
             </div>
         </section>
+
         <section class="section skills-sec" id="skills">
+            <div class="bg-lines-horizontal fade-top-bottom"></div>
+            <div class="glow glow-yellow" style="width:400px;height:400px;top:20%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-teal">Expertise</span>
+                <div class="section-header rev"><span class="section-label sl-teal">expertise</span>
                     <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
                 </div>
                 <div class="sk-grid" id="skGrid"></div>
             </div>
         </section>
+
         <section class="section proc-sec" id="process">
+            <div class="bg-dots-grid fade-top-bottom"></div>
+            <div class="glow glow-green" style="width:400px;height:400px;top:20%;left:-10%"></div>
+            <div class="glow glow-red" style="width:350px;height:350px;bottom:10%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev" style="position:relative;z-index:1"><span class="section-label sl-green">My Process</span>
+                <div class="section-header rev"><span class="section-label sl-green">process</span>
                     <h2 class="section-title">From Idea to <span class="grad-text">Live Site</span></h2>
-                    <p class="section-desc">A transparent, structured approach — on time, every time.</p>
+                    <p class="section-desc">A transparent, structured approach &mdash; on time, every time.</p>
                 </div>
                 <div class="proc-grid" id="procGrid"></div>
                 <div class="proc-stats" id="procStats"></div>
             </div>
         </section>
+
         <section class="section faq-sec" id="faq">
+            <div class="bg-iso fade-top-bottom"></div>
+            <div class="glow glow-yellow" style="width:350px;height:350px;top:15%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-orange">FAQ</span>
+                <div class="section-header rev"><span class="section-label sl-yellow">faq</span>
                     <h2 class="section-title">Common <span class="grad-text">Questions</span></h2>
                 </div>
-                <div class="faq-wrap" id="faqWrap"></div>
+                <div class="faq-wrap rev" id="faqWrap"></div>
             </div>
         </section>
 
+        <!-- ===== CTA — TERMINAL STYLE, NO CARTOON ===== -->
         <section class="cta-sec">
             <div class="container">
                 <div class="cta-inner rev">
-                    <h2>Ready to Build Something Great?</h2>
-                    <p>Let's create a fast, high-converting web experience for your business.</p>
-                    <div class="cta-btns"><a href="#contact" class="btn-white" style="padding:16px 36px;font-size:.9375rem">Start a Project</a><a href="#" class="btn-ow" style="padding:16px 36px;font-size:.9375rem">Download Resume</a></div>
+                    <div class="cta-terminal">
+                        <div class="cta-terminal-head">
+                            <div class="dots"><span></span><span></span><span></span></div>
+                            <div class="title">~/ankit-jaswal/hire.sh</div>
+                        </div>
+                        <div class="cta-terminal-body">
+                            <div><span class="prompt">$</span> <span class="cmd">npm</span> <span class="string">init project</span></div>
+                            <div><span class="comment">// Ready to build your next big idea?</span></div>
+                            <div><span class="prompt">$</span> <span class="cmd">contact</span> <span class="keyword">--priority</span>=<span class="string">"high"</span> <span class="keyword">--reply</span>=<span class="string">"24h"</span><span class="cta-cursor-blink"></span></div>
+                        </div>
+                    </div>
+                    <h2>Ready to Build <span>Something Great?</span></h2>
+                    <p>Let's create a fast, high-converting web experience for your business. From concept to code, delivered on time.</p>
+                    <div class="cta-btns">
+                        <a href="#contact" class="btn-white" style="padding:16px 36px;font-size:.9375rem">Start a Project</a>
+                        <a href="#" class="btn-ow" style="padding:16px 36px;font-size:.9375rem">Download Resume</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section contact-sec" id="contact">
+            <div class="bg-grid-subtle fade-top-bottom"></div>
+            <div class="glow glow-blue" style="width:400px;height:400px;top:10%;left:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-blue">Contact</span>
+                <div class="section-header rev"><span class="section-label sl-blue">contact</span>
                     <h2 class="section-title">Let's <span class="grad-text">Connect</span></h2>
                 </div>
                 <div class="contact-grid">
                     <div class="ci rev">
                         <h3>Get in Touch</h3>
-                        <p>Open to new projects. Let's discuss your goals and bring your vision to life.</p>
+                        <p>I'm based in Zirakpur, Punjab and work with clients worldwide. Let's discuss your project.</p>
                         <div class="c-methods">
                             <div class="c-method">
-                                <div class="c-mi" style="background:var(--primary-light);color:var(--primary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                                <div class="c-mi" style="background:var(--g-lblue);color:var(--g-blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                                 <div>
-                                    <div class="c-ml">Email</div>
-                                    <div class="c-mv">hello@ankitjaswal.dev</div>
+                                    <div class="c-ml">email</div>
+                                    <div class="c-mv"><a href="mailto:ankit.jaswal.311@gmail.com">ankit.jaswal.311@gmail.com</a></div>
                                 </div>
                             </div>
                             <div class="c-method">
-                                <div class="c-mi" style="background:var(--secondary-light);color:var(--secondary)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+                                <div class="c-mi" style="background:var(--g-lgreen);color:var(--g-green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
                                 <div>
-                                    <div class="c-ml">Phone</div>
-                                    <div class="c-mv">+91 98765 43210</div>
+                                    <div class="c-ml">phone</div>
+                                    <div class="c-mv"><a href="tel:+917018464647">+91 70184 64647</a></div>
                                 </div>
                             </div>
                             <div class="c-method">
-                                <div class="c-mi" style="background:var(--accent-light);color:#E37400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                                <div class="c-mi" style="background:var(--g-lred);color:var(--g-red)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                                 <div>
-                                    <div class="c-ml">Location</div>
-                                    <div class="c-mv">India — Remote Worldwide</div>
+                                    <div class="c-ml">location</div>
+                                    <div class="c-mv">Zirakpur, Punjab, India</div>
+                                </div>
+                            </div>
+                            <div class="c-method">
+                                <div class="c-mi" style="background:var(--g-lyellow);color:var(--g-orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                                <div>
+                                    <div class="c-ml">response_time</div>
+                                    <div class="c-mv">Within 24 hours</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="social-row"><a href="#" class="sl-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                            <a
-                                href="#" class="sl-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-                                <a
-                                    href="#" class="sl-btn" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                                    <a
-                                        href="#" class="sl-btn" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg></a>
+                        <div class="social-row">
+                            <a href="#" class="sl-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                            <a href="#" class="sl-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                            <a href="https://wa.me/917018464647" target="_blank" rel="noopener" class="sl-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
                         </div>
                     </div>
-
-                    <!-- FULL FORM -->
                     <div class="cf-card rev">
-                        <form id="cForm" novalidate>
+                        <form id="cForm" novalidate action="https://formsubmit.co/ankit.jaswal.311@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="🚀 New Portfolio Inquiry from Website">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://ankit-jaswal.dev/thank-you">
+
                             <div class="f-row">
-                                <div class="fg"><label for="fn" class="flbl">First Name<span class="req">*</span></label><input type="text" id="fn" class="finp" placeholder="John" required></div>
-                                <div class="fg"><label for="ln" class="flbl">Last Name<span class="req">*</span></label><input type="text" id="ln" class="finp" placeholder="Doe" required></div>
+                                <div class="fg"><label for="fn" class="flbl">First Name<span class="req">*</span></label><input type="text" id="fn" name="First Name" class="finp" placeholder="John" required></div>
+                                <div class="fg"><label for="ln" class="flbl">Last Name<span class="req">*</span></label><input type="text" id="ln" name="Last Name" class="finp" placeholder="Doe" required></div>
                             </div>
                             <div class="f-row">
-                                <div class="fg"><label for="fe" class="flbl">Email Address<span class="req">*</span></label><input type="email" id="fe" class="finp" placeholder="john@example.com" required></div>
-                                <div class="fg"><label for="fp" class="flbl">Phone Number</label><input type="tel" id="fp" class="finp" placeholder="+1 (555) 123-4567"></div>
+                                <div class="fg"><label for="fe" class="flbl">Email<span class="req">*</span></label><input type="email" id="fe" name="Email" class="finp" placeholder="john@example.com" required></div>
+                                <div class="fg"><label for="fp" class="flbl">Phone</label><input type="tel" id="fp" name="Phone" class="finp" placeholder="+1 (555) 123-4567"></div>
                             </div>
-                            <div class="fg"><label for="fco" class="flbl">Company / Website</label><input type="text" id="fco" class="finp" placeholder="yourcompany.com"></div>
+                            <div class="fg"><label for="fco" class="flbl">Company / Website</label><input type="text" id="fco" name="Company" class="finp" placeholder="yourcompany.com"></div>
                             <div class="f-row-3">
-                                <div class="fg"><label for="fserv" class="flbl">Service Needed<span class="req">*</span></label><select id="fserv" class="fsel" required><option value="">Select service...</option><option>Shopify Store / App</option><option>WordPress Website / Plugin</option><option>WooCommerce Store</option><option>BigCommerce</option><option>HubSpot Setup</option><option>Google Ads / GA4</option><option>Speed Optimization</option><option>SEO / Technical SEO</option><option>Website Maintenance</option><option>Other</option></select></div>
-                                <div
-                                    class="fg"><label for="fb" class="flbl">Budget Range</label><select id="fb" class="fsel"><option value="">Select budget...</option><option>Under $1,000</option><option>$1,000 – $3,000</option><option>$3,000 – $5,000</option><option>$5,000 – $10,000</option><option>$10,000 – $25,000</option><option>$25,000+</option></select></div>
-                            <div
-                                class="fg"><label for="ft" class="flbl">Timeline</label><select id="ft" class="fsel"><option value="">Select timeline...</option><option>ASAP / Urgent</option><option>1 – 2 Weeks</option><option>2 – 4 Weeks</option><option>1 – 2 Months</option><option>2 – 3 Months</option><option>Flexible</option></select></div>
+                                <div class="fg"><label for="fserv" class="flbl">Service<span class="req">*</span></label><select id="fserv" name="Service Needed" class="fsel" required><option value="">Select...</option><option>WordPress Development</option><option>Shopify Store / App</option><option>WooCommerce</option><option>Custom Plugin</option><option>Speed Optimization</option><option>SEO / Technical SEO</option><option>BigCommerce</option><option>HubSpot Setup</option><option>Website Migration</option><option>Other</option></select></div>
+                                <div class="fg"><label for="fb" class="flbl">Budget <span class="cur" id="curLabel">USD</span></label><select id="fb" name="Budget" class="fsel"></select></div>
+                                <div class="fg"><label for="ft" class="flbl">Timeline</label><select id="ft" name="Timeline" class="fsel"><option value="">Select...</option><option>ASAP (Rush)</option><option>1-2 Weeks</option><option>2-4 Weeks</option><option>1-2 Months</option><option>Flexible</option></select></div>
+                            </div>
+                            <div class="fg"><label for="fm" class="flbl">Project Details<span class="req">*</span></label><textarea id="fm" name="Project Details" class="ftxt" placeholder="Describe your project goals, features needed, current pain points, and reference websites..."
+                                    required></textarea></div>
+                            <button type="submit" class="f-submit" id="fBtn">Send Message &rarr;</button>
+                            <p class="f-note" id="curNote">// Response guaranteed within 24 hours &middot; Notifications sent to ankit.jaswal.311@gmail.com</p>
+                        </form>
+                    </div>
                 </div>
-                <div class="fg"><label for="fref" class="flbl">How did you find me?</label><select id="fref" class="fsel"><option value="">Select...</option><option>Google Search</option><option>LinkedIn</option><option>Upwork</option><option>Referral</option><option>Social Media</option><option>Other</option></select></div>
-                <div class="fg"><label for="fm" class="flbl">Project Details<span class="req">*</span></label><textarea id="fm" class="ftxt" placeholder="Tell me about your project goals, features needed, current pain points, and any reference websites..." required></textarea></div>
-                <button type="submit" class="f-submit" id="fBtn">Send Message →</button>
-                <p class="f-note">I typically respond within 2-4 hours during business hours.</p>
-                </form>
-            </div>
-            </div>
             </div>
         </section>
     </main>
@@ -2518,86 +2962,317 @@
                         <div class="logo-mark-bg"></div>
                         <div class="logo-mark-inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                     </div><span>Ankit Jaswal</span></div>
-                <div class="foot-links"><a href="#services" class="foot-link">Services</a><a href="#projects" class="foot-link">Projects</a><a href="#experience" class="foot-link">Experience</a><a href="#skills" class="foot-link">Skills</a><a href="#contact" class="foot-link">Contact</a></div>
+                <div class="foot-links"><a href="#services" class="foot-link">services</a><a href="#projects" class="foot-link">projects</a><a href="#experience" class="foot-link">experience</a><a href="#skills" class="foot-link">skills</a><a href="#contact" class="foot-link">contact</a></div>
             </div>
-            <div class="foot-bot"><span id="copyright"></span><span>Built with clean code &amp; passion</span></div>
+            <div class="foot-bot"><span id="copyright"></span><span>// Built with clean code &amp; passion &middot; Zirakpur, Punjab</span></div>
         </div>
     </footer>
     <button class="btt" id="btt" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
 
     <script>
-        document.getElementById('copyright').textContent = '\u00A9 ' + new Date().getFullYear() + ' Ankit Jaswal. All rights reserved.';
+        document.getElementById('copyright').textContent = '// \u00A9 ' + new Date().getFullYear() + ' Ankit Jaswal. All rights reserved.';
 
+        // ===== CUSTOM CURSOR =====
+        (function() {
+            var dot = document.getElementById('cursorDot'),
+                ring = document.getElementById('cursorRing'),
+                glow = document.getElementById('cursorGlow');
+            if (!dot || window.matchMedia('(hover:none)').matches) return;
+            var mx = 0,
+                my = 0,
+                rx = 0,
+                ry = 0,
+                gx = 0,
+                gy = 0;
+            document.addEventListener('mousemove', function(e) {
+                mx = e.clientX;
+                my = e.clientY;
+                dot.style.left = mx + 'px';
+                dot.style.top = my + 'px'
+            });
+
+            function animate() {
+                rx += (mx - rx) * .18;
+                ry += (my - ry) * .18;
+                gx += (mx - gx) * .08;
+                gy += (my - gy) * .08;
+                ring.style.left = rx + 'px';
+                ring.style.top = ry + 'px';
+                glow.style.left = gx + 'px';
+                glow.style.top = gy + 'px';
+                requestAnimationFrame(animate)
+            }
+            animate();
+            // Hover expand on interactive elements
+            var hoverEls = 'a, button, input, textarea, select, .srv-card, .sk-card, .exp-card, .proj-card, .proc-card, .c-method, .hero-pill, .proj-tab, .fi-q, .pstat, .hf, .mob-link, .foot-link, .nav-link, .sl-btn, .dl-btn, .btt';
+            document.querySelectorAll(hoverEls).forEach(function(el) {
+                el.addEventListener('mouseenter', function() {
+                    dot.classList.add('hover');
+                    ring.classList.add('hover')
+                });
+                el.addEventListener('mouseleave', function() {
+                    dot.classList.remove('hover');
+                    ring.classList.remove('hover')
+                })
+            });
+            document.addEventListener('mousedown', function() {
+                dot.classList.add('click');
+                ring.classList.add('click')
+            });
+            document.addEventListener('mouseup', function() {
+                dot.classList.remove('click');
+                ring.classList.remove('click')
+            });
+            document.addEventListener('mouseleave', function() {
+                dot.style.opacity = '0';
+                ring.style.opacity = '0';
+                glow.style.opacity = '0'
+            });
+            document.addEventListener('mouseenter', function() {
+                dot.style.opacity = '1';
+                ring.style.opacity = '.6';
+                glow.style.opacity = '1'
+            });
+        })();
+
+        // ===== GEO-BASED PRICING =====
+        var pricingByCountry = {
+            US: {
+                cur: 'USD',
+                sym: '$',
+                options: ['Under $5K', '$5K - $10K', '$10K - $25K', '$25K - $50K', '$50K+']
+            },
+            GB: {
+                cur: 'GBP',
+                sym: '\u00A3',
+                options: ['Under \u00A34K', '\u00A34K - \u00A38K', '\u00A38K - \u00A320K', '\u00A320K - \u00A340K', '\u00A340K+']
+            },
+            CA: {
+                cur: 'CAD',
+                sym: 'C$',
+                options: ['Under C$7K', 'C$7K - C$14K', 'C$14K - C$35K', 'C$35K - C$70K', 'C$70K+']
+            },
+            AU: {
+                cur: 'AUD',
+                sym: 'A$',
+                options: ['Under A$8K', 'A$8K - A$15K', 'A$15K - A$38K', 'A$38K - A$75K', 'A$75K+']
+            },
+            EU: {
+                cur: 'EUR',
+                sym: '\u20AC',
+                options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
+            },
+            DE: {
+                cur: 'EUR',
+                sym: '\u20AC',
+                options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
+            },
+            FR: {
+                cur: 'EUR',
+                sym: '\u20AC',
+                options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
+            },
+            NL: {
+                cur: 'EUR',
+                sym: '\u20AC',
+                options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
+            },
+            IT: {
+                cur: 'EUR',
+                sym: '\u20AC',
+                options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
+            },
+            ES: {
+                cur: 'EUR',
+                sym: '\u20AC',
+                options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
+            },
+            AE: {
+                cur: 'AED',
+                sym: 'AED',
+                options: ['Under AED 18K', 'AED 18K - 37K', 'AED 37K - 92K', 'AED 92K - 185K', 'AED 185K+']
+            },
+            SA: {
+                cur: 'SAR',
+                sym: 'SAR',
+                options: ['Under SAR 19K', 'SAR 19K - 38K', 'SAR 38K - 94K', 'SAR 94K - 188K', 'SAR 188K+']
+            },
+            SG: {
+                cur: 'SGD',
+                sym: 'S$',
+                options: ['Under S$7K', 'S$7K - S$13K', 'S$13K - S$33K', 'S$33K - S$67K', 'S$67K+']
+            },
+            JP: {
+                cur: 'JPY',
+                sym: '\u00A5',
+                options: ['Under \u00A5750K', '\u00A5750K - \u00A51.5M', '\u00A51.5M - \u00A53.7M', '\u00A53.7M - \u00A57.5M', '\u00A57.5M+']
+            },
+            IN: {
+                cur: 'INR',
+                sym: '\u20B9',
+                options: ['Under \u20B94.2L', '\u20B94.2L - \u20B98.3L', '\u20B98.3L - \u20B921L', '\u20B921L - \u20B942L', '\u20B942L+']
+            },
+            DEFAULT: {
+                cur: 'USD',
+                sym: '$',
+                options: ['Under $5K', '$5K - $10K', '$10K - $25K', '$25K - $50K', '$50K+']
+            }
+        };
+
+        function detectCountry() {
+            try {
+                var lang = navigator.language || navigator.userLanguage || 'en-US';
+                var region = lang.split('-')[1];
+                if (region) return region.toUpperCase();
+                // fallback timezone
+                var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+                if (tz.indexOf('London') > -1) return 'GB';
+                if (tz.indexOf('Paris') > -1 || tz.indexOf('Berlin') > -1 || tz.indexOf('Amsterdam') > -1 || tz.indexOf('Madrid') > -1 || tz.indexOf('Rome') > -1) return 'EU';
+                if (tz.indexOf('Toronto') > -1 || tz.indexOf('Vancouver') > -1) return 'CA';
+                if (tz.indexOf('Sydney') > -1 || tz.indexOf('Melbourne') > -1) return 'AU';
+                if (tz.indexOf('Dubai') > -1) return 'AE';
+                if (tz.indexOf('Singapore') > -1) return 'SG';
+                if (tz.indexOf('Tokyo') > -1) return 'JP';
+                if (tz.indexOf('Kolkata') > -1 || tz.indexOf('Mumbai') > -1) return 'IN';
+                if (tz.indexOf('New_York') > -1 || tz.indexOf('Chicago') > -1 || tz.indexOf('Denver') > -1 || tz.indexOf('Los_Angeles') > -1) return 'US';
+            } catch (e) {}
+            return 'US';
+        }
+
+        function loadPricing() {
+            var country = detectCountry();
+            var data = pricingByCountry[country] || pricingByCountry.DEFAULT;
+            var sel = document.getElementById('fb');
+            var curLbl = document.getElementById('curLabel');
+            if (curLbl) curLbl.textContent = data.cur;
+            var html = '<option value="">Select...</option>';
+            data.options.forEach(function(o) {
+                html += '<option>' + o + '</option>'
+            });
+            sel.innerHTML = html;
+        }
+        loadPricing();
+
+        // PILLS
         var pills = [{
             t: 'WordPress',
-            c: '#21759B'
+            c: '#4285F4'
         }, {
             t: 'Shopify',
-            c: '#5E8E3E'
+            c: '#34A853'
         }, {
             t: 'WooCommerce',
-            c: '#7F54B3'
+            c: '#A50E0E'
+        }, {
+            t: 'Elementor Pro',
+            c: '#EA4335'
+        }, {
+            t: 'Shopify Liquid',
+            c: '#0D652D'
+        }, {
+            t: 'PHP',
+            c: '#174EA6'
+        }, {
+            t: 'JavaScript',
+            c: '#FBBC04'
         }, {
             t: 'BigCommerce',
-            c: '#34313F'
+            c: '#202124'
         }, {
             t: 'HubSpot',
-            c: '#FF7A59'
+            c: '#EA4335'
+        }, {
+            t: 'CS-Cart',
+            c: '#4285F4'
+        }, {
+            t: 'Webflow',
+            c: '#174EA6'
         }, {
             t: 'Google Ads',
             c: '#4285F4'
-        }, {
-            t: 'PHP',
-            c: '#777BB4'
-        }, {
-            t: 'JavaScript',
-            c: '#F7DF1E'
         }];
         document.getElementById('heroPills').innerHTML = pills.map(function(p) {
             return '<span class="hero-pill"><span class="hp-dot" style="background:' + p.c + '"></span>' + p.t + '</span>'
         }).join('');
+
         var techs = [{
             t: 'WordPress',
-            c: '#21759B'
+            c: '#4285F4'
         }, {
             t: 'Shopify',
-            c: '#5E8E3E'
+            c: '#34A853'
         }, {
             t: 'WooCommerce',
-            c: '#7F54B3'
+            c: '#A50E0E'
+        }, {
+            t: 'Elementor',
+            c: '#EA4335'
+        }, {
+            t: 'Gutenberg',
+            c: '#202124'
+        }, {
+            t: 'ACF Pro',
+            c: '#0D652D'
+        }, {
+            t: 'Shopify Liquid',
+            c: '#34A853'
+        }, {
+            t: 'PHP',
+            c: '#174EA6'
+        }, {
+            t: 'JavaScript',
+            c: '#FBBC04'
+        }, {
+            t: 'jQuery',
+            c: '#4285F4'
+        }, {
+            t: 'Bootstrap',
+            c: '#A50E0E'
         }, {
             t: 'BigCommerce',
-            c: '#34313F'
+            c: '#202124'
+        }, {
+            t: 'CS-Cart',
+            c: '#174EA6'
         }, {
             t: 'HubSpot',
-            c: '#FF7A59'
+            c: '#EA4335'
+        }, {
+            t: 'Webflow',
+            c: '#4285F4'
+        }, {
+            t: 'Wix',
+            c: '#4285F4'
+        }, {
+            t: 'Squarespace',
+            c: '#202124'
+        }, {
+            t: 'Klaviyo',
+            c: '#202124'
+        }, {
+            t: 'Mailchimp',
+            c: '#FBBC04'
+        }, {
+            t: 'Rank Math',
+            c: '#A50E0E'
+        }, {
+            t: 'Yoast SEO',
+            c: '#EA4335'
+        }, {
+            t: 'Git',
+            c: '#EA4335'
+        }, {
+            t: 'Figma',
+            c: '#EA4335'
+        }, {
+            t: 'Cloudflare',
+            c: '#E37400'
+        }, {
+            t: 'Zapier',
+            c: '#EA4335'
         }, {
             t: 'Google Ads',
             c: '#4285F4'
-        }, {
-            t: 'PHP',
-            c: '#777BB4'
-        }, {
-            t: 'Laravel',
-            c: '#FF2D20'
-        }, {
-            t: 'JavaScript',
-            c: '#F7DF1E'
-        }, {
-            t: 'React',
-            c: '#61DAFB'
-        }, {
-            t: 'Node.js',
-            c: '#339933'
-        }, {
-            t: 'Cloudflare',
-            c: '#F48120'
-        }, {
-            t: 'GitHub',
-            c: '#181717'
-        }, {
-            t: 'Figma',
-            c: '#F24E1E'
         }];
         var mi = techs.map(function(t) {
             return '<span class="mi"><span class="mdi" style="background:' + t.c + '"></span>' + t.t + '</span>'
@@ -2605,77 +3280,77 @@
         document.getElementById('marqTrack').innerHTML = mi + mi;
 
         var srvs = [{
-            bg: 'var(--wordpress-bg)',
-            cl: 'var(--wordpress)',
+            bg: 'var(--g-lblue)',
+            cl: 'var(--g-blue)',
             icon: 'M2 3h20v14H2zM8 21h8M12 17v4',
-            t: 'WordPress',
-            d: 'Custom themes, plugins, scalable sites.'
+            t: 'WordPress Dev',
+            d: 'Custom themes, plugins, Gutenberg blocks, ACF, WP hooks.'
         }, {
-            bg: 'var(--shopify-bg)',
-            cl: 'var(--shopify)',
+            bg: 'var(--g-lgreen)',
+            cl: 'var(--g-green)',
             icon: 'M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 002-2V6l-3-4zM3 6h18',
-            t: 'Shopify',
-            d: 'Stores, themes, and private apps.'
+            t: 'Shopify Dev',
+            d: 'Liquid, Shopify 2.0, custom sections, metafields, apps.'
         }, {
-            bg: 'rgba(127,84,179,.08)',
-            cl: '#7F54B3',
+            bg: 'var(--g-lred)',
+            cl: 'var(--g-red)',
             icon: 'M9 21a1 1 0 100-2 1 1 0 000 2zM20 21a1 1 0 100-2 1 1 0 000 2zM1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6',
             t: 'WooCommerce',
-            d: 'Custom stores with payment flows.'
+            d: 'Payment gateways, subscriptions, product customization.'
         }, {
-            bg: 'var(--accent-light)',
-            cl: '#E37400',
+            bg: 'var(--g-lyellow)',
+            cl: 'var(--g-orange)',
+            icon: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5',
+            t: 'Elementor Pro',
+            d: 'Custom widgets, templates, dynamic content.'
+        }, {
+            bg: 'var(--g-lred)',
+            cl: 'var(--g-red)',
             icon: 'M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z',
             t: 'Custom Plugins',
-            d: 'WordPress plugins using hooks.'
+            d: 'WordPress hooks, REST API, custom functionality.'
         }, {
-            bg: 'var(--primary-light)',
-            cl: 'var(--primary)',
+            bg: 'var(--g-lblue)',
+            cl: 'var(--g-blue)',
             icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
             t: 'API Integrations',
-            d: 'CRMs, payments, ERPs, webhooks.'
+            d: 'Zapier, Make, Google APIs, payment gateways, CRMs.'
         }, {
-            bg: 'var(--secondary-light)',
-            cl: 'var(--secondary)',
+            bg: 'var(--g-lgreen)',
+            cl: 'var(--g-green)',
             icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
             t: 'Speed Optimization',
-            d: 'Sub-2s load, 90+ Lighthouse.'
+            d: 'PageSpeed 90+, Core Web Vitals, GTmetrix.'
         }, {
-            bg: 'var(--purple-light)',
-            cl: 'var(--purple)',
+            bg: 'var(--g-lyellow)',
+            cl: 'var(--g-orange)',
             icon: 'M11 11m-8 0a8 8 0 1016 0 8 8 0 10-16 0M21 21l-4.35-4.35',
-            t: 'SEO',
-            d: 'Schema, Core Web Vitals, rankings.'
+            t: 'SEO & Technical SEO',
+            d: 'Rank Math, Yoast, schema markup, site structure.'
         }, {
-            bg: 'var(--teal-light)',
-            cl: 'var(--teal)',
+            bg: 'var(--g-lgreen)',
+            cl: 'var(--g-green)',
             icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z',
-            t: 'Security',
-            d: 'Hardening, SSL, monitoring.'
+            t: 'Security & Malware',
+            d: 'Hardening, malware removal, SSL, firewalls.'
         }, {
-            bg: 'var(--primary-light)',
-            cl: 'var(--primary)',
-            icon: 'M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6',
-            t: 'Maintenance',
-            d: 'Updates, backups, support.'
-        }, {
-            bg: 'rgba(52,49,63,.08)',
-            cl: '#34313F',
+            bg: 'var(--g-lred)',
+            cl: 'var(--g-red)',
             icon: 'M2 3h20v14H2zM8 21h8M12 17v4',
-            t: 'BigCommerce & HubSpot',
-            d: 'Stores, CRM, automations.'
+            t: 'BigCommerce & CS-Cart',
+            d: 'Multi-vendor, wholesale, B2B stores.'
         }, {
-            bg: 'rgba(66,133,244,.1)',
-            cl: '#4285F4',
+            bg: 'var(--g-lyellow)',
+            cl: 'var(--g-orange)',
+            icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6',
+            t: 'HubSpot & Email',
+            d: 'HubSpot CMS, Klaviyo, Mailchimp integration.'
+        }, {
+            bg: 'var(--g-lblue)',
+            cl: 'var(--g-blue)',
             icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
-            t: 'Google Ads',
-            d: 'Campaigns, GA4, tracking.'
-        }, {
-            bg: 'var(--error-light)',
-            cl: 'var(--error)',
-            icon: 'M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z',
-            t: 'Theme Dev',
-            d: 'Pixel-perfect any platform.'
+            t: 'Google Ads & GA4',
+            d: 'Campaign setup, GA4, GTM, conversion tracking.'
         }];
         document.getElementById('srvGrid').innerHTML = srvs.map(function(s, i) {
             return '<div class="srv-card rev d' + (i % 4 + 1) + '"><div class="srv-ic" style="background:' + s.bg + ';color:' + s.cl + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><h3>' + s.t + '</h3><p>' + s.d + '</p></div>'
@@ -2684,13 +3359,12 @@
         var projects = [{
             cat: 'shopify',
             label: 'SHOPIFY',
-            lbg: 'var(--shopify-bg)',
-            lcl: 'var(--shopify)',
+            lbg: 'var(--g-lgreen)',
+            lcl: 'var(--g-green)',
             title: 'GlucaChill',
             url: 'https://glucachill.com/products/gluca-chill-insulin-cooling-safe-pack-v3',
-            grad: 'linear-gradient(135deg,#1a73e8,#0d4fa3)',
-            emoji: '\uD83E\uDDCA GlucaChill',
-            desc: 'Medical product store with custom product page.',
+            img: 'https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/glucachill.png',
+            desc: 'Medical Shopify store with custom product page and optimized checkout.',
             tech: ['Shopify', 'Liquid', 'Metafields'],
             res: [{
                 v: '98',
@@ -2705,13 +3379,12 @@
         }, {
             cat: 'shopify',
             label: 'SHOPIFY',
-            lbg: 'var(--shopify-bg)',
-            lcl: 'var(--shopify)',
+            lbg: 'var(--g-lgreen)',
+            lcl: 'var(--g-green)',
             title: 'GloryGain',
             url: 'https://glorygain.com/products/sea-moss-shilajit-bundle-offer',
-            grad: 'linear-gradient(135deg,#2D6A4F,#52B788)',
-            emoji: '\uD83C\uDF3F GloryGain',
-            desc: 'Health supplement store with bundle products.',
+            img: 'https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/seamos.png',
+            desc: 'Health supplement store with bundle products and high-converting layout.',
             tech: ['Shopify', 'Bundles', 'CRO'],
             res: [{
                 v: '+220%',
@@ -2726,13 +3399,12 @@
         }, {
             cat: 'shopify',
             label: 'SHOPIFY',
-            lbg: 'var(--shopify-bg)',
-            lcl: 'var(--shopify)',
+            lbg: 'var(--g-lgreen)',
+            lcl: 'var(--g-green)',
             title: 'Alyfe Supplements',
             url: 'https://alyfesupplements.com/pages/quiz-results',
-            grad: 'linear-gradient(135deg,#7B2D8B,#C56CD6)',
-            emoji: '\uD83D\uDC9C Alyfe',
-            desc: 'Custom quiz results page with personalization.',
+            img: 'https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/quiz-result.png',
+            desc: 'Custom quiz results with personalized supplement recommendations.',
             tech: ['Shopify', 'Quiz JS', 'Personalization'],
             res: [{
                 v: '+185%',
@@ -2747,12 +3419,11 @@
         }, {
             cat: 'wordpress',
             label: 'WORDPRESS',
-            lbg: 'var(--wordpress-bg)',
-            lcl: 'var(--wordpress)',
+            lbg: 'var(--g-lblue)',
+            lcl: 'var(--g-blue)',
             title: 'Pemvish',
             url: 'https://pemvish.com/',
-            grad: 'linear-gradient(135deg,#1E3A5F,#2D6A9F)',
-            emoji: '\uD83D\uDD37 Pemvish',
+            img: 'https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/pemvish.png',
             desc: 'Custom WordPress brand website for lead generation.',
             tech: ['WordPress', 'Custom Theme', 'Hooks'],
             res: [{
@@ -2768,13 +3439,12 @@
         }, {
             cat: 'shopify',
             label: 'SHOPIFY',
-            lbg: 'var(--shopify-bg)',
-            lcl: 'var(--shopify)',
+            lbg: 'var(--g-lgreen)',
+            lcl: 'var(--g-green)',
             title: 'NeuroDrops',
             url: 'https://www.neurodrops.store/products/neurodrops',
-            grad: 'linear-gradient(135deg,#0F3460,#16213E)',
-            emoji: '\uD83E\uDDE0 NeuroDrops',
-            desc: 'Premium supplement store with science-backed design.',
+            img: 'https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/neurodropes.png',
+            desc: 'Premium supplement store with science-backed product page.',
             tech: ['Shopify', 'Liquid', 'Klaviyo'],
             res: [{
                 v: '+265%',
@@ -2789,13 +3459,12 @@
         }, {
             cat: 'shopify',
             label: 'SHOPIFY',
-            lbg: 'var(--shopify-bg)',
-            lcl: 'var(--shopify)',
+            lbg: 'var(--g-lgreen)',
+            lcl: 'var(--g-green)',
             title: 'Lumora Home',
             url: 'https://www.lumorahome.nl/',
-            grad: 'linear-gradient(135deg,#C9A96E,#8B6914)',
-            emoji: '\uD83C\uDFE0 Lumora',
-            desc: 'Dutch home decor with multi-language support.',
+            img: 'https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/lumora.png',
+            desc: 'Dutch home d\u00E9cor with multi-language and European payments.',
             tech: ['Shopify', 'Multi-lang', 'iDEAL'],
             res: [{
                 v: '+195%',
@@ -2808,99 +3477,95 @@
                 l: 'Score'
             }]
         }];
-        document.getElementById('projTabs').innerHTML = '<button class="proj-tab on" data-f="all">All</button><button class="proj-tab" data-f="shopify">Shopify</button><button class="proj-tab" data-f="wordpress">WordPress</button>';
+        document.getElementById('projTabs').innerHTML = '<button class="proj-tab on" data-f="all">// all</button><button class="proj-tab" data-f="shopify">// shopify</button><button class="proj-tab" data-f="wordpress">// wordpress</button>';
 
         function renderProjects(f) {
             var list = f === 'all' ? projects : projects.filter(function(p) {
                 return p.cat === f
             });
             document.getElementById('projGrid').innerHTML = list.map(function(p) {
-                return '<div class="proj-card rev"><div class="proj-thumb"><div class="proj-thumb-ph" style="background:' + p.grad + '">' + p.emoji + '</div><div class="proj-thumb-ov"><a href="' + p.url + '" target="_blank" rel="noopener" class="pbtn pbtn-g" style="flex:unset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Visit</a></div></div><div class="proj-body"><span class="proj-badge" style="background:' + p.lbg + ';color:' + p.lcl + '">' + p.label + '</span><h3>' + p.title + '</h3><p class="proj-desc">' + p.desc + '</p><div class="proj-tags">' + p.tech.map(function(t) {
+                return '<div class="proj-card rev"><div class="proj-thumb"><img class="proj-thumb-img" src="' + p.img + '" alt="' + p.title + '" loading="lazy"/><div class="proj-thumb-ov"><a href="' + p.url + '" target="_blank" rel="noopener" class="pbtn pbtn-g" style="flex:unset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Visit Site</a></div></div><div class="proj-body"><span class="proj-badge" style="background:' + p.lbg + ';color:' + p.lcl + '">' + p.label + '</span><h3>' + p.title + '</h3><p class="proj-desc">' + p.desc + '</p><div class="proj-tags">' + p.tech.map(function(t) {
                     return '<span class="ptag">' + t + '</span>'
                 }).join('') + '</div><div class="proj-results">' + p.res.map(function(r) {
                     return '<div class="proj-result"><div class="prv" style="color:' + p.lcl + '">' + r.v + '</div><div class="prl">' + r.l + '</div></div>'
-                }).join('') + '</div><div class="proj-btns"><a href="' + p.url + '" target="_blank" rel="noopener" class="pbtn pbtn-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View Live</a><a href="#contact" class="pbtn pbtn-o">Discuss</a></div></div></div>'
+                }).join('') + '</div><div class="proj-btns"><a href="' + p.url + '" target="_blank" rel="noopener" class="pbtn pbtn-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site</a><a href="#contact" class="pbtn pbtn-o">Discuss</a></div></div></div>'
             }).join('');
             document.querySelectorAll('.proj-card.rev').forEach(function(el) {
                 ro.observe(el)
             })
         }
 
-        var tl = [{
-            d: 'Present \u2014 7/13/2026',
-            t: 'Senior WordPress & Shopify Developer',
-            co: 'Freelance / Independent',
-            items: ['60+ live Shopify & WordPress projects globally', 'Built GlucaChill, GloryGain, NeuroDrops, Lumora Home', 'Google Ads campaigns and GA4 for 20+ stores', 'HubSpot CRM integrations with WP and Shopify'],
-            tags: ['Shopify', 'WordPress', 'Google Ads', 'HubSpot']
+        var exp = [{
+            date: 'Dec 2022 \u2014 Present',
+            title: 'WordPress & Shopify Developer',
+            co: 'Websoftrix Infotech Pvt. Ltd.',
+            loc: 'Zirakpur, Punjab',
+            items: ['Developed custom WordPress websites from Figma and Adobe XD designs', 'Built Shopify stores with custom Liquid development and Shopify 2.0', 'Created WooCommerce stores with advanced product functionality', 'Developed custom plugins, Elementor widgets, and reusable templates', 'Integrated third-party APIs, payment gateways (Stripe, Razorpay)', 'Improved website speed to achieve 90+ Google PageSpeed scores', 'Fixed hacked websites and performed malware removal', 'Migrated websites across servers and hosting platforms', 'Managed hosting, DNS, SSL, and Cloudflare configurations', 'Optimized websites for SEO, Core Web Vitals, and Technical SEO', 'Collaborated directly with international clients across healthcare, eCommerce, real estate, and corporate industries'],
+            tags: ['WordPress', 'Shopify', 'WooCommerce', 'Elementor', 'PHP', 'Liquid', 'ACF', 'Custom Plugins', 'Google Ads', 'HubSpot', 'CS-Cart', 'Cloudflare']
         }, {
-            d: '2022 \u2014 2023',
-            t: 'E-Commerce Developer',
-            co: 'Digital Agency',
-            items: ['BigCommerce and Shopify stores for B2B & B2C', 'Advanced WordPress hook-based plugin architecture', 'Page load reduced by 65% across all projects'],
-            tags: ['BigCommerce', 'PHP', 'Hooks', 'Performance']
-        }, {
-            d: '2020 \u2014 2022',
-            t: 'WordPress Developer',
-            co: 'Tech Startup',
-            items: ['30+ WordPress and WooCommerce client sites', 'Deep WP hooks, filters, and Plugin API expertise', 'Pixel-perfect implementations with design teams'],
-            tags: ['WordPress', 'PHP', 'WooCommerce', 'JavaScript']
+            date: '2020 \u2014 2022',
+            title: 'Junior Web Developer',
+            co: 'Freelance & Early Career',
+            loc: 'Remote',
+            items: ['Built 30+ responsive WordPress and WooCommerce websites', 'Gained deep expertise in WordPress hooks, filters, and Plugin API', 'Developed child themes, custom post types, and taxonomies', 'Translated Figma designs into pixel-perfect responsive pages', 'Implemented SEO best practices with Rank Math and Yoast', 'Managed cPanel, WHM, and server-side configurations'],
+            tags: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'WooCommerce']
         }];
-        document.getElementById('tline').innerHTML = tl.map(function(t) {
-            return '<div class="ti rev"><div class="ti-dot"></div><div class="ti-date">' + t.d + '</div><h3>' + t.t + '</h3><div class="ti-co">' + t.co + '</div><div class="ti-desc"><ul>' + t.items.map(function(i) {
-                return '<li>' + i + '</li>'
-            }).join('') + '</ul></div><div class="ti-tags">' + t.tags.map(function(tg) {
-                return '<span class="titag">' + tg + '</span>'
+        document.getElementById('expGrid').innerHTML = exp.map(function(e, i) {
+            return '<div class="exp-card rev d' + (i + 1) + '"><div class="exp-top"><div><h3>' + e.title + '</h3><div class="exp-co">' + e.co + '</div></div><span class="exp-date">' + e.date + '</span></div><div class="exp-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>' + e.loc + '</div><ul class="exp-list">' + e.items.map(function(item) {
+                return '<li>' + item + '</li>'
+            }).join('') + '</ul><div class="exp-tags">' + e.tags.map(function(t) {
+                return '<span class="exp-tag">' + t + '</span>'
             }).join('') + '</div></div>'
         }).join('');
 
         var sks = [{
-            bg: 'var(--primary-light)',
-            cl: 'var(--primary)',
-            icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
-            t: 'Frontend',
-            tags: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind', 'TypeScript']
+            bg: 'var(--g-lblue)',
+            cl: 'var(--g-blue)',
+            icon: 'M2 3h20v14H2zM8 21h8M12 17v4',
+            t: 'WordPress',
+            tags: ['Custom Themes', 'Custom Plugins', 'Gutenberg', 'ACF Pro', 'WP Hooks', 'Filters', 'REST API', 'Child Themes', 'CPT', 'Taxonomies']
         }, {
-            bg: 'var(--secondary-light)',
-            cl: 'var(--secondary)',
-            icon: 'M2 2h20v8H2zM2 14h20v8H2z',
-            t: 'Backend',
-            tags: ['PHP', 'Laravel', 'Node.js', 'MySQL', 'REST API', 'GraphQL']
-        }, {
-            bg: 'var(--shopify-bg)',
-            cl: 'var(--shopify)',
+            bg: 'var(--g-lgreen)',
+            cl: 'var(--g-green)',
             icon: 'M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 002-2V6l-3-4z',
             t: 'Shopify',
-            tags: ['Liquid', 'Storefront API', 'Admin API', 'Polaris', 'Hydrogen']
+            tags: ['Shopify Liquid', 'Shopify 2.0', 'Custom Sections', 'Metafields', 'Product Templates', 'Cart Customization', 'Collection Pages', 'Store Migration', 'Theme Customization']
         }, {
-            bg: 'var(--wordpress-bg)',
-            cl: 'var(--wordpress)',
-            icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
-            t: 'WordPress Hooks',
-            tags: ['add_action', 'add_filter', 'do_action', 'apply_filters', 'Plugin API']
+            bg: 'var(--g-lred)',
+            cl: 'var(--g-red)',
+            icon: 'M9 21a1 1 0 100-2 1 1 0 000 2zM20 21a1 1 0 100-2 1 1 0 000 2zM1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6',
+            t: 'E-Commerce',
+            tags: ['WooCommerce', 'BigCommerce', 'CS-Cart Multi-Vendor', 'Payment Gateways', 'Subscriptions', 'Product Filters']
         }, {
-            bg: 'rgba(52,49,63,.08)',
-            cl: '#34313F',
-            icon: 'M2 3h20v14H2z',
-            t: 'BigCommerce & HubSpot',
-            tags: ['BigCommerce API', 'Stencil', 'HubSpot CRM', 'Workflows']
+            bg: 'var(--g-lyellow)',
+            cl: 'var(--g-orange)',
+            icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+            t: 'Frontend',
+            tags: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap', 'Responsive Design', 'Tailwind CSS']
         }, {
-            bg: 'rgba(66,133,244,.1)',
-            cl: '#4285F4',
-            icon: 'M11 11m-8 0a8 8 0 1016 0 8 8 0 10-16 0M21 21l-4.35-4.35',
-            t: 'Google Ads',
-            tags: ['Google Ads', 'GA4', 'GTM', 'Conversion Tracking', 'Shopping']
-        }, {
-            bg: 'var(--secondary-light)',
-            cl: 'var(--secondary)',
+            bg: 'var(--g-lgreen)',
+            cl: 'var(--g-green)',
             icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
             t: 'Performance & SEO',
-            tags: ['Core Web Vitals', 'Schema', 'Lighthouse', 'CDN', 'Caching']
+            tags: ['PageSpeed', 'GTmetrix', 'Core Web Vitals', 'Rank Math', 'Yoast SEO', 'Schema Markup', 'Technical SEO']
         }, {
-            bg: 'var(--purple-light)',
-            cl: 'var(--purple)',
+            bg: 'var(--g-lyellow)',
+            cl: 'var(--g-orange)',
+            icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6',
+            t: 'Email & Marketing',
+            tags: ['Klaviyo', 'Mailchimp', 'HubSpot', 'Google Ads', 'GA4', 'GTM', 'Zapier', 'Make']
+        }, {
+            bg: 'var(--g-lred)',
+            cl: 'var(--g-red)',
             icon: 'M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z',
-            t: 'Dev Tools',
-            tags: ['Git', 'Docker', 'VS Code', 'Figma', 'Webpack', 'CI/CD']
+            t: 'Tools',
+            tags: ['Git', 'GitHub', 'Figma', 'Canva', 'cPanel', 'WHM', 'Cloudflare', 'VS Code', 'Postman', 'WP-CLI']
+        }, {
+            bg: 'var(--g-lblue)',
+            cl: 'var(--g-blue)',
+            icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z',
+            t: 'Other CMS',
+            tags: ['Webflow', 'Wix', 'Squarespace', 'HubSpot CMS', 'Elementor Pro', 'Website Security', 'Malware Removal']
         }];
         document.getElementById('skGrid').innerHTML = sks.map(function(s, i) {
             return '<div class="sk-card rev d' + (i % 4 + 1) + '"><div class="sk-head"><div class="sk-ic" style="background:' + s.bg + ';color:' + s.cl + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><h3>' + s.t + '</h3></div><div class="sk-tags">' + s.tags.map(function(tg) {
@@ -2908,78 +3573,77 @@
             }).join('') + '</div></div>'
         }).join('');
 
-        // PROCESS
         var procSteps = [{
             num: '01',
             icon: 'M11 11m-8 0a8 8 0 1016 0 8 8 0 10-16 0M21 21l-4.35-4.35',
-            ib: 'var(--primary-light)',
-            ic: 'var(--primary)',
+            ib: 'var(--g-lblue)',
+            ic: 'var(--g-blue)',
             badge: 'Week 1',
-            bb: 'var(--primary-light)',
-            bc: 'var(--primary)',
+            bb: 'var(--g-lblue)',
+            bc: 'var(--g-blue)',
             title: 'Discovery & Strategy',
-            desc: 'Deep dive into goals, audience, competitors. Map every requirement before coding.',
+            desc: 'Deep dive into goals, audience, competitors, and requirements.',
             tools: ['Notion', 'Figma', 'Loom'],
             arrow: true
         }, {
             num: '02',
             icon: 'M3 3h18v18H3zM3 9h18M9 21V9',
-            ib: 'var(--purple-light)',
-            ic: 'var(--purple)',
+            ib: 'var(--g-lred)',
+            ic: 'var(--g-red)',
             badge: 'Week 1-2',
-            bb: 'var(--purple-light)',
-            bc: 'var(--purple)',
+            bb: 'var(--g-lred)',
+            bc: 'var(--g-red)',
             title: 'Design & Prototyping',
-            desc: 'Wireframes, UI components, interactive Figma prototypes. Full design approval first.',
-            tools: ['Figma', 'FigJam'],
+            desc: 'Wireframes, UI components, and Figma prototypes for approval.',
+            tools: ['Figma', 'FigJam', 'Canva'],
             arrow: true
         }, {
             num: '03',
             icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
-            ib: 'var(--shopify-bg)',
-            ic: 'var(--shopify)',
+            ib: 'var(--g-lyellow)',
+            ic: 'var(--g-orange)',
             badge: 'Week 2-5',
-            bb: 'var(--shopify-bg)',
-            bc: 'var(--shopify)',
+            bb: 'var(--g-lyellow)',
+            bc: 'var(--g-orange)',
             title: 'Development & Build',
-            desc: 'Clean hooks-based code. WordPress, Shopify Liquid, REST APIs built for scale.',
-            tools: ['VS Code', 'Git', 'PHP'],
+            desc: 'WordPress hooks, Shopify Liquid, REST APIs, custom plugins.',
+            tools: ['VS Code', 'Git', 'PHP', 'Liquid'],
             arrow: false
         }, {
             num: '04',
             icon: 'M22 11.08V12a10 10 0 11-5.93-9.14M22 4l-10 10.01L9 11.01',
-            ib: 'var(--secondary-light)',
-            ic: 'var(--secondary)',
+            ib: 'var(--g-lgreen)',
+            ic: 'var(--g-green)',
             badge: 'Week 5',
-            bb: 'var(--secondary-light)',
-            bc: 'var(--secondary)',
+            bb: 'var(--g-lgreen)',
+            bc: 'var(--g-green)',
             title: 'Testing & QA',
-            desc: 'Cross-browser, cross-device, Lighthouse audits, accessibility, real-device testing.',
-            tools: ['BrowserStack', 'Lighthouse'],
+            desc: 'Cross-browser, Lighthouse audits, Core Web Vitals, accessibility.',
+            tools: ['GTmetrix', 'PageSpeed', 'BrowserStack'],
             arrow: true
         }, {
             num: '05',
             icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z',
-            ib: 'var(--accent-light)',
-            ic: '#E37400',
+            ib: 'var(--g-lblue)',
+            ic: 'var(--g-blue)',
             badge: 'Week 6',
-            bb: 'var(--accent-light)',
-            bc: '#E37400',
+            bb: 'var(--g-lblue)',
+            bc: 'var(--g-blue)',
             title: 'Launch & Deployment',
-            desc: 'DNS, SSL, CDN setup, performance optimization. Zero-downtime go-live.',
-            tools: ['Cloudflare', 'CI/CD'],
+            desc: 'DNS, SSL, CDN, Cloudflare setup. Zero-downtime go-live.',
+            tools: ['Cloudflare', 'cPanel', 'WHM'],
             arrow: true
         }, {
             num: '06',
             icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z',
-            ib: 'var(--teal-light)',
-            ic: 'var(--teal)',
+            ib: 'var(--g-lgreen)',
+            ic: 'var(--g-green)',
             badge: 'Ongoing',
-            bb: 'var(--teal-light)',
-            bc: 'var(--teal)',
+            bb: 'var(--g-lgreen)',
+            bc: 'var(--g-green)',
             title: 'Support & Growth',
-            desc: 'Monthly maintenance, security updates, monitoring, and new features as you scale.',
-            tools: ['Uptime', 'Slack'],
+            desc: 'Maintenance, security monitoring, updates, and feature additions.',
+            tools: ['Uptime', 'Slack', 'Email'],
             arrow: false
         }];
         document.getElementById('procGrid').innerHTML = procSteps.map(function(s, i) {
@@ -2991,51 +3655,50 @@
 
         var pstats = [{
             icon: 'M12 12m-10 0a10 10 0 1020 0 10 10 0 10-20 0M12 6v6l4 2',
-            ib: 'var(--primary-light)',
-            ic: 'var(--primary)',
+            ib: 'var(--g-lblue)',
+            ic: 'var(--g-blue)',
             val: '6 Weeks',
             lbl: 'Average Timeline'
         }, {
             icon: 'M22 11.08V12a10 10 0 11-5.93-9.14M22 4l-10 10.01L9 11.01',
-            ib: 'var(--secondary-light)',
-            ic: 'var(--secondary)',
+            ib: 'var(--g-lgreen)',
+            ic: 'var(--g-green)',
             val: '150+',
-            lbl: 'Projects On Time'
+            lbl: 'Projects Delivered'
         }, {
             icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6',
-            ib: 'var(--accent-light)',
-            ic: '#E37400',
+            ib: 'var(--g-lyellow)',
+            ic: 'var(--g-orange)',
             val: '24hr',
-            lbl: 'Response Guarantee'
+            lbl: 'Response Time'
         }];
         document.getElementById('procStats').innerHTML = pstats.map(function(s) {
             return '<div class="pstat rev"><div class="pstat-ic" style="background:' + s.ib + ';color:' + s.ic + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="' + s.icon + '"/></svg></div><div><div class="pstat-val">' + s.val + '</div><div class="pstat-lbl">' + s.lbl + '</div></div></div>'
         }).join('');
 
         var faqs = [{
+            q: 'What WordPress services do you offer?',
+            a: 'Custom theme development, custom plugin development, Elementor Pro widgets, Gutenberg blocks, ACF Pro setups, WooCommerce stores, WP REST API integrations, speed optimization, malware removal, and website migrations.'
+        }, {
             q: 'What Shopify services do you offer?',
-            a: 'Custom Liquid themes, private/public apps, checkout customization, headless Shopify with Hydrogen, platform migrations, and store optimization.'
+            a: 'Custom Shopify Liquid themes, Shopify 2.0 sections, metafields, product templates, cart customization, collection pages, product filters, app integration, theme customization, and store migration.'
         }, {
-            q: 'How do you use WordPress hooks?',
-            a: 'Every customization uses add_action() and add_filter() \u2014 never modifying core files. Covers custom post types, REST API endpoints, WooCommerce modifications, and extensible plugin architectures.'
+            q: 'Do you work with other platforms?',
+            a: 'Yes. I also work with BigCommerce, CS-Cart (Multi-Vendor & Wholesale), HubSpot CMS, Webflow, Wix, and Squarespace.'
         }, {
-            q: 'Do you work with BigCommerce and HubSpot?',
-            a: 'Yes. Custom BigCommerce stores with Stencil themes, plus HubSpot CRM workflows, email automations, and seamless integrations with WordPress and Shopify.'
+            q: 'Can you optimize my website speed?',
+            a: 'Absolutely. I optimize for Google PageSpeed (90+ scores), GTmetrix, and Core Web Vitals using advanced caching, image optimization, code minification, CDN setup, and server-side improvements.'
         }, {
-            q: 'Can you set up Google Ads?',
-            a: 'Absolutely \u2014 Google Ads campaigns, GA4, Google Tag Manager, Shopping campaigns, conversion tracking, and remarketing all properly configured.'
-        }, {
-            q: 'What is your typical timeline?',
-            a: 'Simple sites: 2-3 weeks. E-commerce stores: 4-6 weeks. Custom apps: 6-10 weeks.'
+            q: 'Do you handle website security?',
+            a: 'Yes. I provide security hardening, malware removal, SSL setup, firewall configuration, and ongoing security monitoring for WordPress and Shopify sites.'
         }, {
             q: 'What are your payment terms?',
-            a: '40% upfront, 30% midpoint, 30% on delivery. Bank transfer, PayPal, and Wise accepted.'
+            a: '40% upfront, 30% at midpoint, 30% on delivery. I accept bank transfer, PayPal, Wise, and Razorpay.'
         }];
         document.getElementById('faqWrap').innerHTML = faqs.map(function(f) {
-            return '<div class="fi-item rev"><button class="fi-q" aria-expanded="false">' + f.q + '<svg class="fi-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="fi-ans"><div class="fi-ans-inner">' + f.a + '</div></div></div>'
+            return '<div class="fi-item"><button class="fi-q" aria-expanded="false">' + f.q + '<svg class="fi-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="fi-ans"><div class="fi-ans-inner">' + f.a + '</div></div></div>'
         }).join('');
 
-        // JS LOGIC
         var nav = document.getElementById('nav');
         window.addEventListener('scroll', function() {
             nav.classList.toggle('scrolled', scrollY > 50)
@@ -3065,18 +3728,6 @@
         mo.addEventListener('click', closeM);
         mm.querySelectorAll('a').forEach(function(a) {
             a.addEventListener('click', closeM)
-        });
-        document.querySelectorAll('.cw-tab').forEach(function(tab) {
-            tab.addEventListener('click', function() {
-                document.querySelectorAll('.cw-tab').forEach(function(t) {
-                    t.classList.remove('on')
-                });
-                document.querySelectorAll('.cw-pane').forEach(function(p) {
-                    p.classList.remove('on')
-                });
-                tab.classList.add('on');
-                document.getElementById('cw-' + tab.getAttribute('data-tab')).classList.add('on')
-            })
         });
         var ro = new IntersectionObserver(function(entries) {
             entries.forEach(function(e) {
@@ -3178,43 +3829,34 @@
                 })
             })
         });
+
+        // FORM — sends to ankit.jaswal.311@gmail.com via FormSubmit.co
         document.getElementById('cForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            var fn = document.getElementById('fn');
-            var ln = document.getElementById('ln');
-            var em = document.getElementById('fe');
-            var sv = document.getElementById('fserv');
-            var m = document.getElementById('fm');
+            var fn = document.getElementById('fn'),
+                ln = document.getElementById('ln'),
+                em = document.getElementById('fe'),
+                sv = document.getElementById('fserv'),
+                m = document.getElementById('fm');
             var ok = true;
-            var fields = [
+            [
                 [fn, !fn.value.trim()],
                 [ln, !ln.value.trim()],
                 [em, !em.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)],
                 [sv, !sv.value],
                 [m, !m.value.trim()]
-            ];
-            fields.forEach(function(pair) {
-                pair[0].style.borderColor = pair[1] ? 'var(--error)' : '';
-                pair[0].style.boxShadow = pair[1] ? '0 0 0 3px var(--error-light)' : '';
-                if (pair[1]) ok = false
+            ].forEach(function(p) {
+                p[0].style.borderColor = p[1] ? 'var(--g-mred)' : '';
+                p[0].style.boxShadow = p[1] ? '0 0 0 3px var(--g-lred)' : '';
+                if (p[1]) ok = false;
             });
-            if (ok) {
-                var b = document.getElementById('fBtn');
-                b.textContent = 'Sending...';
-                b.disabled = true;
-                setTimeout(function() {
-                    b.textContent = '\u2713 Message Sent!';
-                    b.style.background = 'var(--secondary)';
-                    b.style.animation = 'none';
-                    setTimeout(function() {
-                        document.getElementById('cForm').reset();
-                        b.textContent = 'Send Message \u2192';
-                        b.style.background = '';
-                        b.style.animation = '';
-                        b.disabled = false
-                    }, 3000)
-                }, 1500)
+            if (!ok) {
+                e.preventDefault();
+                return
             }
+            var b = document.getElementById('fBtn');
+            b.textContent = 'Sending...';
+            b.disabled = true;
+            // form submits to FormSubmit which emails ankit.jaswal.311@gmail.com
         });
         document.querySelectorAll('.finp,.ftxt,.fsel').forEach(function(el) {
             el.addEventListener('input', function() {
