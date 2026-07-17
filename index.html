@@ -8,7 +8,7 @@
     <title>Ankit Jaswal | Senior WordPress & Shopify Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *,
         *::before,
@@ -44,9 +44,6 @@
             --text-secondary: #5F6368;
             --text-tertiary: #9AA0A6;
             --border: #E8EAED;
-            --code-bg: #0d1117;
-            --code-text: #c9d1d9;
-            --code-border: #30363d;
             --sh-sm: 0 1px 3px rgba(60, 64, 67, .1), 0 1px 2px rgba(60, 64, 67, .06);
             --sh-md: 0 4px 6px rgba(60, 64, 67, .07), 0 2px 4px rgba(60, 64, 67, .06);
             --sh-lg: 0 10px 15px rgba(60, 64, 67, .08), 0 4px 6px rgba(60, 64, 67, .05);
@@ -105,7 +102,6 @@
         }
         
         button {
-            cursor: none;
             border: none;
             background: none;
             font-family: inherit
@@ -135,11 +131,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text
         }
-        
-        .mono {
-            font-family: 'JetBrains Mono', monospace
-        }
-        /* ===== CUSTOM CURSOR ===== */
+        /* CUSTOM CURSOR */
         
         .cursor-dot {
             width: 8px;
@@ -153,7 +145,6 @@
             z-index: 99999;
             transform: translate(-50%, -50%);
             transition: width .2s, height .2s, background .2s;
-            mix-blend-mode: normal;
             box-shadow: 0 0 12px rgba(66, 133, 244, .5)
         }
         
@@ -196,20 +187,6 @@
             height: 20px
         }
         
-        @media(hover:none),
-        (pointer:coarse) {
-            .cursor-dot,
-            .cursor-ring {
-                display: none
-            }
-            body,
-            a,
-            button {
-                cursor: auto
-            }
-        }
-        /* Cursor glow follower */
-        
         .cursor-glow {
             width: 400px;
             height: 400px;
@@ -230,8 +207,15 @@
         
         @media(hover:none),
         (pointer:coarse) {
+            .cursor-dot,
+            .cursor-ring,
             .cursor-glow {
                 display: none
+            }
+            body,
+            a,
+            button {
+                cursor: auto
             }
         }
         /* BG PATTERNS */
@@ -285,14 +269,6 @@
             inset: 0;
             background-image: linear-gradient(30deg, rgba(232, 234, 237, .4) 1px, transparent 1px), linear-gradient(-30deg, rgba(232, 234, 237, .4) 1px, transparent 1px);
             background-size: 52px 52px;
-            pointer-events: none;
-            z-index: 0
-        }
-        
-        .bg-code-lines {
-            position: absolute;
-            inset: 0;
-            background-image: repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(66, 133, 244, .04) 27px, rgba(66, 133, 244, .04) 28px);
             pointer-events: none;
             z-index: 0
         }
@@ -708,14 +684,7 @@
             font-weight: 700;
             margin-bottom: 14px;
             letter-spacing: .08em;
-            text-transform: uppercase;
-            font-family: 'JetBrains Mono', monospace
-        }
-        
-        .section-label::before {
-            content: '//';
-            font-weight: 700;
-            opacity: .6
+            text-transform: uppercase
         }
         
         .sl-blue {
@@ -772,7 +741,7 @@
         
         .hero .container {
             display: grid;
-            grid-template-columns: 1.05fr .95fr;
+            grid-template-columns: 1.1fr .9fr;
             gap: 64px;
             align-items: center;
             position: relative;
@@ -791,8 +760,7 @@
             font-weight: 500;
             color: var(--text-secondary);
             margin-bottom: 28px;
-            box-shadow: var(--sh-sm);
-            font-family: 'JetBrains Mono', monospace
+            box-shadow: var(--sh-sm)
         }
         
         .hero-badge-dot {
@@ -820,8 +788,7 @@
             margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 7px;
-            font-family: 'JetBrains Mono', monospace
+            gap: 7px
         }
         
         .hero-eyebrow svg {
@@ -835,25 +802,6 @@
             line-height: 1.05;
             margin-bottom: 14px;
             letter-spacing: -.02em
-        }
-        
-        .hero-title::before {
-            content: '<';
-            color: var(--g-mblue);
-            opacity: .4;
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 400;
-            margin-right: 6px
-        }
-        
-        .hero-title::after {
-            content: ' />';
-            color: var(--g-mblue);
-            opacity: .4;
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 400;
-            font-size: .6em;
-            vertical-align: middle
         }
         
         .hero-sub {
@@ -882,8 +830,7 @@
             align-items: center;
             gap: 6px;
             color: var(--text-secondary);
-            transition: var(--tf);
-            font-family: 'JetBrains Mono', monospace
+            transition: var(--tf)
         }
         
         .hero-pill:hover {
@@ -943,78 +890,220 @@
             color: var(--text-secondary);
             margin-top: 2px
         }
-        /* ===== HERO IMAGE (real photo) ===== */
+        /* ===== HERO PHOTO — TRANSPARENT PNG WITH FLOATING TAGS ===== */
         
         .hero-visual {
             position: relative;
             display: flex;
             justify-content: center;
-            align-items: center
+            align-items: center;
+            min-height: 520px
         }
         
-        .photo-wrap {
+        .photo-stage {
             position: relative;
             width: 100%;
-            max-width: 440px;
-            padding: 20px
+            max-width: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-top: 40px
         }
+        /* Ambient glow behind photo */
         
-        .photo-glow {
+        .photo-halo {
             position: absolute;
-            inset: 20px;
-            background: var(--grad-google);
-            background-size: 200% 200%;
-            animation: grad-shift 6s ease infinite;
-            filter: blur(70px);
-            opacity: .35;
-            border-radius: var(--r-2xl);
-            z-index: 0
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 90%;
+            background: radial-gradient(ellipse at center bottom, rgba(66, 133, 244, .25) 0%, rgba(52, 168, 83, .15) 40%, transparent 70%);
+            filter: blur(60px);
+            z-index: 0;
+            animation: halo-pulse 6s ease-in-out infinite
         }
         
-        .photo-frame {
-            position: relative;
-            animation: grad-shift 6s ease infinite;
+        @keyframes halo-pulse {
+            0%,
+            100% {
+                opacity: .6;
+                transform: translateX(-50%) scale(1)
+            }
+            50% {
+                opacity: 1;
+                transform: translateX(-50%) scale(1.05)
+            }
+        }
+        /* Backdrop circle — soft accent */
+        
+        .photo-backdrop {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            aspect-ratio: 1;
+            background: radial-gradient(circle, rgba(66, 133, 244, .12) 0%, rgba(255, 255, 255, 0) 65%);
+            z-index: 1;
+            animation: back-float 8s ease-in-out infinite
         }
         
-        .photo-container {
-            position: relative;
+        @keyframes back-float {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0)
+            }
+            50% {
+                transform: translateX(-50%) translateY(-10px)
+            }
+        }
+        /* Soft grid lines behind photo — subtle depth */
+        
+        .photo-grid {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
-            height: 100%;
+            height: 80%;
+            background-image: radial-gradient(circle, rgba(66, 133, 244, .15) 1px, transparent 1px);
+            background-size: 24px 24px;
+            mask-image: radial-gradient(ellipse at center bottom, black 30%, transparent 75%);
+            -webkit-mask-image: radial-gradient(ellipse at center bottom, black 30%, transparent 75%);
+            opacity: .5;
+            z-index: 1
         }
+        /* The photo itself — transparent, floats with gentle motion */
         
         .photo-img {
+            position: relative;
+            z-index: 2;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center top;
-            display: block
+            max-width: 440px;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 30px 40px rgba(60, 64, 67, .25)) drop-shadow(0 15px 20px rgba(60, 64, 67, .15));
+            animation: photo-float 6s ease-in-out infinite;
+            transition: transform .5s var(--ease)
         }
         
-        .photo-verified {
+        @keyframes photo-float {
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+            50% {
+                transform: translateY(-15px)
+            }
+        }
+        
+        .photo-stage:hover .photo-img {
+            transform: translateY(-20px) scale(1.02)
+        }
+        /* Floating tech tags around photo */
+        
+        .ptag-float {
             position: absolute;
-            bottom: 20px;
-            right: 20px;
-            width: 46px;
-            height: 46px;
-            background: var(--g-mblue);
-            color: #fff;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--r-full);
+            padding: 9px 16px 9px 10px;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            box-shadow: var(--sh-lg);
+            z-index: 5;
+            font-size: .8125rem;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: transform .3s var(--ease)
+        }
+        
+        .ptag-float:hover {
+            transform: scale(1.08);
+            box-shadow: var(--sh-xl)
+        }
+        
+        .ptag-float .ptag-ic {
+            width: 26px;
+            height: 26px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 4px solid var(--bg);
-            box-shadow: var(--sh-md);
-            z-index: 3
+            flex-shrink: 0
         }
         
-        .photo-verified svg {
-            width: 20px;
-            height: 20px
+        .ptag-float .ptag-ic svg {
+            width: 14px;
+            height: 14px
         }
         
-        .photo-info {
+        .ptag-1 {
+            top: 20px;
+            left: -10px;
+            animation: tag-f1 5s ease-in-out infinite
+        }
+        
+        .ptag-2 {
+            top: 100px;
+            right: -20px;
+            animation: tag-f2 6s ease-in-out infinite .5s
+        }
+        
+        .ptag-3 {
+            bottom: 180px;
+            left: -30px;
+            animation: tag-f3 7s ease-in-out infinite 1s
+        }
+        
+        .ptag-4 {
+            bottom: 80px;
+            right: -10px;
+            animation: tag-f1 6.5s ease-in-out infinite 1.5s
+        }
+        
+        .ptag-5 {
+            top: 50%;
+            left: -40px;
+            animation: tag-f2 8s ease-in-out infinite 2s
+        }
+        
+        @keyframes tag-f1 {
+            0%,
+            100% {
+                transform: translateY(0) translateX(0)
+            }
+            50% {
+                transform: translateY(-12px) translateX(4px)
+            }
+        }
+        
+        @keyframes tag-f2 {
+            0%,
+            100% {
+                transform: translateY(0) translateX(0)
+            }
+            50% {
+                transform: translateY(-10px) translateX(-4px)
+            }
+        }
+        
+        @keyframes tag-f3 {
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+            50% {
+                transform: translateY(-14px)
+            }
+        }
+        /* Status pill floating at bottom */
+        
+        .photo-status {
             position: absolute;
-            bottom: -16px;
+            bottom: -8px;
             left: 50%;
             transform: translateX(-50%);
             background: var(--bg);
@@ -1023,38 +1112,38 @@
             padding: 10px 22px;
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 16px;
             box-shadow: var(--sh-lg);
-            z-index: 4;
+            z-index: 6;
             white-space: nowrap
         }
         
-        .photo-info-name {
+        .photo-status-name {
             display: flex;
             flex-direction: column;
             line-height: 1.2
         }
         
-        .photo-info-name strong {
+        .photo-status-name strong {
             font-size: .8125rem;
             font-weight: 800;
             font-family: 'Manrope', sans-serif
         }
         
-        .photo-info-name span {
+        .photo-status-name span {
             font-size: .6875rem;
             color: var(--text-secondary);
             margin-top: 2px
         }
         
-        .photo-info-status {
+        .photo-status-badge {
             display: flex;
             align-items: center;
             gap: 6px;
             font-size: .75rem;
             font-weight: 600;
             color: var(--g-green);
-            padding-left: 16px;
+            padding-left: 14px;
             border-left: 1px solid var(--border)
         }
         
@@ -1065,72 +1154,6 @@
             border-radius: 50%;
             animation: pulse 2s infinite;
             box-shadow: 0 0 0 3px rgba(52, 168, 83, .2)
-        }
-        
-        .hf {
-            position: absolute;
-            background: var(--bg);
-            border-radius: var(--r-lg);
-            padding: 12px 16px;
-            box-shadow: var(--sh-lg);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            z-index: 5;
-            border: 1px solid var(--border)
-        }
-        
-        .hf1 {
-            top: 30px;
-            right: -20px;
-            animation: fl 6s ease-in-out infinite
-        }
-        
-        .hf2 {
-            top: 45%;
-            left: -30px;
-            animation: fl 7s ease-in-out infinite .5s
-        }
-        
-        .hf3 {
-            bottom: 100px;
-            right: -30px;
-            animation: fl 8s ease-in-out infinite 1s
-        }
-        
-        @keyframes fl {
-            0%,
-            100% {
-                transform: translateY(0)
-            }
-            50% {
-                transform: translateY(-10px)
-            }
-        }
-        
-        .fic {
-            width: 38px;
-            height: 38px;
-            border-radius: var(--r-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0
-        }
-        
-        .fic svg {
-            width: 18px;
-            height: 18px
-        }
-        
-        .fl-t {
-            font-size: .75rem;
-            font-weight: 700
-        }
-        
-        .fl-s {
-            font-size: .6875rem;
-            color: var(--text-secondary)
         }
         /* MARQUEE */
         
@@ -1150,8 +1173,7 @@
             color: var(--text-tertiary);
             text-transform: uppercase;
             letter-spacing: .15em;
-            margin-bottom: 20px;
-            font-family: 'JetBrains Mono', monospace
+            margin-bottom: 20px
         }
         
         .marq-track {
@@ -1177,8 +1199,7 @@
             font-size: .8125rem;
             font-weight: 600;
             color: var(--text-secondary);
-            white-space: nowrap;
-            font-family: 'JetBrains Mono', monospace
+            white-space: nowrap
         }
         
         .mdi {
@@ -1207,7 +1228,6 @@
             border-radius: var(--r-lg);
             padding: 24px;
             transition: var(--tn);
-            cursor: none;
             position: relative;
             overflow: hidden
         }
@@ -1292,10 +1312,8 @@
             font-weight: 600;
             border: 1.5px solid var(--border);
             color: var(--text-secondary);
-            cursor: none;
             background: var(--bg);
-            transition: var(--tn);
-            font-family: 'JetBrains Mono', monospace
+            transition: var(--tn)
         }
         
         .proj-tab.on,
@@ -1376,8 +1394,7 @@
             font-weight: 700;
             letter-spacing: .04em;
             text-transform: uppercase;
-            margin-bottom: 10px;
-            font-family: 'JetBrains Mono', monospace
+            margin-bottom: 10px
         }
         
         .proj-card h3 {
@@ -1407,8 +1424,7 @@
             border-radius: var(--r-full);
             font-size: .625rem;
             font-weight: 600;
-            color: var(--text-secondary);
-            font-family: 'JetBrains Mono', monospace
+            color: var(--text-secondary)
         }
         
         .proj-results {
@@ -1437,8 +1453,7 @@
             font-size: .5625rem;
             color: var(--text-tertiary);
             text-transform: uppercase;
-            margin-top: 2px;
-            font-family: 'JetBrains Mono', monospace
+            margin-top: 2px
         }
         
         .proj-btns {
@@ -1552,8 +1567,7 @@
             background: var(--g-lblue);
             border-radius: var(--r-full);
             white-space: nowrap;
-            flex-shrink: 0;
-            font-family: 'JetBrains Mono', monospace
+            flex-shrink: 0
         }
         
         .exp-card h3 {
@@ -1575,8 +1589,7 @@
             margin-bottom: 16px;
             display: flex;
             align-items: center;
-            gap: 4px;
-            font-family: 'JetBrains Mono', monospace
+            gap: 4px
         }
         
         .exp-loc svg {
@@ -1622,8 +1635,7 @@
             border-radius: var(--r-full);
             font-size: .625rem;
             font-weight: 600;
-            color: var(--text-secondary);
-            font-family: 'JetBrains Mono', monospace
+            color: var(--text-secondary)
         }
         /* SKILLS */
         
@@ -1699,8 +1711,7 @@
             font-size: .6875rem;
             font-weight: 500;
             color: var(--text-secondary);
-            transition: var(--tf);
-            font-family: 'JetBrains Mono', monospace
+            transition: var(--tf)
         }
         
         .sktag:hover {
@@ -1757,7 +1768,7 @@
             position: absolute;
             top: 16px;
             right: 20px;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Manrope', sans-serif;
             font-size: 3.5rem;
             font-weight: 800;
             line-height: 1;
@@ -1806,8 +1817,7 @@
             text-transform: uppercase;
             margin-bottom: 10px;
             position: relative;
-            z-index: 1;
-            font-family: 'JetBrains Mono', monospace
+            z-index: 1
         }
         
         .proc-card h3 {
@@ -1841,8 +1851,7 @@
             border-radius: var(--r-full);
             font-size: .625rem;
             font-weight: 600;
-            color: var(--text-tertiary);
-            font-family: 'JetBrains Mono', monospace
+            color: var(--text-tertiary)
         }
         
         .proc-arrow {
@@ -1990,10 +1999,10 @@
             color: var(--text-secondary);
             line-height: 1.75
         }
-        /* ===== CTA — DEVELOPER TERMINAL STYLE (no cartoon) ===== */
+        /* ===== CTA — CLEAN, NO TERMINAL/CODE STYLE ===== */
         
         .cta-sec {
-            background: var(--code-bg);
+            background: linear-gradient(135deg, #0a1128 0%, #174EA6 50%, #0D652D 100%);
             padding: 100px 0;
             position: relative;
             overflow: hidden
@@ -2003,150 +2012,102 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: linear-gradient(rgba(66, 133, 244, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(66, 133, 244, .05) 1px, transparent 1px);
-            background-size: 40px 40px;
-            opacity: .4
+            background: radial-gradient(circle at 30% 40%, rgba(66, 133, 244, .3), transparent 50%), radial-gradient(circle at 70% 60%, rgba(52, 168, 83, .25), transparent 50%), radial-gradient(circle at 50% 100%, rgba(251, 188, 4, .15), transparent 50%)
         }
         
         .cta-sec::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at 30% 40%, rgba(66, 133, 244, .15), transparent 50%), radial-gradient(circle at 70% 60%, rgba(52, 168, 83, .12), transparent 50%)
+            background-image: radial-gradient(circle, rgba(255, 255, 255, .06) 1px, transparent 1px);
+            background-size: 32px 32px
         }
         
         .cta-inner {
             text-align: center;
-            max-width: 720px;
+            max-width: 640px;
             margin: 0 auto;
             position: relative;
             z-index: 2
         }
         
-        .cta-terminal {
-            background: rgba(13, 17, 23, .7);
-            border: 1px solid var(--code-border);
-            border-radius: var(--r-xl);
-            padding: 0;
-            margin-bottom: 32px;
-            text-align: left;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .875rem;
-            overflow: hidden;
+        .cta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            background: rgba(255, 255, 255, .1);
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: var(--r-full);
+            font-size: .75rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, .9);
+            margin-bottom: 24px;
             backdrop-filter: blur(10px)
         }
         
-        .cta-terminal-head {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, .03);
-            border-bottom: 1px solid var(--code-border)
-        }
-        
-        .cta-terminal-head .dots {
-            display: flex;
-            gap: 6px
-        }
-        
-        .cta-terminal-head .dots span {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%
-        }
-        
-        .cta-terminal-head .dots span:nth-child(1) {
-            background: #FF5F57
-        }
-        
-        .cta-terminal-head .dots span:nth-child(2) {
-            background: #FEBC2E
-        }
-        
-        .cta-terminal-head .dots span:nth-child(3) {
-            background: #28C840
-        }
-        
-        .cta-terminal-head .title {
-            color: #8b949e;
-            font-size: .75rem;
-            margin-left: 12px
-        }
-        
-        .cta-terminal-body {
-            padding: 20px 24px;
-            color: var(--code-text);
-            line-height: 1.8
-        }
-        
-        .cta-terminal-body .prompt {
-            color: #7ee787
-        }
-        
-        .cta-terminal-body .cmd {
-            color: #79c0ff
-        }
-        
-        .cta-terminal-body .comment {
-            color: #8b949e
-        }
-        
-        .cta-terminal-body .string {
-            color: #a5d6ff
-        }
-        
-        .cta-terminal-body .keyword {
-            color: #ff7b72
-        }
-        
-        .cta-cursor-blink {
-            display: inline-block;
+        .cta-badge-dot {
             width: 8px;
-            height: 1em;
-            background: #7ee787;
-            vertical-align: text-bottom;
-            margin-left: 2px;
-            animation: tcursor 1s step-end infinite
-        }
-        
-        @keyframes tcursor {
-            0%,
-            50% {
-                opacity: 1
-            }
-            51%,
-            100% {
-                opacity: 0
-            }
+            height: 8px;
+            background: var(--g-mgreen);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 0 3px rgba(52, 168, 83, .3)
         }
         
         .cta-inner h2 {
             color: #fff;
-            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-            margin-bottom: 14px;
-            font-weight: 800
+            font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+            margin-bottom: 16px;
+            font-weight: 800;
+            line-height: 1.15
         }
         
         .cta-inner h2 span {
-            background: var(--grad-text);
+            background: linear-gradient(135deg, #4285F4, #FBBC04, #34A853);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: grad-shift 5s ease infinite
         }
         
         .cta-inner p {
-            color: rgba(255, 255, 255, .75);
-            font-size: 1rem;
+            color: rgba(255, 255, 255, .8);
+            font-size: 1.0625rem;
             margin-bottom: 32px;
             line-height: 1.7
         }
         
         .cta-btns {
             display: flex;
-            gap: 11px;
+            gap: 12px;
             justify-content: center;
             flex-wrap: wrap
+        }
+        
+        .cta-quick {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, .1)
+        }
+        
+        .cta-quick-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, .75);
+            font-size: .8125rem
+        }
+        
+        .cta-quick-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--g-mgreen)
         }
         /* CONTACT */
         
@@ -2215,8 +2176,7 @@
         
         .c-ml {
             font-size: .6875rem;
-            color: var(--text-secondary);
-            font-family: 'JetBrains Mono', monospace
+            color: var(--text-secondary)
         }
         
         .c-mv {
@@ -2291,8 +2251,7 @@
             font-size: .6875rem;
             color: var(--text-tertiary);
             font-weight: 500;
-            margin-left: 6px;
-            font-family: 'JetBrains Mono', monospace
+            margin-left: 6px
         }
         
         .finp,
@@ -2306,8 +2265,7 @@
             font-family: 'Inter', sans-serif;
             color: var(--text);
             transition: var(--tf);
-            background: var(--bg-alt);
-            cursor: none
+            background: var(--bg-alt)
         }
         
         .finp:focus,
@@ -2346,7 +2304,6 @@
             font-size: 1rem;
             font-weight: 700;
             font-family: 'Manrope', sans-serif;
-            cursor: none;
             transition: var(--tn);
             background-size: 200% 200%;
             animation: grad-shift 5s ease infinite;
@@ -2362,8 +2319,7 @@
             font-size: .75rem;
             color: var(--text-tertiary);
             margin-top: 12px;
-            text-align: center;
-            font-family: 'JetBrains Mono', monospace
+            text-align: center
         }
         /* FOOTER */
         
@@ -2408,8 +2364,7 @@
         
         .foot-link {
             font-size: .8125rem;
-            transition: var(--tf);
-            font-family: 'JetBrains Mono', monospace
+            transition: var(--tf)
         }
         
         .foot-link:hover {
@@ -2423,8 +2378,7 @@
             padding-top: 20px;
             font-size: .75rem;
             flex-wrap: wrap;
-            gap: 14px;
-            font-family: 'JetBrains Mono', monospace
+            gap: 14px
         }
         
         .btt {
@@ -2511,14 +2465,15 @@
             .hero .container {
                 grid-template-columns: 1fr;
                 text-align: center;
-                gap: 60px
+                gap: 40px
             }
             .hero-content {
                 order: 2;
                 text-align: center
             }
             .hero-visual {
-                order: 1
+                order: 1;
+                min-height: auto
             }
             .hero-pills,
             .hero-actions,
@@ -2529,7 +2484,10 @@
                 margin-left: auto;
                 margin-right: auto
             }
-            .photo-wrap {
+            .photo-stage {
+                max-width: 380px
+            }
+            .photo-img {
                 max-width: 360px
             }
             .contact-grid {
@@ -2601,14 +2559,36 @@
                 flex-direction: column;
                 align-items: center
             }
-            .photo-wrap {
+            .photo-stage {
+                max-width: 320px
+            }
+            .photo-img {
                 max-width: 300px
             }
-            .hf {
+            .ptag-float {
                 display: none
             }
-            .cta-terminal-body {
-                font-size: .75rem
+            .ptag-1,
+            .ptag-4 {
+                display: flex;
+                padding: 7px 12px 7px 8px;
+                font-size: .6875rem
+            }
+            .ptag-1 {
+                top: 10px;
+                left: 0
+            }
+            .ptag-4 {
+                bottom: 50px;
+                right: 0
+            }
+            .ptag-float .ptag-ic {
+                width: 22px;
+                height: 22px
+            }
+            .ptag-float .ptag-ic svg {
+                width: 12px;
+                height: 12px
             }
         }
         
@@ -2644,8 +2624,15 @@
             .hs-val {
                 font-size: 1.25rem
             }
-            .photo-wrap {
+            .photo-stage {
+                max-width: 280px
+            }
+            .photo-img {
                 max-width: 260px
+            }
+            .ptag-1,
+            .ptag-4 {
+                display: none
             }
         }
         
@@ -2657,6 +2644,9 @@
             .rev {
                 opacity: 1;
                 transform: none
+            }
+            .photo-img {
+                animation: none
             }
         }
         
@@ -2670,7 +2660,6 @@
 
 <body>
 
-    <!-- CUSTOM CURSOR -->
     <div class="cursor-glow" id="cursorGlow"></div>
     <div class="cursor-ring" id="cursorRing"></div>
     <div class="cursor-dot" id="cursorDot"></div>
@@ -2695,16 +2684,16 @@
         <div class="mob-divider"></div><a href="#contact" class="mob-cta">Hire Me &rarr;</a></div>
 
     <main id="main">
-        <!-- HERO with real photo -->
+        <!-- HERO with transparent PNG photo + floating tags -->
         <section class="hero" id="hero">
             <div class="bg-dots-grid fade-radial"></div>
             <div class="glow glow-blue" style="width:500px;height:500px;top:-15%;right:-10%"></div>
             <div class="glow glow-green" style="width:400px;height:400px;bottom:-20%;left:-10%"></div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge rev"><span class="hero-badge-dot"></span>const status = "available_for_hire"</div>
+                    <div class="hero-badge rev"><span class="hero-badge-dot"></span>Available for new projects</div>
                     <p class="hero-eyebrow rev d1 grad-text"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Senior Developer &middot; 4+ Years &middot; Zirakpur, Punjab</p>
-                    <h1 class="hero-title rev d1"><span class="grad-text">Ankit Jaswal</span></h1>
+                    <h1 class="hero-title rev d1">I'm <span class="grad-text">Ankit Jaswal</span></h1>
                     <p class="hero-sub rev d2">Senior WordPress &amp; Shopify Developer specializing in custom themes, plugins, WooCommerce, Shopify Liquid, performance optimization, and conversion-focused eCommerce solutions for clients worldwide.</p>
                     <div class="hero-pills rev d3" id="heroPills"></div>
                     <div class="hero-actions rev d4">
@@ -2730,39 +2719,53 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ===== TRANSPARENT PHOTO WITH FLOATING TAGS ===== -->
                 <div class="hero-visual rev d2">
-                    <div class="photo-wrap">
-                        <div class="photo-glow"></div>
-                        <div class="photo-frame">
-                            <div class="photo-container">
-                                <img src="https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/profile-pic.png" alt="Ankit Jaswal - Senior WordPress & Shopify Developer" class="photo-img" loading="eager">
+                    <div class="photo-stage">
+                        <div class="photo-halo"></div>
+                        <div class="photo-backdrop"></div>
+                        <div class="photo-grid"></div>
+
+                        <!-- Floating skill tags around photo -->
+                        <div class="ptag-float ptag-1">
+                            <div class="ptag-ic" style="background:var(--g-lblue);color:var(--g-blue)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
                             </div>
-                            <div class="photo-verified" title="Verified Developer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                            <span>WordPress</span>
                         </div>
-                        <div class="photo-info">
-                            <div class="photo-info-name"><strong>Ankit Jaswal</strong><span>Senior Developer</span></div>
-                            <div class="photo-info-status"><span class="status-dot"></span>Online</div>
+                        <div class="ptag-float ptag-2">
+                            <div class="ptag-ic" style="background:var(--g-lgreen);color:var(--g-green)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/></svg>
+                            </div>
+                            <span>Shopify</span>
                         </div>
-                    </div>
-                    <div class="hf hf1">
-                        <div class="fic" style="background:var(--g-lgreen);color:var(--g-green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/></svg></div>
-                        <div>
-                            <div class="fl-t" style="color:var(--g-green)">Shopify Expert</div>
-                            <div class="fl-s">Liquid &amp; Apps</div>
+                        <div class="ptag-float ptag-3">
+                            <div class="ptag-ic" style="background:var(--g-lyellow);color:var(--g-orange)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </div>
+                            <span>90+ PageSpeed</span>
                         </div>
-                    </div>
-                    <div class="hf hf2">
-                        <div class="fic" style="background:var(--g-lblue);color:var(--g-blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-                        <div>
-                            <div class="fl-t" style="color:var(--g-blue)">WP Hooks</div>
-                            <div class="fl-s">Actions &amp; Filters</div>
+                        <div class="ptag-float ptag-4">
+                            <div class="ptag-ic" style="background:var(--g-lred);color:var(--g-red)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                            </div>
+                            <span>Plugins</span>
                         </div>
-                    </div>
-                    <div class="hf hf3">
-                        <div class="fic" style="background:var(--g-lyellow);color:var(--g-orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                        <div>
-                            <div class="fl-t" style="color:var(--g-orange)">98% Rated</div>
-                            <div class="fl-s">Top Reviews</div>
+                        <div class="ptag-float ptag-5">
+                            <div class="ptag-ic" style="background:var(--g-lblue);color:var(--g-blue)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <span>Liquid</span>
+                        </div>
+
+                        <!-- The photo (transparent PNG) -->
+                        <img src="https://raw.githubusercontent.com/ankitjaswal311-max/portfolio/refs/heads/main/profile-pic.png" alt="Ankit Jaswal - Senior WordPress & Shopify Developer" class="photo-img" loading="eager">
+
+                        <!-- Status badge -->
+                        <div class="photo-status">
+                            <div class="photo-status-name"><strong>Ankit Jaswal</strong><span>Senior Developer</span></div>
+                            <div class="photo-status-badge"><span class="status-dot"></span>Online</div>
                         </div>
                     </div>
                 </div>
@@ -2770,7 +2773,7 @@
         </section>
 
         <div class="marq">
-            <div class="marq-lbl">&lt;/&gt; Technologies &amp; Platforms</div>
+            <div class="marq-lbl">Technologies &amp; Platforms</div>
             <div style="overflow:hidden">
                 <div class="marq-track" id="marqTrack"></div>
             </div>
@@ -2780,7 +2783,7 @@
             <div class="bg-grid-subtle fade-top-bottom"></div>
             <div class="glow glow-blue" style="width:400px;height:400px;top:20%;right:-15%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-blue">services</span>
+                <div class="section-header rev"><span class="section-label sl-blue">Services</span>
                     <h2 class="section-title"><span class="grad-text">What I Build</span></h2>
                     <p class="section-desc">Custom WordPress development, Shopify stores, WooCommerce, performance optimization, and scalable web solutions.</p>
                 </div>
@@ -2792,7 +2795,7 @@
             <div class="bg-lines-diagonal fade-top-bottom"></div>
             <div class="glow glow-green" style="width:400px;height:400px;bottom:10%;left:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-purple">portfolio</span>
+                <div class="section-header rev"><span class="section-label sl-purple">Portfolio</span>
                     <h2 class="section-title">Live Client <span class="grad-text">Websites</span></h2>
                     <p class="section-desc">Real stores, real results &mdash; every project live and verified.</p>
                 </div>
@@ -2806,7 +2809,7 @@
             <div class="glow glow-red" style="width:400px;height:400px;top:10%;left:-10%"></div>
             <div class="glow glow-blue" style="width:350px;height:350px;bottom:15%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-red">career</span>
+                <div class="section-header rev"><span class="section-label sl-red">Career</span>
                     <h2 class="section-title">Professional <span class="grad-text">Experience</span></h2>
                     <p class="section-desc">4+ years of building high-performance websites and eCommerce solutions.</p>
                 </div>
@@ -2818,7 +2821,7 @@
             <div class="bg-lines-horizontal fade-top-bottom"></div>
             <div class="glow glow-yellow" style="width:400px;height:400px;top:20%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-teal">expertise</span>
+                <div class="section-header rev"><span class="section-label sl-teal">Expertise</span>
                     <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
                 </div>
                 <div class="sk-grid" id="skGrid"></div>
@@ -2830,7 +2833,7 @@
             <div class="glow glow-green" style="width:400px;height:400px;top:20%;left:-10%"></div>
             <div class="glow glow-red" style="width:350px;height:350px;bottom:10%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-green">process</span>
+                <div class="section-header rev"><span class="section-label sl-green">Process</span>
                     <h2 class="section-title">From Idea to <span class="grad-text">Live Site</span></h2>
                     <p class="section-desc">A transparent, structured approach &mdash; on time, every time.</p>
                 </div>
@@ -2843,33 +2846,28 @@
             <div class="bg-iso fade-top-bottom"></div>
             <div class="glow glow-yellow" style="width:350px;height:350px;top:15%;right:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-yellow">faq</span>
+                <div class="section-header rev"><span class="section-label sl-yellow">FAQ</span>
                     <h2 class="section-title">Common <span class="grad-text">Questions</span></h2>
                 </div>
                 <div class="faq-wrap rev" id="faqWrap"></div>
             </div>
         </section>
 
-        <!-- ===== CTA — TERMINAL STYLE, NO CARTOON ===== -->
+        <!-- ===== CTA — CLEAN, NO CODE/TERMINAL ===== -->
         <section class="cta-sec">
             <div class="container">
                 <div class="cta-inner rev">
-                    <div class="cta-terminal">
-                        <div class="cta-terminal-head">
-                            <div class="dots"><span></span><span></span><span></span></div>
-                            <div class="title">~/ankit-jaswal/hire.sh</div>
-                        </div>
-                        <div class="cta-terminal-body">
-                            <div><span class="prompt">$</span> <span class="cmd">npm</span> <span class="string">init project</span></div>
-                            <div><span class="comment">// Ready to build your next big idea?</span></div>
-                            <div><span class="prompt">$</span> <span class="cmd">contact</span> <span class="keyword">--priority</span>=<span class="string">"high"</span> <span class="keyword">--reply</span>=<span class="string">"24h"</span><span class="cta-cursor-blink"></span></div>
-                        </div>
-                    </div>
+                    <div class="cta-badge"><span class="cta-badge-dot"></span>Currently accepting new projects</div>
                     <h2>Ready to Build <span>Something Great?</span></h2>
-                    <p>Let's create a fast, high-converting web experience for your business. From concept to code, delivered on time.</p>
+                    <p>Let's create a fast, beautiful, high-converting web experience tailored to your business. From concept to launch — delivered on time and beyond expectations.</p>
                     <div class="cta-btns">
                         <a href="#contact" class="btn-white" style="padding:16px 36px;font-size:.9375rem">Start a Project</a>
                         <a href="#" class="btn-ow" style="padding:16px 36px;font-size:.9375rem">Download Resume</a>
+                    </div>
+                    <div class="cta-quick">
+                        <div class="cta-quick-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Free consultation</div>
+                        <div class="cta-quick-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>24-hour response</div>
+                        <div class="cta-quick-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Money-back guarantee</div>
                     </div>
                 </div>
             </div>
@@ -2879,7 +2877,7 @@
             <div class="bg-grid-subtle fade-top-bottom"></div>
             <div class="glow glow-blue" style="width:400px;height:400px;top:10%;left:-10%"></div>
             <div class="container">
-                <div class="section-header rev"><span class="section-label sl-blue">contact</span>
+                <div class="section-header rev"><span class="section-label sl-blue">Contact</span>
                     <h2 class="section-title">Let's <span class="grad-text">Connect</span></h2>
                 </div>
                 <div class="contact-grid">
@@ -2890,28 +2888,28 @@
                             <div class="c-method">
                                 <div class="c-mi" style="background:var(--g-lblue);color:var(--g-blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                                 <div>
-                                    <div class="c-ml">email</div>
+                                    <div class="c-ml">Email</div>
                                     <div class="c-mv"><a href="mailto:ankit.jaswal.311@gmail.com">ankit.jaswal.311@gmail.com</a></div>
                                 </div>
                             </div>
                             <div class="c-method">
                                 <div class="c-mi" style="background:var(--g-lgreen);color:var(--g-green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
                                 <div>
-                                    <div class="c-ml">phone</div>
+                                    <div class="c-ml">Phone</div>
                                     <div class="c-mv"><a href="tel:+917018464647">+91 70184 64647</a></div>
                                 </div>
                             </div>
                             <div class="c-method">
                                 <div class="c-mi" style="background:var(--g-lred);color:var(--g-red)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                                 <div>
-                                    <div class="c-ml">location</div>
+                                    <div class="c-ml">Location</div>
                                     <div class="c-mv">Zirakpur, Punjab, India</div>
                                 </div>
                             </div>
                             <div class="c-method">
                                 <div class="c-mi" style="background:var(--g-lyellow);color:var(--g-orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
                                 <div>
-                                    <div class="c-ml">response_time</div>
+                                    <div class="c-ml">Response Time</div>
                                     <div class="c-mv">Within 24 hours</div>
                                 </div>
                             </div>
@@ -2927,8 +2925,6 @@
                             <input type="hidden" name="_subject" value="🚀 New Portfolio Inquiry from Website">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="https://ankit-jaswal.dev/thank-you">
-
                             <div class="f-row">
                                 <div class="fg"><label for="fn" class="flbl">First Name<span class="req">*</span></label><input type="text" id="fn" name="First Name" class="finp" placeholder="John" required></div>
                                 <div class="fg"><label for="ln" class="flbl">Last Name<span class="req">*</span></label><input type="text" id="ln" name="Last Name" class="finp" placeholder="Doe" required></div>
@@ -2946,7 +2942,7 @@
                             <div class="fg"><label for="fm" class="flbl">Project Details<span class="req">*</span></label><textarea id="fm" name="Project Details" class="ftxt" placeholder="Describe your project goals, features needed, current pain points, and reference websites..."
                                     required></textarea></div>
                             <button type="submit" class="f-submit" id="fBtn">Send Message &rarr;</button>
-                            <p class="f-note" id="curNote">// Response guaranteed within 24 hours &middot; Notifications sent to ankit.jaswal.311@gmail.com</p>
+                            <p class="f-note">Response guaranteed within 24 hours &middot; Notifications sent to ankit.jaswal.311@gmail.com</p>
                         </form>
                     </div>
                 </div>
@@ -2962,17 +2958,17 @@
                         <div class="logo-mark-bg"></div>
                         <div class="logo-mark-inner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                     </div><span>Ankit Jaswal</span></div>
-                <div class="foot-links"><a href="#services" class="foot-link">services</a><a href="#projects" class="foot-link">projects</a><a href="#experience" class="foot-link">experience</a><a href="#skills" class="foot-link">skills</a><a href="#contact" class="foot-link">contact</a></div>
+                <div class="foot-links"><a href="#services" class="foot-link">Services</a><a href="#projects" class="foot-link">Projects</a><a href="#experience" class="foot-link">Experience</a><a href="#skills" class="foot-link">Skills</a><a href="#contact" class="foot-link">Contact</a></div>
             </div>
-            <div class="foot-bot"><span id="copyright"></span><span>// Built with clean code &amp; passion &middot; Zirakpur, Punjab</span></div>
+            <div class="foot-bot"><span id="copyright"></span><span>Built with clean code &amp; passion &middot; Zirakpur, Punjab</span></div>
         </div>
     </footer>
     <button class="btt" id="btt" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
 
     <script>
-        document.getElementById('copyright').textContent = '// \u00A9 ' + new Date().getFullYear() + ' Ankit Jaswal. All rights reserved.';
+        document.getElementById('copyright').textContent = '\u00A9 ' + new Date().getFullYear() + ' Ankit Jaswal. All rights reserved.';
 
-        // ===== CUSTOM CURSOR =====
+        // CURSOR
         (function() {
             var dot = document.getElementById('cursorDot'),
                 ring = document.getElementById('cursorRing'),
@@ -3003,8 +2999,7 @@
                 requestAnimationFrame(animate)
             }
             animate();
-            // Hover expand on interactive elements
-            var hoverEls = 'a, button, input, textarea, select, .srv-card, .sk-card, .exp-card, .proj-card, .proc-card, .c-method, .hero-pill, .proj-tab, .fi-q, .pstat, .hf, .mob-link, .foot-link, .nav-link, .sl-btn, .dl-btn, .btt';
+            var hoverEls = 'a, button, input, textarea, select, .srv-card, .sk-card, .exp-card, .proj-card, .proc-card, .c-method, .hero-pill, .proj-tab, .fi-q, .pstat, .ptag-float, .mob-link, .foot-link, .nav-link, .sl-btn, .dl-btn, .btt, .photo-img';
             document.querySelectorAll(hoverEls).forEach(function(el) {
                 el.addEventListener('mouseenter', function() {
                     dot.classList.add('hover');
@@ -3035,86 +3030,70 @@
             });
         })();
 
-        // ===== GEO-BASED PRICING =====
+        // GEO PRICING
         var pricingByCountry = {
             US: {
                 cur: 'USD',
-                sym: '$',
                 options: ['Under $5K', '$5K - $10K', '$10K - $25K', '$25K - $50K', '$50K+']
             },
             GB: {
                 cur: 'GBP',
-                sym: '\u00A3',
                 options: ['Under \u00A34K', '\u00A34K - \u00A38K', '\u00A38K - \u00A320K', '\u00A320K - \u00A340K', '\u00A340K+']
             },
             CA: {
                 cur: 'CAD',
-                sym: 'C$',
                 options: ['Under C$7K', 'C$7K - C$14K', 'C$14K - C$35K', 'C$35K - C$70K', 'C$70K+']
             },
             AU: {
                 cur: 'AUD',
-                sym: 'A$',
                 options: ['Under A$8K', 'A$8K - A$15K', 'A$15K - A$38K', 'A$38K - A$75K', 'A$75K+']
             },
             EU: {
                 cur: 'EUR',
-                sym: '\u20AC',
                 options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
             },
             DE: {
                 cur: 'EUR',
-                sym: '\u20AC',
                 options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
             },
             FR: {
                 cur: 'EUR',
-                sym: '\u20AC',
                 options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
             },
             NL: {
                 cur: 'EUR',
-                sym: '\u20AC',
                 options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
             },
             IT: {
                 cur: 'EUR',
-                sym: '\u20AC',
                 options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
             },
             ES: {
                 cur: 'EUR',
-                sym: '\u20AC',
                 options: ['Under \u20AC5K', '\u20AC5K - \u20AC9K', '\u20AC9K - \u20AC22K', '\u20AC22K - \u20AC45K', '\u20AC45K+']
             },
             AE: {
                 cur: 'AED',
-                sym: 'AED',
                 options: ['Under AED 18K', 'AED 18K - 37K', 'AED 37K - 92K', 'AED 92K - 185K', 'AED 185K+']
             },
             SA: {
                 cur: 'SAR',
-                sym: 'SAR',
                 options: ['Under SAR 19K', 'SAR 19K - 38K', 'SAR 38K - 94K', 'SAR 94K - 188K', 'SAR 188K+']
             },
             SG: {
                 cur: 'SGD',
-                sym: 'S$',
                 options: ['Under S$7K', 'S$7K - S$13K', 'S$13K - S$33K', 'S$33K - S$67K', 'S$67K+']
             },
             JP: {
                 cur: 'JPY',
-                sym: '\u00A5',
                 options: ['Under \u00A5750K', '\u00A5750K - \u00A51.5M', '\u00A51.5M - \u00A53.7M', '\u00A53.7M - \u00A57.5M', '\u00A57.5M+']
             },
             IN: {
                 cur: 'INR',
-                sym: '\u20B9',
                 options: ['Under \u20B94.2L', '\u20B94.2L - \u20B98.3L', '\u20B98.3L - \u20B921L', '\u20B921L - \u20B942L', '\u20B942L+']
             },
             DEFAULT: {
                 cur: 'USD',
-                sym: '$',
                 options: ['Under $5K', '$5K - $10K', '$10K - $25K', '$25K - $50K', '$50K+']
             }
         };
@@ -3124,7 +3103,6 @@
                 var lang = navigator.language || navigator.userLanguage || 'en-US';
                 var region = lang.split('-')[1];
                 if (region) return region.toUpperCase();
-                // fallback timezone
                 var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
                 if (tz.indexOf('London') > -1) return 'GB';
                 if (tz.indexOf('Paris') > -1 || tz.indexOf('Berlin') > -1 || tz.indexOf('Amsterdam') > -1 || tz.indexOf('Madrid') > -1 || tz.indexOf('Rome') > -1) return 'EU';
@@ -3153,7 +3131,6 @@
         }
         loadPricing();
 
-        // PILLS
         var pills = [{
             t: 'WordPress',
             c: '#4285F4'
@@ -3477,7 +3454,7 @@
                 l: 'Score'
             }]
         }];
-        document.getElementById('projTabs').innerHTML = '<button class="proj-tab on" data-f="all">// all</button><button class="proj-tab" data-f="shopify">// shopify</button><button class="proj-tab" data-f="wordpress">// wordpress</button>';
+        document.getElementById('projTabs').innerHTML = '<button class="proj-tab on" data-f="all">All</button><button class="proj-tab" data-f="shopify">Shopify</button><button class="proj-tab" data-f="wordpress">WordPress</button>';
 
         function renderProjects(f) {
             var list = f === 'all' ? projects : projects.filter(function(p) {
@@ -3830,7 +3807,6 @@
             })
         });
 
-        // FORM — sends to ankit.jaswal.311@gmail.com via FormSubmit.co
         document.getElementById('cForm').addEventListener('submit', function(e) {
             var fn = document.getElementById('fn'),
                 ln = document.getElementById('ln'),
@@ -3856,7 +3832,6 @@
             var b = document.getElementById('fBtn');
             b.textContent = 'Sending...';
             b.disabled = true;
-            // form submits to FormSubmit which emails ankit.jaswal.311@gmail.com
         });
         document.querySelectorAll('.finp,.ftxt,.fsel').forEach(function(el) {
             el.addEventListener('input', function() {
